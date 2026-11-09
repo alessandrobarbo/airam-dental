@@ -1,0 +1,1112 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clínica Dental Airam · Tu dentista en Boadilla del Monte</title>
+<meta name="description" content="Clínica Dental Airam en Boadilla del Monte, Madrid. Desde el año 2000 devolviendo sonrisas: ortodoncia, implantes, odontopediatría, estética dental y sedación consciente. Pide cita por WhatsApp o al 91 633 46 36.">
+<meta name="theme-color" content="#3A4147">
+<script>
+/* Activa el movimiento solo con JS y sin preferencia de movimiento reducido */
+try{ if(!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('js'); }catch(e){}
+</script>
+<link rel="icon" href="https://airamdental.com/wp-content/uploads/2024/08/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="https://airamdental.com/wp-content/uploads/2024/08/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Clínica Dental Airam",
+  "url": "https://airamdental.com/",
+  "telephone": "+34 916 334 636",
+  "email": "info@airamdental.com",
+  "foundingDate": "2000",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Avenida del Nuevo Mundo, 7",
+    "postalCode": "28660",
+    "addressLocality": "Boadilla del Monte",
+    "addressRegion": "Madrid",
+    "addressCountry": "ES"
+  },
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification","dayOfWeek": "Monday","opens": "10:00","closes": "20:00"},
+    {"@type": "OpeningHoursSpecification","dayOfWeek": "Tuesday","opens": "14:00","closes": "20:00"},
+    {"@type": "OpeningHoursSpecification","dayOfWeek": "Wednesday","opens": "09:00","closes": "20:00"},
+    {"@type": "OpeningHoursSpecification","dayOfWeek": "Thursday","opens": "10:00","closes": "20:00"},
+    {"@type": "OpeningHoursSpecification","dayOfWeek": "Friday","opens": "10:00","closes": "15:00"}
+  ],
+  "sameAs": ["https://www.instagram.com/dentalairam/","https://www.facebook.com/people/Airam-Dental/61565206595550/"]
+}
+</script>
+
+<style>
+:root{
+  /* Paleta Airam (extraída del sitio y del logotipo) */
+  --pizarra:#3A4147;      /* texto y fondos oscuros */
+  --pizarra-2:#2D2E33;    /* oscuro profundo */
+  --arena:#D7CCBF;        /* color del logotipo */
+  --lino:#F1EDE7;         /* superficie clara */
+  --nogal:#6D6259;        /* texto secundario cálido */
+  --taupe:#A69788;        /* líneas y detalles */
+  --blanco:#FFFFFF;
+
+  --font:"Maven Pro", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --wrap:1200px;
+  --gutter:clamp(16px,4vw,40px);
+  --petal:clamp(48px,9vw,120px);
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--blanco);color:var(--pizarra);
+  font-family:var(--font);font-size:17px;line-height:1.6;font-weight:400;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-weight:500;line-height:1.12;margin:0;letter-spacing:-.01em}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gutter)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:2px solid var(--pizarra);outline-offset:3px;border-radius:4px}
+.on-dark :focus-visible{outline-color:var(--arena)}
+
+/* ---------- Botones ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:.6em;justify-content:center;
+  font:500 16px/1 var(--font);text-decoration:none;
+  padding:16px 24px;border-radius:999px;border:1.5px solid transparent;
+  transition:background-color .2s var(--ease),color .2s var(--ease),border-color .2s var(--ease);
+  cursor:pointer;white-space:nowrap;
+}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-wa{background:var(--pizarra);color:var(--blanco)}
+.btn-wa:hover{background:var(--pizarra-2)}
+.btn-line{border-color:var(--pizarra);color:var(--pizarra);background:transparent}
+.btn-line:hover{background:var(--pizarra);color:var(--blanco)}
+.on-dark .btn-wa{background:var(--arena);color:var(--pizarra-2)}
+.on-dark .btn-wa:hover{background:var(--blanco)}
+.on-dark .btn-line{border-color:var(--arena);color:var(--arena)}
+.on-dark .btn-line:hover{background:var(--arena);color:var(--pizarra-2)}
+
+/* ---------- Cabecera ---------- */
+.site-header{
+  position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);
+  backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);
+  border-bottom:1px solid transparent;transition:border-color .25s;
+}
+.site-header.scrolled{border-bottom-color:rgba(58,65,71,.12)}
+.header-in{display:flex;align-items:center;gap:24px;height:76px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--pizarra);margin-right:auto}
+.logo .mark{width:40px;height:40px;color:var(--taupe)}
+.logo .word{display:flex;flex-direction:column;line-height:1}
+.logo .word small{font-size:10.5px;letter-spacing:.14em;color:var(--nogal);margin-bottom:3px}
+.logo .word svg{width:82px;height:auto;color:var(--pizarra)}
+.nav{display:flex;gap:28px}
+.nav a{text-decoration:none;font-size:15.5px;font-weight:500;color:var(--nogal);padding:6px 0;position:relative}
+.nav a:hover{color:var(--pizarra)}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1.5px;background:var(--pizarra);transform:scaleX(0);transform-origin:left;transition:transform .25s var(--ease)}
+.nav a:hover::after{transform:scaleX(1)}
+.header-cta{padding:12px 20px;font-size:15px}
+.menu-btn{display:none;background:none;border:0;padding:10px;margin-right:-10px;cursor:pointer;color:var(--pizarra)}
+.menu-btn svg{width:26px;height:26px}
+
+/* ---------- Hero ---------- */
+.hero{background:var(--lino);overflow:hidden}
+.hero-in{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(32px,5vw,72px);align-items:center;padding-top:clamp(40px,6vw,80px);padding-bottom:clamp(48px,7vw,96px)}
+.hero h1{font-size:clamp(40px,6.2vw,78px);font-weight:500;letter-spacing:-.025em;line-height:1.02}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.06em}
+.hero h1 .ln > span{display:block}
+.hero h1 .ln + .ln > span{color:var(--nogal);font-weight:400}
+.hero .motto{margin-top:28px;font-size:clamp(19px,1.8vw,22px);color:var(--pizarra);font-weight:500}
+.hero .lead{margin-top:14px;max-width:46ch;color:var(--nogal)}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.hero-facts{display:flex;flex-wrap:wrap;gap:8px 28px;margin:36px 0 0;padding:20px 0 0;border-top:1px solid rgba(58,65,71,.15);list-style:none;font-size:15px;color:var(--nogal)}
+.hero-facts li{display:flex;align-items:center;gap:8px}
+.hero-facts svg{width:18px;height:18px;color:var(--taupe);flex:none}
+
+.hero-media{position:relative}
+.petal-frame{
+  border-radius:0 var(--petal) 0 var(--petal);overflow:hidden;background:var(--arena);
+  aspect-ratio:5/4.6;
+}
+.petal-frame img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.hero-media .petal-frame{background:#fff}
+.hero-media .petal-frame img{object-position:50% 100%;transform:scale(1.28);transform-origin:50% 100%}
+.hero-media .mark-bg{position:absolute;width:62%;right:-14%;top:-16%;color:var(--arena);opacity:.55;z-index:0;pointer-events:none}
+.hero-media .petal-frame{position:relative;z-index:1}
+.status{
+  position:absolute;z-index:2;left:clamp(-8px,-1vw,0px);bottom:clamp(-20px,-2vw,-12px);
+  background:var(--blanco);border-radius:0 22px 0 22px;padding:14px 18px;
+  box-shadow:0 18px 40px -18px rgba(45,46,51,.35);font-size:14.5px;line-height:1.35;max-width:260px
+}
+.status b{display:flex;align-items:center;gap:8px;font-weight:600;font-size:15px}
+.status b i{width:9px;height:9px;border-radius:50%;background:var(--taupe);flex:none}
+.status.open b i{background:#4E8B6A;box-shadow:0 0 0 4px rgba(78,139,106,.18)}
+.status span{color:var(--nogal)}
+
+/* Hero: único momento de movimiento al cargar */
+@media (prefers-reduced-motion:no-preference){
+  .hero-media .petal-frame{animation:unfurl 1.1s var(--ease) both .1s}
+  .hero-media .mark-bg{animation:spin-in 1.6s var(--ease) both}
+  .status{animation:rise .7s var(--ease) both .8s}
+  @keyframes unfurl{from{clip-path:inset(0 0 100% 0 round 0 var(--petal) 0 var(--petal));transform:scale(1.04)}to{clip-path:inset(0 0 0 0 round 0 var(--petal) 0 var(--petal));transform:none}}
+  @keyframes spin-in{from{transform:rotate(-30deg) scale(.85);opacity:0}to{transform:none;opacity:.55}}
+  @keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+}
+
+/* ---------- Secciones genéricas ---------- */
+.section{padding:clamp(72px,10vw,128px) 0}
+section[id]{scroll-margin-top:64px}
+.section-head{max-width:720px;margin-bottom:clamp(36px,5vw,56px)}
+.section-head h2{font-size:clamp(32px,4.4vw,52px);letter-spacing:-.02em}
+.section-head p{margin-top:16px;color:var(--nogal);max-width:60ch}
+.quote-line{font-size:clamp(18px,1.6vw,20px);font-weight:500;color:var(--nogal)}
+
+/* ---------- Manifiesto ---------- */
+.manifesto{background:var(--pizarra);color:var(--lino)}
+.manifesto .wrap{display:grid;grid-template-columns:auto 1fr;gap:clamp(24px,5vw,72px);align-items:start;padding-top:clamp(64px,8vw,104px);padding-bottom:clamp(64px,8vw,104px)}
+.manifesto .mark{width:clamp(64px,9vw,120px);color:var(--arena);opacity:.6}
+.manifesto blockquote{margin:0;font-size:clamp(26px,3.4vw,42px);line-height:1.2;font-weight:400;letter-spacing:-.015em;max-width:24ch;color:var(--blanco)}
+.manifesto p{margin-top:24px;max-width:62ch;color:rgba(241,237,231,.75)}
+.manifesto cite{display:block;margin-top:20px;font-style:normal;font-size:15px;color:var(--arena)}
+
+/* ---------- Por qué Airam ---------- */
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid rgba(58,65,71,.15)}
+.why article{padding:32px 32px 32px 0;border-bottom:1px solid rgba(58,65,71,.15)}
+.why article+article{padding-left:32px;border-left:1px solid rgba(58,65,71,.15)}
+.why article:nth-child(4){padding-left:0;border-left:0}
+.why h3{font-size:21px;font-weight:600}
+.why p{margin-top:10px;color:var(--nogal);font-size:16px}
+.why svg{width:30px;height:30px;color:var(--taupe);margin-bottom:18px}
+
+/* ---------- Especialidades ---------- */
+.esp{background:var(--lino)}
+.esp-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,80px);align-items:start}
+.esp-list{border-top:1px solid rgba(58,65,71,.18)}
+.esp-list details{border-bottom:1px solid rgba(58,65,71,.18)}
+.esp-list summary{
+  list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;
+  padding:20px 0;font-size:clamp(20px,2vw,24px);font-weight:500;
+}
+.esp-list summary::-webkit-details-marker{display:none}
+.esp-list summary .pm{width:28px;height:28px;flex:none;border-radius:50%;border:1.5px solid var(--taupe);position:relative;transition:transform .3s var(--ease),background-color .2s}
+.esp-list summary .pm::before,.esp-list summary .pm::after{content:"";position:absolute;left:50%;top:50%;width:11px;height:1.5px;background:var(--pizarra);transform:translate(-50%,-50%)}
+.esp-list summary .pm::after{transform:translate(-50%,-50%) rotate(90deg);transition:opacity .2s}
+.esp-list details[open] summary .pm{background:var(--pizarra);border-color:var(--pizarra);transform:rotate(180deg)}
+.esp-list details[open] summary .pm::before{background:var(--blanco)}
+.esp-list details[open] summary .pm::after{opacity:0}
+.esp-list summary:hover{color:var(--nogal)}
+.esp-body{padding:0 0 26px;max-width:56ch}
+.esp-body .quote-line{color:var(--pizarra)}
+.esp-body p+p{margin-top:10px}
+.esp-body p.d{color:var(--nogal);font-size:16px}
+.esp-body .ask{display:inline-flex;align-items:center;gap:8px;margin-top:18px;font-weight:600;font-size:15.5px;text-decoration:none;border-bottom:1.5px solid var(--arena);padding-bottom:2px}
+.esp-body .ask:hover{border-color:var(--pizarra)}
+.esp-body .ask svg{width:18px;height:18px}
+.esp-body .m-img{display:none}
+.esp-visual{position:sticky;top:110px}
+.esp-visual .petal-frame{aspect-ratio:4/4.4;--petal:clamp(48px,8vw,104px)}
+.esp-visual img{transition:opacity .35s var(--ease)}
+.esp-visual figcaption{margin-top:16px;font-size:15px;color:var(--nogal)}
+
+/* ---------- Sedación ---------- */
+.sed{background:var(--pizarra-2);color:var(--lino)}
+.sed .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(32px,5vw,80px);align-items:center;padding-top:clamp(64px,8vw,112px);padding-bottom:clamp(64px,8vw,112px)}
+.sed .petal-frame{border-radius:var(--petal) 0 var(--petal) 0;aspect-ratio:4/3.6}
+.sed h2{font-size:clamp(32px,4.2vw,50px);color:var(--blanco);letter-spacing:-.02em}
+.sed .quote-line{color:var(--arena);margin-top:16px}
+.sed p.t{margin-top:20px;color:rgba(241,237,231,.78);max-width:58ch}
+.sed ul{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:14px}
+.sed li{padding-left:28px;position:relative;color:rgba(241,237,231,.88)}
+.sed li::before{content:"";position:absolute;left:0;top:.45em;width:12px;height:12px;border-radius:0 7px 0 7px;background:var(--arena)}
+.sed li b{color:var(--blanco);font-weight:600}
+.sed .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+
+/* ---------- La clínica (pétalos) ---------- */
+.clinic-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,96px);align-items:center}
+.petals{display:grid;grid-template-columns:1fr 1fr;gap:clamp(8px,1.2vw,14px);position:relative}
+.petals figure{margin:0;position:relative;aspect-ratio:1;overflow:hidden;background:var(--arena)}
+.petals figure img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+.petals figure:hover img{transform:scale(1.04)}
+.petals figure:nth-child(1),.petals figure:nth-child(4){border-radius:0 50% 0 50%}
+.petals figure:nth-child(2),.petals figure:nth-child(3){border-radius:50% 0 50% 0}
+.petals figcaption{position:absolute;left:50%;bottom:14%;transform:translateX(-50%);background:rgba(255,255,255,.92);padding:5px 12px;border-radius:999px;font-size:13px;font-weight:500;white-space:nowrap}
+.clinic-text p{color:var(--nogal)}
+.clinic-text p+p{margin-top:16px}
+.tech{list-style:none;padding:0;margin:32px 0 0;display:flex;flex-wrap:wrap;gap:10px}
+.tech li{border:1px solid rgba(58,65,71,.22);border-radius:999px;padding:8px 16px;font-size:14.5px;font-weight:500}
+.boca{margin-top:36px;font-size:clamp(22px,2.4vw,28px);font-weight:500;line-height:1.25}
+.boca small{display:block;font-size:15px;color:var(--nogal);font-weight:400;margin-bottom:6px}
+
+/* ---------- Equipo ---------- */
+.team-photo{border-radius:0 var(--petal) 0 var(--petal);overflow:hidden;aspect-ratio:16/7.5;margin-bottom:clamp(40px,5vw,64px)}
+.team-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 25%}
+.docs{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(16px,2vw,28px)}
+.doc img{width:100%;aspect-ratio:3/3.7;object-fit:cover;object-position:50% 20%;border-radius:0 28px 0 28px;background:var(--lino)}
+.doc h3{font-size:19px;font-weight:600;margin-top:16px}
+.doc .role{font-size:14.5px;color:var(--nogal);margin-top:3px}
+.doc p.bio{font-size:15px;color:var(--nogal);margin-top:10px;line-height:1.55}
+.staff{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(16px,2vw,28px);margin-top:clamp(40px,5vw,56px);padding-top:clamp(28px,4vw,40px);border-top:1px solid rgba(58,65,71,.15)}
+.staff .p{display:flex;align-items:center;gap:12px}
+.staff img{width:56px;height:56px;border-radius:50%;object-fit:cover;object-position:50% 20%;flex:none;background:var(--lino)}
+.staff b{display:block;font-weight:600;font-size:15.5px;line-height:1.25}
+.staff span{font-size:13.5px;color:var(--nogal);line-height:1.3;display:block}
+
+/* ---------- Opiniones ---------- */
+.reviews{background:var(--lino)}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,40px)}
+.rev{margin:0;display:flex;flex-direction:column}
+.rev .qmark{width:34px;height:34px;color:var(--taupe)}
+.rev blockquote{margin:16px 0 0;font-size:17.5px;line-height:1.6;flex:1}
+.rev figcaption{margin-top:22px;padding-top:16px;border-top:1px solid rgba(58,65,71,.18);font-weight:600}
+.rev figcaption span{display:block;font-weight:400;color:var(--nogal);font-size:14.5px}
+
+/* ---------- Contacto ---------- */
+.contact{background:var(--pizarra);color:var(--lino)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px)}
+.contact h2{color:var(--blanco);font-size:clamp(34px,4.6vw,56px);letter-spacing:-.02em}
+.contact .quote-line{color:var(--arena);margin-top:14px}
+.contact .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.c-list{list-style:none;padding:0;margin:40px 0 0;display:grid;gap:18px}
+.c-list li{display:grid;grid-template-columns:24px 1fr;gap:14px;align-items:start}
+.c-list svg{width:22px;height:22px;color:var(--arena);margin-top:2px}
+.c-list a{text-decoration:none;border-bottom:1px solid rgba(215,204,191,.4)}
+.c-list a:hover{border-color:var(--arena)}
+.c-list small{display:block;color:rgba(241,237,231,.6);font-size:14px}
+.hours{width:100%;border-collapse:collapse;font-size:16px}
+.hours caption{text-align:left;font-weight:600;font-size:20px;color:var(--blanco);margin-bottom:12px}
+.hours td{padding:11px 0;border-bottom:1px solid rgba(215,204,191,.18)}
+.hours td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.hours tr.today td{color:var(--blanco);font-weight:600}
+.hours tr.today td:first-child::after{content:"Hoy";margin-left:10px;font-size:12px;font-weight:600;background:var(--arena);color:var(--pizarra-2);padding:2px 8px;border-radius:999px;vertical-align:2px}
+.hours tr.closed td{color:rgba(241,237,231,.55)}
+.map{margin-top:28px;border-radius:0 40px 0 40px;overflow:hidden;aspect-ratio:16/10;background:var(--pizarra-2)}
+.map iframe{width:100%;height:100%;border:0;filter:grayscale(.35) contrast(1.02)}
+.dir{display:inline-flex;align-items:center;gap:8px;margin-top:14px;font-weight:500;color:var(--arena);text-decoration:none;font-size:15.5px}
+.dir:hover{color:var(--blanco)}
+.dir svg{width:18px;height:18px}
+
+/* ---------- Pie ---------- */
+.foot{background:var(--pizarra-2);color:rgba(241,237,231,.7);font-size:14.5px;padding:48px 0 calc(40px + env(safe-area-inset-bottom))}
+.foot-in{display:flex;flex-wrap:wrap;gap:24px 40px;align-items:center;justify-content:space-between}
+.foot .logo{color:var(--lino);margin:0}
+.foot .logo .word svg{color:var(--lino)}
+.foot .logo .word small{color:var(--arena)}
+.foot nav{display:flex;flex-wrap:wrap;gap:8px 22px}
+.foot a{text-decoration:none}
+.foot a:hover{color:var(--blanco)}
+.social{display:flex;gap:10px}
+.social a{width:42px;height:42px;border-radius:50%;border:1px solid rgba(215,204,191,.35);display:grid;place-items:center;color:var(--arena)}
+.social a:hover{background:var(--arena);color:var(--pizarra-2)}
+.social svg{width:19px;height:19px}
+.foot .copy{width:100%;padding-top:24px;border-top:1px solid rgba(215,204,191,.15);font-size:13.5px}
+
+/* ---------- Barra móvil y botón flotante ---------- */
+.mbar{display:none}
+.wa-float{
+  position:fixed;right:22px;bottom:22px;z-index:40;width:60px;height:60px;border-radius:50%;
+  background:var(--pizarra);color:var(--blanco);display:grid;place-items:center;
+  box-shadow:0 14px 30px -12px rgba(45,46,51,.55);transition:transform .2s var(--ease),background-color .2s;
+}
+.wa-float:hover{transform:scale(1.06);background:var(--pizarra-2)}
+.wa-float svg{width:28px;height:28px}
+
+/* ---------- Menú móvil ---------- */
+.mnav{position:fixed;inset:0;z-index:60;background:var(--lino);display:flex;flex-direction:column;padding:20px var(--gutter) 32px;visibility:hidden;opacity:0;transition:opacity .25s var(--ease),visibility 0s .25s}
+.mnav.open{visibility:visible;opacity:1;transition:opacity .25s var(--ease)}
+.mnav .top{display:flex;justify-content:space-between;align-items:center;height:56px}
+.mnav nav{display:flex;flex-direction:column;margin-top:32px}
+.mnav nav a{font-size:30px;font-weight:500;text-decoration:none;padding:12px 0;border-bottom:1px solid rgba(58,65,71,.12)}
+.mnav .actions{margin-top:auto;display:grid;gap:12px}
+
+/* =====================================================================
+   MOVIMIENTO · nivel "Vivo" con tono sereno de clínica
+   Entradas 600–900 ms, distancia 16–26 px, solo transform/opacity.
+   ===================================================================== */
+:root{--dist:26px}
+body{overflow-x:clip}
+.hero{overflow:clip}
+
+/* Cabecera: barra de progreso de lectura + versión compacta al rolar */
+.progress{position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--taupe);transform-origin:left;transform:scaleX(var(--sp,0));pointer-events:none}
+.header-in{transition:height .3s var(--ease)}
+.site-header{transition:border-color .25s,box-shadow .3s}
+.site-header.scrolled{box-shadow:0 12px 30px -26px rgba(45,46,51,.55)}
+.site-header.scrolled .header-in{height:64px}
+.logo .mark{transition:transform .7s var(--ease)}
+.logo:hover .mark{transform:rotate(90deg)}
+
+/* Revelación al rolar (solo con html.js) */
+.js .rv{opacity:0;transform:translateY(var(--dist));transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:var(--d,0s)}
+.js .rv.rv-scale{transform:scale(.88)}
+.js .rv.rv-left{transform:translateX(calc(var(--dist) * -1))}
+.js .rv.in{opacity:1;transform:none}
+
+/* Hero: título línea a línea, apoyo escalonado, Ken Burns y selo flotante */
+.js .hero h1 .ln > span{animation:line-up .9s var(--ease) both}
+.js .hero h1 .ln:nth-child(2) > span{animation-delay:.12s}
+.js .fu{animation:fadeup .8s var(--ease) var(--d,.4s) both}
+.js .hero-media .petal-frame img{animation:kenburns 18s ease-in-out 1.2s infinite alternate}
+.js .status{animation:rise .7s var(--ease) .8s both,bob 5s ease-in-out 1.6s infinite}
+.status b i{position:relative}
+.status.open b i::after{content:"";position:absolute;inset:0;border-radius:50%;background:#4E8B6A;animation:ping 2.2s ease-out infinite}
+@keyframes line-up{from{transform:translateY(105%)}to{transform:none}}
+@keyframes fadeup{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes kenburns{from{transform:scale(1.28)}to{transform:scale(1.36) translateX(-2%)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes ping{from{transform:scale(1);opacity:.7}to{transform:scale(3.2);opacity:0}}
+
+/* Faixa contínua de tratamientos y tecnología */
+.band{background:var(--pizarra);color:var(--lino);padding:18px 0;overflow:hidden}
+.band.m-fade{-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.band-track{display:flex;width:max-content;animation:marquee 46s linear infinite}
+.band:hover .band-track,.band.is-off .band-track{animation-play-state:paused}
+.band ul{display:flex;list-style:none;margin:0;padding:0}
+.band li{display:flex;align-items:center;gap:26px;padding-right:26px;font-size:18px;font-weight:500;white-space:nowrap}
+.band li svg{width:20px;height:20px;color:var(--arena);opacity:.8;flex:none}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* Contadores reales en el manifiesto */
+.facts{display:flex;flex-wrap:wrap;gap:20px 56px;margin:40px 0 0;padding-top:28px;border-top:1px solid rgba(215,204,191,.22)}
+.facts div{display:flex;flex-direction:column-reverse}
+.facts dt{font-size:15px;color:rgba(241,237,231,.7)}
+.facts dd{margin:0;font-size:clamp(40px,5vw,60px);font-weight:500;line-height:1;color:var(--arena);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+
+/* Pétalos de la clínica: florecen desde el centro del símbolo */
+.petals figure:nth-child(1).rv{transform-origin:100% 100%}
+.petals figure:nth-child(2).rv{transform-origin:0 100%}
+.petals figure:nth-child(3).rv{transform-origin:100% 0}
+.petals figure:nth-child(4).rv{transform-origin:0 0}
+
+/* Especialidades: respuesta al abrir */
+.js .esp-list details[open] .esp-body{animation:fadeup .45s var(--ease)}
+.esp-visual .petal-frame img{transition:opacity .35s var(--ease),transform .9s var(--ease)}
+.esp-visual .petal-frame:hover img{transform:scale(1.04)}
+.esp-list summary .pm{transition:transform .3s var(--ease),background-color .2s,border-color .2s}
+.esp-list details:not([open]) summary:hover .pm{transform:rotate(90deg);border-color:var(--pizarra)}
+
+/* Microinteracciones */
+.btn{position:relative;overflow:hidden;transition:background-color .2s var(--ease),color .2s var(--ease),border-color .2s var(--ease),transform .25s var(--ease),box-shadow .25s var(--ease)}
+.btn::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.28) 50%,transparent 70%);transform:translateX(-120%);transition:transform .7s var(--ease);pointer-events:none}
+.btn:hover{transform:translateY(-2px)}
+.btn:hover::after{transform:translateX(120%)}
+.btn-wa:hover{box-shadow:0 14px 26px -14px rgba(45,46,51,.75)}
+.why svg{transition:transform .5s var(--ease),color .3s}
+.why article:hover svg{transform:translateY(-3px) rotate(-6deg);color:var(--pizarra)}
+.doc img{transition:transform .5s var(--ease)}
+.doc:hover img{transform:translateY(-6px)}
+.tech li{transition:background-color .25s,color .25s,border-color .25s}
+.tech li:hover{background:var(--pizarra);color:var(--blanco);border-color:var(--pizarra)}
+.social a{transition:background-color .25s,color .25s,transform .25s var(--ease)}
+.social a:hover{transform:translateY(-2px)}
+.wa-float::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--pizarra);animation:wa-pulse 2.6s ease-out infinite;pointer-events:none}
+@keyframes wa-pulse{from{transform:scale(1);opacity:.7}to{transform:scale(1.6);opacity:0}}
+
+/* ---------- Responsive ---------- */
+@media (max-width:1080px){
+  .docs{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 calc(var(--gutter) * -1);padding:0 var(--gutter) 12px;scroll-padding:0 var(--gutter);scrollbar-width:thin}
+  .doc{flex:0 0 min(270px,72%);scroll-snap-align:start}
+  .staff{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:900px){
+  .nav,.header-cta{display:none}
+  .menu-btn{display:block}
+  .hero-in{grid-template-columns:1fr}
+  .hero-media{max-width:560px;margin-right:calc(var(--gutter) * -1);margin-left:auto;width:calc(100% + var(--gutter) * 0)}
+  .why{grid-template-columns:1fr 1fr}
+  .why article,.why article+article{padding:28px 24px 28px 0;border-left:0}
+  .why article:nth-child(even){padding-left:24px;border-left:1px solid rgba(58,65,71,.15)}
+  .esp-grid,.sed .wrap,.clinic-grid,.contact-grid{grid-template-columns:1fr}
+  .esp-visual{display:none}
+  .esp-body .m-img{display:block;margin-top:18px;border-radius:0 40px 0 40px;overflow:hidden;aspect-ratio:16/10}
+  .esp-body .m-img img{width:100%;height:100%;object-fit:cover}
+  .rev-grid{grid-template-columns:1fr}
+  .rev+.rev{padding-top:32px;border-top:1px solid rgba(58,65,71,.12)}
+  .manifesto .wrap{grid-template-columns:1fr}
+  .team-photo{aspect-ratio:16/10}
+}
+@media (max-width:640px){
+  body{font-size:16.5px;padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+  .header-in{height:64px}
+  .hero .actions .btn{flex:1 1 100%}
+  .hero-media{margin-right:0;max-width:none}
+  .status{left:12px;bottom:-18px}
+  .why{grid-template-columns:1fr}
+  .why article:nth-child(even),.why article,.why article+article{padding:24px 0;border-left:0}
+  .doc h3{font-size:17px}
+  .staff{grid-template-columns:1fr 1fr;gap:18px 14px}
+  .staff img{width:48px;height:48px}
+  .petals figcaption{font-size:11.5px;padding:4px 9px}
+  .sed .actions .btn,.contact .actions .btn{flex:1 1 100%}
+  .wa-float{display:none}
+  .mbar{
+    display:grid;grid-template-columns:1fr 1.5fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:45;
+    padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);
+    backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid rgba(58,65,71,.12)
+  }
+  .mbar .btn{padding:14px 12px;font-size:15.5px}
+  .foot{padding-bottom:calc(110px + env(safe-area-inset-bottom))}
+}
+@media (max-width:640px){
+  :root{--dist:16px}
+  .band li{font-size:16px;gap:20px;padding-right:20px}
+  .facts{gap:20px 32px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .js .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- Símbolos reutilizables (logotipo original de Airam e iconos) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-mark" viewBox="0 0 340.16 340.16"><path fill="currentColor" d="M284.9,60V11.89L263.62,7.26,256,5.83C246,3.94,225,0,187.12,0,157,0,84.45,5,58.85,52.34h-47L7.24,73.72,5.83,81.25C3.94,91.33,0,112.31,0,150.27c0,31.15,5.45,105.82,55.44,129.89l-.17,0h.19l-.19,48.05,21.35,4.65,7.58,1.43c10.08,1.89,31.06,5.82,68.88,5.82,30.15,0,102.66-5,128.26-52.35h46.94l4.64-21.37,1.41-7.54c1.89-10.09,5.83-31.07,5.83-69C340.16,158.74,334.88,84.09,284.9,60ZM183.46,20.5a487.53,487.53,0,0,1,75,5.45l3.69.59V53.2a92.59,92.59,0,0,0-13.86-1c-33.15,0-57.55,15.18-72.51,45.11-1.81,3.63-3.46,7.41-4.94,11.3-18.4-50.25-60.28-55.8-77.8-55.8l-7.36-.06C103.39,31.36,136.22,20.5,183.46,20.5ZM266.08,265h-19c-40.39,0-64.73-31-67-85,79.55,3.11,88.15,48.73,88.15,68.23A64.15,64.15,0,0,1,266.08,265ZM262.15,76V93.16c0,40.09-29,63.78-81.87,66.83,4.07-77.1,48.85-85.47,68-85.47A62.72,62.72,0,0,1,262.15,76ZM78,264.14V247c0-40.15,29-63.85,81.83-66.87-1.49,27.18-11.32,85.48-68,85.48A63.45,63.45,0,0,1,78,264.14Zm-3.94-189h19c40.37,0,64.7,31,66.92,85-79.52-3.12-88.11-48.73-88.11-68.24A64.68,64.68,0,0,1,74.07,75.13Zm-53.6,78.8c0-39.32,4.07-66,5.45-75.1l.59-3.7H51.05a93.65,93.65,0,0,0-1.51,16.8c0,33.19,15.16,57.61,45.06,72.59a117.45,117.45,0,0,0,13.58,5.81C62.64,188.59,55.69,226,55.69,247l0,7C32.64,237.3,20.47,202.83,20.47,153.93ZM156.7,319.66c-40.08,0-66.36-4.1-75-5.45L78,313.62V287a91.75,91.75,0,0,0,13.79,1c33.14,0,57.54-15.18,72.51-45.12a119.49,119.49,0,0,0,4.93-11.29c18.4,50.25,60.31,55.8,77.84,55.8l7.36.06C236.81,308.8,204,319.66,156.7,319.66Zm157.54-58.33-.59,3.69H289.11a93.48,93.48,0,0,0,1.51-16.8c0-33.16-15.16-57.58-45.06-72.58A117.94,117.94,0,0,0,232,169.83c45.54-18.26,52.49-55.61,52.49-76.66l0-7.08c23.32,16.89,35.17,50.52,35.17,100.14A490.51,490.51,0,0,1,314.24,261.33Z"/></symbol>
+    <symbol id="i-word" viewBox="174 205 250 61"><g fill="currentColor"><path d="M401.6,206.6c13.3,0,21.18,7.06,21.18,21v37.19H416.9V227.55c0-8.36-3.3-15.07-15.66-15.07A45.18,45.18,0,0,0,382.41,217a26.46,26.46,0,0,1,2,10.59v37.19h-5.88V227.55c0-8.36-3.3-15.07-15.89-15.07A44.28,44.28,0,0,0,346,216v48.73h-5.88V212.6c4.12-2.12,12.94-6,23.18-6,6.83,0,12.13,2,15.66,5.88A49.17,49.17,0,0,1,401.6,206.6Z"/><path d="M305.57,206.25c16.95,0,24.37,8.35,24.37,23.89v17.42c0,15.54-15.89,17.54-23.07,17.54-7.42,0-23.78-2.36-23.78-17.78,0-17.77,22-18.48,27.31-18.48A66.94,66.94,0,0,1,324.05,230c0-12-5.88-18-18.83-18A55.88,55.88,0,0,0,289,214.6V209A53.68,53.68,0,0,1,305.57,206.25Zm18.6,41.31V235.32a90.88,90.88,0,0,0-14.48-1.06c-7.18,0-20.83,1.65-20.83,13.06,0,10.48,10.95,12.48,18,12.48S324.17,257.92,324.17,247.56Z"/><path d="M196.63,206.25c17,0,24.36,8.35,24.36,23.89v17.42c0,15.54-15.89,17.54-23.07,17.54-7.41,0-23.77-2.36-23.77-17.78,0-17.77,22-18.48,27.3-18.48A67.07,67.07,0,0,1,215.11,230c0-12-5.89-18-18.83-18A56,56,0,0,0,180,214.6V209A53.8,53.8,0,0,1,196.63,206.25Zm18.6,41.31V235.32a90.88,90.88,0,0,0-14.48-1.06c-7.18,0-20.83,1.65-20.83,13.06,0,10.48,10.94,12.48,18,12.48S215.23,257.92,215.23,247.56Z"/><path d="M278.81,212.38A85,85,0,0,0,257.48,216v48.73h-5.83V212.14a74.52,74.52,0,0,1,27.16-5.48Z"/><path d="M231.36,264.49V206.86h5.84v57.63Z"/></g></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M3.516 3.516c4.686-4.686 12.284-4.686 16.97 0s4.686 12.283 0 16.97a12 12 0 0 1-13.754 2.299l-5.814.735a.392.392 0 0 1-.438-.44l.748-5.788A12 12 0 0 1 3.517 3.517zm3.61 17.043.3.158a9.85 9.85 0 0 0 11.534-1.758c3.843-3.843 3.843-10.074 0-13.918s-10.075-3.843-13.918 0a9.85 9.85 0 0 0-1.747 11.554l.16.303-.51 3.942a.196.196 0 0 0 .219.22zm6.534-7.003-.933 1.164a9.84 9.84 0 0 1-3.497-3.495l1.166-.933a.79.79 0 0 0 .23-.94L9.561 6.96a.79.79 0 0 0-.924-.445l-2.023.524a.797.797 0 0 0-.588.88 11.754 11.754 0 0 0 10.005 10.005.797.797 0 0 0 .88-.587l.525-2.023a.79.79 0 0 0-.445-.923L14.6 13.327a.79.79 0 0 0-.94.23z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M5 3.5h3.2l1.6 4.2-2.2 1.4a11 11 0 0 0 5.3 5.3l1.4-2.2 4.2 1.6V17a2.5 2.5 0 0 1-2.5 2.5A15.5 15.5 0 0 1 2.5 6 2.5 2.5 0 0 1 5 3.5z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></g></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
+    <symbol id="i-child" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="7" r="3"/><path d="M6 21v-4a6 6 0 0 1 12 0v4"/></g></symbol>
+    <symbol id="i-scan" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3"/><path d="M8.5 9c0-1.5 1.2-2.5 3.5-2.5s3.5 1 3.5 2.5c0 2-1 3-1.3 6.5-.1 1-1.3 1-1.5 0L12 13l-.7 3c-.2 1-1.4 1-1.5 0C9.5 12 8.5 11 8.5 9z"/></g></symbol>
+    <symbol id="i-calm" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 10.5c.5-.6 1.5-.6 2 0M13.5 10.5c.5-.6 1.5-.6 2 0M9 15c1.7 1.4 4.3 1.4 6 0"/></g></symbol>
+    <symbol id="i-hand" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.5s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.8a4.3 4.3 0 0 1 7.5 2.7c0 5.4-7.5 10-7.5 10z"/></g></symbol>
+    <symbol id="i-team" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="9" cy="8" r="3"/><path d="M3 20v-1.5A5.5 5.5 0 0 1 8.5 13h1a5.5 5.5 0 0 1 5.5 5.5V20"/><circle cx="17" cy="9" r="2.4"/><path d="M17 14a4.5 4.5 0 0 1 4.5 4.5V20"/></g></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5" stroke-linecap="round"/></g></symbol>
+    <symbol id="i-quote" viewBox="0 0 32 32"><path fill="currentColor" d="M6 25V16.5C6 10.6 9.3 7 14 6l1 2.2c-3 .9-4.6 3-4.8 5.8H14V25zm12 0V16.5C18 10.6 21.3 7 26 6l1 2.2c-3 .9-4.6 3-4.8 5.8H26V25z"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></g></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 21v-7.5H16l.4-3h-2.9V8.6c0-.9.3-1.5 1.5-1.5h1.5V4.4c-.3 0-1.2-.1-2.2-.1-2.2 0-3.8 1.4-3.8 3.9v2.3H8v3h2.5V21z"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></g></symbol>
+  </defs>
+</svg>
+
+<a class="sr-only" href="#main">Saltar al contenido</a>
+
+<header class="site-header" id="top">
+  <div class="wrap header-in">
+    <a class="logo" href="#top" aria-label="Clínica Dental Airam, inicio">
+      <svg class="mark" aria-hidden="true"><use href="#i-mark"/></svg>
+      <span class="word"><small>Clínica dental</small><svg viewBox="0 0 250 61" aria-hidden="true"><use href="#i-word"/></svg></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#especialidades">Especialidades</a>
+      <a href="#clinica">La clínica</a>
+      <a href="#equipo">Equipo</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="btn btn-wa header-cta" data-wa href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir cita</a>
+    <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="mnav">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <span class="progress" aria-hidden="true"></span>
+</header>
+
+<div class="mnav" id="mnav" role="dialog" aria-modal="true" aria-label="Menú">
+  <div class="top">
+    <a class="logo" href="#top" aria-label="Clínica Dental Airam, inicio">
+      <svg class="mark" aria-hidden="true"><use href="#i-mark"/></svg>
+      <span class="word"><small>Clínica dental</small><svg viewBox="0 0 250 61" aria-hidden="true"><use href="#i-word"/></svg></span>
+    </a>
+    <button class="menu-btn" style="display:block" aria-label="Cerrar menú" data-close>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <nav aria-label="Móvil">
+    <a href="#especialidades">Especialidades</a>
+    <a href="#clinica">La clínica</a>
+    <a href="#equipo">Equipo</a>
+    <a href="#opiniones">Opiniones</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <div class="actions">
+    <a class="btn btn-wa" data-wa href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir cita por WhatsApp</a>
+    <a class="btn btn-line" href="tel:+34916334636"><svg aria-hidden="true"><use href="#i-phone"/></svg>Llamar al 91 633 46 36</a>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="h-hero">
+    <div class="wrap hero-in">
+      <div>
+        <h1 id="h-hero"><span class="ln"><span>Tu dentista</span></span> <span class="ln"><span>en Boadilla del Monte</span></span></h1>
+        <p class="motto fu" style="--d:.35s">«Desde el año 2000 devolviendo sonrisas»</p>
+        <p class="lead fu" style="--d:.45s">Un equipo experto y preparado para cualquier intervención en niños y adultos, con tecnología innovadora e instalaciones de última generación.</p>
+        <div class="actions fu" style="--d:.55s">
+          <a class="btn btn-wa" data-wa href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir cita por WhatsApp</a>
+          <a class="btn btn-line" href="tel:+34916334636"><svg aria-hidden="true"><use href="#i-phone"/></svg>91 633 46 36</a>
+        </div>
+        <ul class="hero-facts fu" style="--d:.7s">
+          <li><svg aria-hidden="true"><use href="#i-pin"/></svg>Av. del Nuevo Mundo, 7</li>
+          <li><svg aria-hidden="true"><use href="#i-child"/></svg>Niños y adultos</li>
+          <li><svg aria-hidden="true"><use href="#i-calm"/></svg>Sedación consciente</li>
+        </ul>
+      </div>
+      <div class="hero-media">
+        <svg class="mark-bg" viewBox="0 0 340.16 340.16" aria-hidden="true"><use href="#i-mark"/></svg>
+        <div class="petal-frame">
+          <img src="https://airamdental.com/wp-content/uploads/2025/07/%C2%A9SortiStudio_AIRAM-EQUIPO-DICIEMBRE-2024-1.jpg" alt="El equipo de Clínica Dental Airam en la clínica de Boadilla del Monte" width="1600" height="1067" fetchpriority="high">
+        </div>
+        <p class="status" id="status" aria-live="polite"><b><i></i><span class="st-t">Horario de hoy</span></b><span class="st-d">Lunes a viernes</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAIXA CONTINUA -->
+  <div class="band m-fade" data-marquee aria-label="Tratamientos y tecnología">
+    <div class="band-track">
+      <ul>
+        <li><svg aria-hidden="true"><use href="#i-mark"/></svg>Ortodoncia invisible</li>
+        <li><svg aria-hidden="true"><use href="#i-mark"/></svg>Implantes dentales</li>
+        <li><svg aria-hidden="true"><use href="#i-mark"/></svg>Odontopediatría</li>
+        <li><svg aria-hidden="true"><use href="#i-mark"/></svg>Estética dental</li>
+        <li><svg aria-hidden="true"><use href="#i-mark"/></svg>Sedación consciente</li>
+        <li><svg aria-hidden="true"><use href="#i-mark"/></svg>CBCT 3D</li>
+        <li><svg aria-hidden="true"><use href="#i-mark"/></svg>Escáner intraoral</li>
+        <li><svg aria-hidden="true"><use href="#i-mark"/></svg>Cirugía guiada</li>
+        <li><svg aria-hidden="true"><use href="#i-mark"/></svg>Diseño de sonrisa digital</li>
+        <li><svg aria-hidden="true"><use href="#i-mark"/></svg>Periodoncia</li>
+        <li><svg aria-hidden="true"><use href="#i-mark"/></svg>Endodoncia</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- POR QUÉ AIRAM -->
+  <section class="section" aria-labelledby="h-why">
+    <div class="wrap">
+      <div class="section-head rv">
+        <h2 id="h-why">Una sonrisa sana es el reflejo de un buen cuidado personal</h2>
+        <p>Nuestro equipo destaca por su servicio personalizado y su calidad, con altos estándares en todas nuestras intervenciones.</p>
+      </div>
+      <div class="why">
+        <article class="rv">
+          <svg aria-hidden="true"><use href="#i-team"/></svg>
+          <h3>Equipo con formación continuada</h3>
+          <p>Odontólogas especialistas en cirugía, implantes, periodoncia, ortodoncia, estética y odontopediatría, trabajando juntas desde hace más de 10 años.</p>
+        </article>
+        <article class="rv" style="--d:.08s">
+          <svg aria-hidden="true"><use href="#i-child"/></svg>
+          <h3>Los niños, nuestros protagonistas</h3>
+          <p>Gabinete infantil adaptado y amigable, y especialistas que se ganan la confianza de los más pequeños.</p>
+        </article>
+        <article class="rv" style="--d:.16s">
+          <svg aria-hidden="true"><use href="#i-scan"/></svg>
+          <h3>Diagnóstico preciso</h3>
+          <p>Sala de RX con panorámico, CBCT 3D y telerradiografía, y escáner intraoral para diseño de sonrisa digital y cirugía guiada.</p>
+        </article>
+        <article class="rv" style="--d:0s">
+          <svg aria-hidden="true"><use href="#i-calm"/></svg>
+          <h3>Sin miedo al dentista</h3>
+          <p>Sedación consciente con médicos especialistas en Anestesiología y Reanimación, en nuestro propio quirófano.</p>
+        </article>
+        <article class="rv" style="--d:.08s">
+          <svg aria-hidden="true"><use href="#i-hand"/></svg>
+          <h3>Intimidad y confort</h3>
+          <p>Recepción alejada de las consultas y despachos tranquilos para preparar tu plan de tratamiento con total confidencialidad.</p>
+        </article>
+        <article class="rv" style="--d:.16s">
+          <svg aria-hidden="true"><use href="#i-chat"/></svg>
+          <h3>Diagnósticos, no ventas</h3>
+          <p>Emitimos y explicamos diagnósticos. Somos profesionales de la salud.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- MANIFIESTO -->
+  <section class="manifesto on-dark" aria-label="Nuestra filosofía">
+    <div class="wrap">
+      <svg class="mark rv rv-scale" viewBox="0 0 340.16 340.16" aria-hidden="true"><use href="#i-mark"/></svg>
+      <div>
+        <blockquote class="rv">Nosotros no hacemos ventas, sino que emitimos y explicamos diagnósticos: somos profesionales de la salud.</blockquote>
+        <p class="rv" style="--d:.1s">Somos un equipo joven con una gran preparación y una formación continuada, como corresponde a la odontología de hoy, entendida como un servicio de salud.</p>
+        <cite class="rv" style="--d:.15s">Equipo de Clínica Dental Airam</cite>
+        <dl class="facts rv" style="--d:.2s">
+          <div><dt>Años devolviendo sonrisas</dt><dd><span data-count="26" data-since="2000">26</span></dd></div>
+          <div><dt>Especialidades</dt><dd><span data-count="10">10</span></dd></div>
+          <div><dt>Profesionales en el equipo</dt><dd><span data-count="10">10</span></dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ESPECIALIDADES -->
+  <section class="section esp" id="especialidades" aria-labelledby="h-esp">
+    <div class="wrap">
+      <div class="section-head rv">
+        <h2 id="h-esp">Especialidades</h2>
+        <p class="quote-line" style="margin-top:16px">«Un experto es alguien que conoce los errores que se pueden cometer en su especialidad y sabe cómo evitarlos»</p>
+      </div>
+      <div class="esp-grid">
+        <div class="esp-list rv" id="esp-list" style="--d:.08s">
+
+          <details name="esp" open data-img="https://airamdental.com/wp-content/uploads/yootheme/cache/50/@Sortistudio_Airam_26_09_2024-62-scaled-5065944f.jpg" data-alt="Paciente revisando su sonrisa con un espejo">
+            <summary>Ortodoncia<span class="pm" aria-hidden="true"></span></summary>
+            <div class="esp-body">
+              <p class="quote-line">«Alinear, conseguir estética y funcionalidad para niños y adultos»</p>
+              <p class="d">Corrige la posición de los dientes y de los maxilares para restablecer el equilibrio funcional de la boca y de la cara, mejorando también la estética facial. Con brackets convencionales u ortodoncia invisible.</p>
+              <a class="ask" data-wa="ortodoncia" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar sobre ortodoncia</a>
+            </div>
+          </details>
+
+          <details name="esp" data-img="https://airamdental.com/wp-content/uploads/2025/08/CBCT-3D-opt-scaled.jpg" data-alt="Imagen de diagnóstico CBCT 3D">
+            <summary>Implantología<span class="pm" aria-hidden="true"></span></summary>
+            <div class="esp-body">
+              <p class="quote-line">«Implantes dentales: la solución definitiva, segura y duradera de reponer piezas dentales perdidas»</p>
+              <p class="d">El implante sustituye a la raíz del diente y funciona igual que tus propios dientes, para masticar, hablar o sonreír con total normalidad. Estudiamos cada caso con CBCT 3D y cirugía guiada.</p>
+              <a class="ask" data-wa="implantes dentales" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar sobre implantes</a>
+            </div>
+          </details>
+
+          <details name="esp" data-img="https://airamdental.com/wp-content/uploads/yootheme/cache/12/@Sortistudio_Airam_26_09_2024-26-scaled-1283d82b.jpg" data-alt="Niña en una revisión dental">
+            <summary>Odontopediatría<span class="pm" aria-hidden="true"></span></summary>
+            <div class="esp-body">
+              <p class="quote-line">«Los niños pequeños: nuestros grandes protagonistas»</p>
+              <p class="d">Nuestra fachada en la Av. del Nuevo Mundo, junto a la rotonda «de la fuente», con colores vivos y dibujos infantiles, ya muestra nuestro cariño por los más pequeños. Dentro, un gabinete infantil pensado para ellos.</p>
+              <a class="ask" data-wa="odontopediatría" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar sobre odontopediatría</a>
+            </div>
+          </details>
+
+          <details name="esp" data-img="https://airamdental.com/wp-content/uploads/yootheme/cache/36/2022.02.22-Clinica-Smile-243-36a2a5bc.jpg" data-alt="Elección del color dental con guía de tonos">
+            <summary>Estética dental<span class="pm" aria-hidden="true"></span></summary>
+            <div class="esp-body">
+              <p class="quote-line">«Sonrisas de cine, para todos los públicos»</p>
+              <p class="d">Soluciona asimetrías, separaciones entre dientes y cambios de color para lograr una sonrisa armónica, con diseño de sonrisa digital.</p>
+              <a class="ask" data-wa="estética dental" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar sobre estética dental</a>
+            </div>
+          </details>
+
+          <details name="esp" data-img="https://airamdental.com/wp-content/uploads/2024/11/@Sortistudio_AIRAM_28_octubre-40_opt.jpg" data-alt="Paciente durante un tratamiento dental">
+            <summary>Blanqueamiento dental<span class="pm" aria-hidden="true"></span></summary>
+            <div class="esp-body">
+              <p class="d">Un tratamiento estético que reduce varios tonos el color original de los dientes, dejándolos más blancos y brillantes. Se puede realizar en clínica o en casa, según cada caso.</p>
+              <a class="ask" data-wa="blanqueamiento dental" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar sobre blanqueamiento</a>
+            </div>
+          </details>
+
+          <details name="esp" data-img="https://airamdental.com/wp-content/uploads/2024/11/@Sortistudio_AIRAM_28_octubre-52_opt.jpg" data-alt="Dos profesionales de Airam realizando un tratamiento">
+            <summary>Restauradora<span class="pm" aria-hidden="true"></span></summary>
+            <div class="esp-body">
+              <p class="quote-line">«Soluciones más fáciles con diagnósticos a tiempo»</p>
+              <p class="d">Mantiene o restablece la forma, la función y la estética de las piezas dentales.</p>
+              <a class="ask" data-wa="odontología restauradora" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar sobre restauradora</a>
+            </div>
+          </details>
+
+          <details name="esp" data-img="https://airamdental.com/wp-content/uploads/yootheme/cache/c5/@Sortistudio_Airam_10_09_2024-14_opt-scaled-c52ab58c.jpg" data-alt="Diseño digital de una pieza dental">
+            <summary>Endodoncia<span class="pm" aria-hidden="true"></span></summary>
+            <div class="esp-body">
+              <p class="quote-line">«Una opción conservadora para no perder una pieza dental»</p>
+              <p class="d">Elimina los tejidos dañados del interior del diente para poder conservarlo.</p>
+              <a class="ask" data-wa="endodoncia" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar sobre endodoncia</a>
+            </div>
+          </details>
+
+          <details name="esp" data-img="https://airamdental.com/wp-content/uploads/yootheme/cache/43/@Sortistudio_Airam_26_09_2024-56-scaled-43cb1043.jpg" data-alt="Radiografía dental en pantalla">
+            <summary>Prótesis<span class="pm" aria-hidden="true"></span></summary>
+            <div class="esp-body">
+              <p class="quote-line">«Diferentes alternativas cuando decidimos no usar implantes»</p>
+              <p class="d">Restaura una o varias piezas dentales y la relación entre los maxilares, devolviendo la altura dental y reponiendo las piezas perdidas.</p>
+              <a class="ask" data-wa="prótesis dentales" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar sobre prótesis</a>
+            </div>
+          </details>
+
+          <details name="esp" data-img="https://airamdental.com/wp-content/uploads/2025/08/Quirofano-opt-ok-scaled.jpg" data-alt="Cirujana en el quirófano de la clínica">
+            <summary>Cirugía dental<span class="pm" aria-hidden="true"></span></summary>
+            <div class="esp-body">
+              <p class="quote-line">«La nueva odontología no genera dolor, te lo quita»</p>
+              <p class="d">Diagnóstico y tratamiento quirúrgico en nuestro propio quirófano, con la opción de sedación consciente.</p>
+              <a class="ask" data-wa="cirugía dental" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar sobre cirugía</a>
+            </div>
+          </details>
+
+          <details name="esp" data-img="https://airamdental.com/wp-content/uploads/yootheme/cache/bb/@Sortistudio_Airam_10_09_2024-31_opt-scaled-bb451a79.jpg" data-alt="Instrumental del gabinete dental">
+            <summary>Periodoncia<span class="pm" aria-hidden="true"></span></summary>
+            <div class="esp-body">
+              <p class="quote-line">«La importancia de cuidar los tejidos que rodean al diente»</p>
+              <p class="d">Prevención, diagnóstico y tratamiento de las enfermedades de la encía y del hueso que sostienen los dientes.</p>
+              <a class="ask" data-wa="periodoncia" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar sobre periodoncia</a>
+            </div>
+          </details>
+
+        </div>
+        <figure class="esp-visual rv" style="--d:.18s" aria-hidden="true">
+          <div class="petal-frame"><img id="esp-img" src="https://airamdental.com/wp-content/uploads/yootheme/cache/50/@Sortistudio_Airam_26_09_2024-62-scaled-5065944f.jpg" alt=""></div>
+          <figcaption id="esp-cap">Ortodoncia</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEDACIÓN -->
+  <section class="sed on-dark" aria-labelledby="h-sed">
+    <div class="wrap">
+      <div class="petal-frame rv rv-left"><img src="https://airamdental.com/wp-content/uploads/2025/08/Gabinete-3-sedacion_opt-scaled.jpg" alt="Gabinete de cirugía y sedación de la clínica" loading="lazy"></div>
+      <div class="rv" style="--d:.12s">
+        <h2 id="h-sed">Sedación consciente</h2>
+        <p class="quote-line">«Aprovechamos los avances médicos: adiós miedos y fobias»</p>
+        <p class="t">Una técnica que complementa la anestesia local y proporciona una relajación muy agradable, parecida al sueño. Estás consciente en todo momento y colaboras con el equipo, pero desaparecen la ansiedad y el miedo.</p>
+        <ul>
+          <li><b>Cirugías largas o complicadas</b>, con más comodidad durante y después del tratamiento.</li>
+          <li><b>Pacientes con fobia al dentista</b> o malas experiencias anteriores.</li>
+          <li><b>Pacientes que necesitan ayuda para colaborar</b>, como en algunos casos de autismo o síndrome de Down.</li>
+        </ul>
+        <p class="t">Colabora con nosotros un equipo de médicos especialistas en Anestesiología y Reanimación con amplia experiencia en grandes hospitales de Madrid.</p>
+        <div class="actions">
+          <a class="btn btn-wa" data-wa="sedación consciente" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Preguntar por la sedación</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LA CLÍNICA -->
+  <section class="section" id="clinica" aria-labelledby="h-clinica">
+    <div class="wrap clinic-grid">
+      <div class="petals">
+        <figure class="rv rv-scale" style="--d:0s"><img src="https://airamdental.com/wp-content/uploads/2025/08/Entrada-airam-opt.jpg" alt="Entrada de la clínica" loading="lazy"><figcaption>Entrada</figcaption></figure>
+        <figure class="rv rv-scale" style="--d:.12s"><img src="https://airamdental.com/wp-content/uploads/2025/08/Recepcion-airam-opt.jpg" alt="Recepción" loading="lazy"><figcaption>Recepción</figcaption></figure>
+        <figure class="rv rv-scale" style="--d:.24s"><img src="https://airamdental.com/wp-content/uploads/2025/08/Gabinete-infantil-airam-opt-scaled.jpg" alt="Gabinete infantil" loading="lazy"><figcaption>Gabinete infantil</figcaption></figure>
+        <figure class="rv rv-scale" style="--d:.36s"><img src="https://airamdental.com/wp-content/uploads/2025/08/Sala-de-espera-airam-opt-scaled.jpg" alt="Sala de espera" loading="lazy"><figcaption>Sala de espera</figcaption></figure>
+      </div>
+      <div class="clinic-text rv" style="--d:.2s">
+        <div class="section-head" style="margin-bottom:28px">
+          <h2 id="h-clinica">Como en casa, también en el dentista</h2>
+        </div>
+        <p>En nuestra clínica de Boadilla del Monte encontrarás el confort y el buen gusto que todos necesitamos para sentirnos como en casa. La zona de recepción y espera está alejada de las consultas para garantizar intimidad, relax y atención personalizada desde la entrada.</p>
+        <p>En el área clínica contamos con gabinete infantil, gabinete de general y estética dental, y quirófano o gabinete de cirugía y sedación.</p>
+        <ul class="tech" aria-label="Tecnología">
+          <li>CBCT 3D</li>
+          <li>Panorámico</li>
+          <li>Telerradiografía</li>
+          <li>Escáner intraoral</li>
+          <li>Diseño de sonrisa digital</li>
+          <li>Cirugía guiada</li>
+        </ul>
+        <p class="boca"><small>Nuestra mejor publicidad:</small>«tu boca a boca»</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPO -->
+  <section class="section" id="equipo" aria-labelledby="h-equipo" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head rv">
+        <h2 id="h-equipo">Profesionales de confianza</h2>
+        <p>Detrás de cada sonrisa hay un equipo que se conoce bien y trabaja mano a mano.</p>
+      </div>
+
+      <div class="docs">
+        <article class="doc rv" style="--d:0s">
+          <img src="https://airamdental.com/wp-content/uploads/yootheme/cache/d5/6-Maria-de-Luis_opt-d5d56cf8.jpg" alt="María de Luis Marcos" loading="lazy">
+          <h3>María de Luis Marcos</h3>
+          <p class="role">Cirujana y directora</p>
+          <p class="bio">Odontóloga especializada en cirugía, implantología y periodoncia. Lidera el equipo de la clínica.</p>
+        </article>
+        <article class="doc rv" style="--d:.08s">
+          <img src="https://airamdental.com/wp-content/uploads/yootheme/cache/e3/7-Maria-Garcia_opt-e32e772c.jpg" alt="María García" loading="lazy">
+          <h3>María García</h3>
+          <p class="role">Ortodoncista y odontopediatra</p>
+          <p class="bio">Experta en ortodoncia infantil y de adultos, con brackets convencionales y ortodoncia invisible.</p>
+        </article>
+        <article class="doc rv" style="--d:.16s">
+          <img src="https://airamdental.com/wp-content/uploads/yootheme/cache/de/9-Sara_opt-defccc1d.jpg" alt="Sara Virtus" loading="lazy">
+          <h3>Sara Virtus</h3>
+          <p class="role">Odontóloga</p>
+          <p class="bio">Especialista en odontología 360, con más de 20 años de experiencia y una visión integral del paciente.</p>
+        </article>
+        <article class="doc rv" style="--d:.24s">
+          <img src="https://airamdental.com/wp-content/uploads/yootheme/cache/81/8-Belen_opt-8178c7c5.jpg" alt="Belén Granja" loading="lazy">
+          <h3>Belén Granja</h3>
+          <p class="role">Ortodoncista y odontopediatra</p>
+          <p class="bio">Más de 10 años ganándose la confianza de los más pequeños. «El éxito de mis tratamientos es la prevención».</p>
+        </article>
+        <article class="doc rv" style="--d:.32s">
+          <img src="https://airamdental.com/wp-content/uploads/yootheme/cache/c6/10-Paula_opt-c6107c46.jpg" alt="Paula Pontevedra" loading="lazy">
+          <h3>Paula Pontevedra</h3>
+          <p class="role">Odontóloga</p>
+          <p class="bio">Especialista en estética y rehabilitación oral, con más de 10 años de experiencia y docente universitaria.</p>
+        </article>
+      </div>
+
+      <div class="staff rv">
+        <div class="p"><img src="https://airamdental.com/wp-content/uploads/yootheme/cache/aa/@Sortistudio_AIRAM_JOSE-ANGEL-aa9025e0.jpg" alt="" loading="lazy"><div><b>José Ángel Palomo</b><span>Médico anestesista</span></div></div>
+        <div class="p"><img src="https://airamdental.com/wp-content/uploads/yootheme/cache/1c/3-Liliana_opt-1c8a0754.jpg" alt="" loading="lazy"><div><b>Liliana Marín</b><span>Higienista</span></div></div>
+        <div class="p"><img src="https://airamdental.com/wp-content/uploads/yootheme/cache/a5/%C2%A9SortiStudio_AIRAM_TAMARA-scaled-a53fe925.jpg" alt="" loading="lazy"><div><b>Tamara Moreno</b><span>Coordinación y atención al paciente</span></div></div>
+        <div class="p"><img src="https://airamdental.com/wp-content/uploads/yootheme/cache/31/@Sortistudio_AIRAM_Abril_2025-14-NOE-scaled-310e6ec5.jpg" alt="" loading="lazy"><div><b>Noelia Rodríguez</b><span>Recepción y administración</span></div></div>
+        <div class="p"><img src="https://airamdental.com/wp-content/uploads/yootheme/cache/56/@Sortistudio_CRIS-scaled-561f3d48.jpg" alt="" loading="lazy"><div><b>Cristina Moreno</b><span>Auxiliar de clínica</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPINIONES -->
+  <section class="section reviews" id="opiniones" aria-labelledby="h-op">
+    <div class="wrap">
+      <div class="section-head rv">
+        <h2 id="h-op">Lo que dicen nuestros pacientes</h2>
+      </div>
+      <div class="rev-grid">
+        <figure class="rev rv" style="--d:0s">
+          <svg class="qmark" aria-hidden="true"><use href="#i-quote"/></svg>
+          <blockquote>Un equipo maravilloso y profesional. Encantado con mis revisiones rutinarias como también lo está mi hija que hoy ha venido conmigo y con la que han mostrado la profesionalidad, paciencia y gran empatía habitual.</blockquote>
+          <figcaption>Carlos Navarro<span>Paciente</span></figcaption>
+        </figure>
+        <figure class="rev rv" style="--d:.1s">
+          <svg class="qmark" aria-hidden="true"><use href="#i-quote"/></svg>
+          <blockquote>Llevamos ya muchos años llevando a mis 3 hijas y estamos encantados con el trato recibido. Son un equipo de personas muy profesionales y que inspiran confianza. Totalmente recomendable.</blockquote>
+          <figcaption>M Carmen Piñera<span>Paciente</span></figcaption>
+        </figure>
+        <figure class="rev rv" style="--d:.2s">
+          <svg class="qmark" aria-hidden="true"><use href="#i-quote"/></svg>
+          <blockquote>Llevo visitando la clínica varios años, tanto yo como mi familia estamos muy contentos. Tuve muy malas experiencias antes y ahora que he encontrado un sitio de confianza no lo cambio.</blockquote>
+          <figcaption>Delia Aparicio<span>Paciente</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section contact on-dark" id="contacto" aria-labelledby="h-contacto">
+    <div class="wrap contact-grid">
+      <div class="rv">
+        <h2 id="h-contacto">Visita nuestra clínica</h2>
+        <p class="quote-line">«Siempre a tu disposición»</p>
+        <div class="actions">
+          <a class="btn btn-wa" data-wa href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir cita por WhatsApp</a>
+          <a class="btn btn-line" href="tel:+34916334636"><svg aria-hidden="true"><use href="#i-phone"/></svg>Llamar</a>
+        </div>
+        <ul class="c-list">
+          <li><svg aria-hidden="true"><use href="#i-pin"/></svg><div>Avenida del Nuevo Mundo, 7<br>28660 Boadilla del Monte, Madrid</div></li>
+          <li><svg aria-hidden="true"><use href="#i-phone"/></svg><div><a href="tel:+34916334636">+34 91 633 46 36</a></div></li>
+          <li><svg aria-hidden="true"><use href="#i-mail"/></svg><div><a href="mailto:info@airamdental.com">info@airamdental.com</a></div></li>
+          <li><svg aria-hidden="true"><use href="#i-ig"/></svg><div><a href="https://www.instagram.com/dentalairam/" target="_blank" rel="noopener">@dentalairam</a></div></li>
+        </ul>
+      </div>
+      <div class="rv" style="--d:.12s">
+        <table class="hours" id="hours">
+          <caption>Horario</caption>
+          <tbody>
+            <tr data-d="1"><td>Lunes</td><td>10:00 – 20:00</td></tr>
+            <tr data-d="2"><td>Martes</td><td>14:00 – 20:00</td></tr>
+            <tr data-d="3"><td>Miércoles</td><td>9:00 – 20:00</td></tr>
+            <tr data-d="4"><td>Jueves</td><td>10:00 – 20:00</td></tr>
+            <tr data-d="5"><td>Viernes</td><td>10:00 – 15:00</td></tr>
+            <tr data-d="6 0" class="closed"><td>Sábado, domingo y festivos</td><td>Cerrado</td></tr>
+          </tbody>
+        </table>
+        <div class="map">
+          <iframe title="Mapa: Clínica Dental Airam, Avenida del Nuevo Mundo 7, Boadilla del Monte" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://maps.google.com/maps?q=Avenida%20del%20Nuevo%20Mundo%207%2C%2028660%20Boadilla%20del%20Monte%2C%20Madrid&z=16&output=embed"></iframe>
+        </div>
+        <a class="dir" href="https://www.google.com/maps/dir/?api=1&destination=Avenida%20del%20Nuevo%20Mundo%207%2C%2028660%20Boadilla%20del%20Monte%2C%20Madrid" target="_blank" rel="noopener">Cómo llegar<svg aria-hidden="true"><use href="#i-route"/></svg></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot on-dark">
+  <div class="wrap foot-in">
+    <a class="logo" href="#top" aria-label="Clínica Dental Airam, volver arriba">
+      <svg class="mark" aria-hidden="true" style="color:var(--arena)"><use href="#i-mark"/></svg>
+      <span class="word"><small>Clínica dental</small><svg viewBox="0 0 250 61" aria-hidden="true"><use href="#i-word"/></svg></span>
+    </a>
+    <nav aria-label="Legal">
+      <a href="https://airamdental.com/aviso-legal/">Aviso legal</a>
+      <a href="https://airamdental.com/politicadeprivacidad/">Política de privacidad</a>
+      <a href="https://airamdental.com/politica-de-cookies/">Política de cookies</a>
+      <a href="https://airamdental.com/recomendaciones/">Recomendaciones post tratamiento</a>
+      <a href="https://airamdental.com/noticias/">Blog</a>
+    </nav>
+    <div class="social">
+      <a href="https://www.instagram.com/dentalairam/" target="_blank" rel="noopener" aria-label="Instagram"><svg aria-hidden="true"><use href="#i-ig"/></svg></a>
+      <a href="https://www.facebook.com/people/Airam-Dental/61565206595550/" target="_blank" rel="noopener" aria-label="Facebook"><svg aria-hidden="true"><use href="#i-fb"/></svg></a>
+      <a data-wa href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><svg aria-hidden="true"><use href="#i-wa"/></svg></a>
+    </div>
+    <p class="copy">Dentista infantil Boadilla · Copyright © <span id="y">2026</span> Clínica Dental de Luis Marcos S.L.P.</p>
+  </div>
+</footer>
+
+<a class="wa-float" data-wa href="#" target="_blank" rel="noopener" aria-label="Pedir cita por WhatsApp"><svg aria-hidden="true"><use href="#i-wa"/></svg></a>
+
+<div class="mbar">
+  <a class="btn btn-line" href="tel:+34916334636"><svg aria-hidden="true"><use href="#i-phone"/></svg>Llamar</a>
+  <a class="btn btn-wa" data-wa href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir cita</a>
+</div>
+
+<script>
+(function(){
+  /* WhatsApp de la clínica (enlace del sitio actual, con prefijo +34) */
+  var WA = "34916334636";
+  function waLink(topic){
+    var msg = topic
+      ? "Hola, me gustaría información sobre " + topic + " en Clínica Dental Airam."
+      : "Hola, me gustaría pedir cita en Clínica Dental Airam.";
+    return "https://wa.me/" + WA + "?text=" + encodeURIComponent(msg);
+  }
+  document.querySelectorAll("[data-wa]").forEach(function(a){ a.href = waLink(a.getAttribute("data-wa")); });
+
+  /* Cabecera al hacer scroll */
+  var header = document.querySelector(".site-header");
+  function onScroll(){ header.classList.toggle("scrolled", window.scrollY > 8); }
+  window.addEventListener("scroll", onScroll, {passive:true}); onScroll();
+
+  /* Menú móvil */
+  var mnav = document.getElementById("mnav"), openBtn = document.querySelector(".header-in .menu-btn");
+  function setMenu(open){
+    mnav.classList.toggle("open", open);
+    openBtn.setAttribute("aria-expanded", open);
+    document.body.style.overflow = open ? "hidden" : "";
+    if(open){ mnav.querySelector("[data-close]").focus(); } else { openBtn.focus({preventScroll:true}); }
+  }
+  openBtn.addEventListener("click", function(){ setMenu(true); });
+  mnav.querySelector("[data-close]").addEventListener("click", function(){ setMenu(false); });
+  mnav.querySelectorAll("nav a").forEach(function(a){ a.addEventListener("click", function(){ setMenu(false); }); });
+  document.addEventListener("keydown", function(e){ if(e.key === "Escape" && mnav.classList.contains("open")) setMenu(false); });
+
+  /* Especialidades: imagen ligada al acordeón */
+  var img = document.getElementById("esp-img"), cap = document.getElementById("esp-cap");
+  var items = document.querySelectorAll("#esp-list details");
+  items.forEach(function(d){
+    // imagen dentro del acordeón para móvil
+    var fig = document.createElement("div"); fig.className = "m-img";
+    fig.innerHTML = '<img loading="lazy" alt="">'; fig.firstChild.src = d.dataset.img; fig.firstChild.alt = d.dataset.alt;
+    d.querySelector(".esp-body").insertBefore(fig, d.querySelector(".ask"));
+    d.addEventListener("toggle", function(){
+      if(!d.open) return;
+      // cierre exclusivo para navegadores sin soporte de details[name]
+      items.forEach(function(o){ if(o !== d && o.open) o.open = false; });
+      img.style.opacity = 0;
+      setTimeout(function(){ img.src = d.dataset.img; cap.textContent = d.querySelector("summary").textContent.trim(); }, 180);
+    });
+  });
+  img.addEventListener("load", function(){ img.style.opacity = 1; });
+
+  /* Horario: abierto/cerrado según la hora de Madrid */
+  var H = {1:[10,20],2:[14,20],3:[9,20],4:[10,20],5:[10,15]};
+  var DN = ["domingo","lunes","martes","miércoles","jueves","viernes","sábado"];
+  function madridNow(){
+    var p = new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Madrid",weekday:"short",hour:"2-digit",minute:"2-digit",hour12:false}).formatToParts(new Date());
+    var o = {}; p.forEach(function(x){ o[x.type] = x.value; });
+    var d = {Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[o.weekday];
+    return {d:d, m:(+o.hour % 24) * 60 + (+o.minute)};
+  }
+  function fmt(h){ return h + ":00"; }
+  try{
+    var now = madridNow();
+    document.querySelectorAll("#hours tr").forEach(function(tr){
+      if(tr.dataset.d.split(" ").indexOf(String(now.d)) > -1) tr.classList.add("today");
+    });
+    var st = document.getElementById("status"), t = st.querySelector(".st-t"), dd = st.querySelector(".st-d");
+    var today = H[now.d];
+    if(today && now.m >= today[0]*60 && now.m < today[1]*60){
+      st.classList.add("open"); t.textContent = "Abierto ahora"; dd.textContent = "Hoy hasta las " + fmt(today[1]) + " h";
+    } else {
+      var n = now.d, label;
+      for(var i = 0; i < 7; i++){
+        var day = (now.d + i) % 7, h = H[day];
+        if(!h) continue;
+        if(i === 0 && now.m < h[0]*60){ label = "Hoy abrimos a las " + fmt(h[0]) + " h"; break; }
+        if(i > 0){ label = (i === 1 ? "Mañana" : "El " + DN[day]) + " abrimos a las " + fmt(h[0]) + " h"; break; }
+      }
+      t.textContent = "Ahora cerrado"; dd.textContent = label || "";
+    }
+  }catch(e){}
+
+  document.getElementById("y").textContent = new Date().getFullYear();
+})();
+</script>
+<script>
+/* Movimiento: revelación al rolar, contadores, faixa contínua y progreso de lectura.
+   JS puro, sin dependencias. Todo el contenido es visible sin JS o con movimiento reducido. */
+(function(){
+  var root = document.documentElement;
+  var reduced = !root.classList.contains("js");
+
+  /* Años desde 2000, calculado con el año actual */
+  document.querySelectorAll("[data-since]").forEach(function(el){
+    var y = new Date().getFullYear() - parseInt(el.getAttribute("data-since"), 10);
+    el.setAttribute("data-count", y); el.textContent = y;
+  });
+
+  /* Faixa contínua: duplica la lista (clon oculto para lectores de pantalla) y pausa fuera de la pantalla */
+  document.querySelectorAll("[data-marquee]").forEach(function(box){
+    var track = box.querySelector(".band-track");
+    if(!track || track.dataset.dup) return;
+    Array.prototype.slice.call(track.children).forEach(function(k){
+      var c = k.cloneNode(true); c.setAttribute("aria-hidden","true"); track.appendChild(c);
+    });
+    track.dataset.dup = "1";
+    if("IntersectionObserver" in window){
+      new IntersectionObserver(function(es){ es.forEach(function(e){ box.classList.toggle("is-off", !e.isIntersecting); }); }).observe(box);
+    }
+  });
+
+  /* Barra de progreso de lectura en la cabecera */
+  var bar = document.querySelector(".site-header .progress"), ticking = false;
+  function prog(){
+    ticking = false;
+    var max = document.documentElement.scrollHeight - innerHeight;
+    bar.style.setProperty("--sp", max > 0 ? Math.min(1, scrollY / max).toFixed(4) : 0);
+    /* red de seguridad: lo que ya quedó por encima del borde inferior se revela aunque el observer no haya disparado */
+    if(window.__rvPending){
+      window.__rvPending = window.__rvPending.filter(function(el){
+        var r = el.getBoundingClientRect();
+        if(r.top < innerHeight * 0.92 && r.left < innerWidth){ el.classList.add("in"); return false; }
+        return true;
+      });
+    }
+  }
+  if(bar){ addEventListener("scroll", function(){ if(!ticking){ ticking = true; requestAnimationFrame(prog); } }, {passive:true}); addEventListener("resize", prog); prog(); }
+
+  var els = Array.prototype.slice.call(document.querySelectorAll(".rv"));
+  var counters = Array.prototype.slice.call(document.querySelectorAll("[data-count]"));
+  if(reduced || !("IntersectionObserver" in window)){
+    els.forEach(function(el){ el.classList.add("in"); });
+    return;
+  }
+
+  /* Revelación al rolar, con red de seguridad */
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } });
+  }, {rootMargin:"0px 0px -8% 0px"});
+  els.forEach(function(el){ io.observe(el); });
+  window.__rvPending = els.slice();
+  setTimeout(function(){
+    els.forEach(function(el){ var r = el.getBoundingClientRect(); if(r.top < innerHeight && r.left < innerWidth) el.classList.add("in"); });
+  }, 2500);
+
+  /* Contadores con easing y valor final garantizado */
+  function run(el){
+    var to = parseFloat(el.getAttribute("data-count")), dur = 1400, t0 = null;
+    el.textContent = "0";
+    function step(t){
+      if(!t0) t0 = t;
+      var p = Math.min((t - t0) / dur, 1);
+      el.textContent = Math.round(to * (1 - Math.pow(1 - p, 3)));
+      if(p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+    setTimeout(function(){ el.textContent = to; }, dur + 600); /* pestañas ocultas pausan rAF */
+  }
+  var cio = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ run(e.target); cio.unobserve(e.target); } });
+  }, {threshold:0.6});
+  counters.forEach(function(el){ cio.observe(el); });
+})();
+</script>
+</body>
+</html>
