@@ -10,11 +10,9 @@
 /* Activa el movimiento solo con JS y sin preferencia de movimiento reducido */
 try{ if(!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('js'); }catch(e){}
 </script>
-<link rel="icon" href="https://airamdental.com/wp-content/uploads/2024/08/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="https://airamdental.com/wp-content/uploads/2024/08/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="stylesheet" href="fonts/maven-pro.css">
 
 <script type="application/ld+json">
 {
@@ -290,6 +288,13 @@ section[id]{scroll-margin-top:64px}
 .hours tr.closed td{color:rgba(241,237,231,.55)}
 .map{margin-top:28px;border-radius:0 40px 0 40px;overflow:hidden;aspect-ratio:16/10;background:var(--pizarra-2)}
 .map iframe{width:100%;height:100%;border:0;filter:grayscale(.35) contrast(1.02)}
+.map-ph{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:24px;text-align:center;position:relative;overflow:hidden}
+.map-mark{position:absolute;width:70%;right:-18%;bottom:-30%;color:var(--arena);opacity:.08;pointer-events:none}
+.map-addr{font-size:18px;font-weight:500;color:var(--blanco);line-height:1.35;position:relative}
+.map-load{position:relative}
+.map-note{font-size:13.5px;line-height:1.45;color:rgba(241,237,231,.7);max-width:36ch;position:relative}
+.map-note a{color:var(--arena)}
+@media (max-width:640px){.map{aspect-ratio:auto;min-height:260px}}
 .dir{display:inline-flex;align-items:center;gap:8px;margin-top:14px;font-weight:500;color:var(--arena);text-decoration:none;font-size:15.5px}
 .dir:hover{color:var(--blanco)}
 .dir svg{width:18px;height:18px}
@@ -307,7 +312,7 @@ section[id]{scroll-margin-top:64px}
 .social a{width:42px;height:42px;border-radius:50%;border:1px solid rgba(215,204,191,.35);display:grid;place-items:center;color:var(--arena)}
 .social a:hover{background:var(--arena);color:var(--pizarra-2)}
 .social svg{width:19px;height:19px}
-.foot .copy{width:100%;padding-top:24px;border-top:1px solid rgba(215,204,191,.15);font-size:13.5px}
+.foot .copy{width:100%;display:flex;flex-wrap:wrap;gap:4px 24px;padding-top:24px;border-top:1px solid rgba(215,204,191,.15);font-size:13.5px}
 
 /* ---------- Barra móvil y botón flotante ---------- */
 .mbar{display:none}
@@ -365,7 +370,19 @@ body{overflow-x:clip}
 @keyframes ping{from{transform:scale(1);opacity:.7}to{transform:scale(3.2);opacity:0}}
 
 /* Faixa contínua de tratamientos y tecnología */
-.band{background:var(--pizarra);color:var(--lino);padding:18px 0;overflow:hidden}
+.band-wrap{position:relative;background:var(--pizarra)}
+.band{color:var(--lino);padding:18px 0;overflow:hidden;margin-right:58px}
+.motion-toggle{display:none}
+.js .motion-toggle{display:grid}
+.motion-toggle{position:absolute;right:max(10px,calc(var(--gutter) - 14px));top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;border:1.5px solid rgba(215,204,191,.45);background:transparent;color:var(--arena);place-items:center;cursor:pointer;transition:background-color .2s,color .2s,border-color .2s}
+.motion-toggle:hover{background:var(--arena);color:var(--pizarra-2);border-color:var(--arena)}
+.motion-toggle:focus-visible{outline:2px solid var(--arena);outline-offset:3px}
+.motion-toggle svg{width:18px;height:18px;grid-area:1/1}
+.motion-toggle .i-play,.motion-toggle[aria-pressed="true"] .i-pause{display:none}
+.motion-toggle[aria-pressed="true"] .i-play{display:block}
+/* Animaciones en pausa por elección del usuario (WCAG 2.2.2) */
+.motion-paused .band-track,.motion-paused .hero-media .petal-frame img,.motion-paused .status,.motion-paused .status b i::after,.motion-paused .wa-float::before{animation-play-state:paused!important}
+.motion-paused .status{animation:none!important}
 .band.m-fade{-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
 .band-track{display:flex;width:max-content;animation:marquee 46s linear infinite}
 .band:hover .band-track,.band.is-off .band-track{animation-play-state:paused}
@@ -560,7 +577,7 @@ body{overflow-x:clip}
       <div class="hero-media">
         <svg class="mark-bg" viewBox="0 0 340.16 340.16" aria-hidden="true"><use href="#i-mark"/></svg>
         <div class="petal-frame">
-          <img src="https://airamdental.com/wp-content/uploads/2025/07/%C2%A9SortiStudio_AIRAM-EQUIPO-DICIEMBRE-2024-1.jpg" alt="El equipo de Clínica Dental Airam en la clínica de Boadilla del Monte" width="1600" height="1067" fetchpriority="high">
+          <img src="img/sortistudio-airam-equipo-diciembre-2024-1.jpg" alt="El equipo de Clínica Dental Airam en la clínica de Boadilla del Monte" width="1600" height="1067" fetchpriority="high">
         </div>
         <p class="status" id="status" aria-live="polite"><b><i></i><span class="st-t">Horario de hoy</span></b><span class="st-d">Lunes a viernes</span></p>
       </div>
@@ -568,6 +585,12 @@ body{overflow-x:clip}
   </section>
 
   <!-- FAIXA CONTINUA -->
+  <div class="band-wrap">
+  <button type="button" class="motion-toggle" aria-pressed="false" data-motion-toggle>
+    <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+    <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg>
+    <span class="sr-only">Pausar animaciones</span>
+  </button>
   <div class="band m-fade" data-marquee aria-label="Tratamientos y tecnología">
     <div class="band-track">
       <ul>
@@ -584,6 +607,7 @@ body{overflow-x:clip}
         <li><svg aria-hidden="true"><use href="#i-mark"/></svg>Endodoncia</li>
       </ul>
     </div>
+  </div>
   </div>
 
   <!-- POR QUÉ AIRAM -->
@@ -655,7 +679,7 @@ body{overflow-x:clip}
       <div class="esp-grid">
         <div class="esp-list rv" id="esp-list" style="--d:.08s">
 
-          <details name="esp" open data-img="https://airamdental.com/wp-content/uploads/yootheme/cache/50/@Sortistudio_Airam_26_09_2024-62-scaled-5065944f.jpg" data-alt="Paciente revisando su sonrisa con un espejo">
+          <details name="esp" open data-img="img/sortistudio-airam-26-09-2024-62-scaled-5065944f.jpg" data-alt="Paciente revisando su sonrisa con un espejo">
             <summary>Ortodoncia<span class="pm" aria-hidden="true"></span></summary>
             <div class="esp-body">
               <p class="quote-line">«Alinear, conseguir estética y funcionalidad para niños y adultos»</p>
@@ -664,7 +688,7 @@ body{overflow-x:clip}
             </div>
           </details>
 
-          <details name="esp" data-img="https://airamdental.com/wp-content/uploads/2025/08/CBCT-3D-opt-scaled.jpg" data-alt="Imagen de diagnóstico CBCT 3D">
+          <details name="esp" data-img="img/cbct-3d-opt-scaled.jpg" data-alt="Imagen de diagnóstico CBCT 3D">
             <summary>Implantología<span class="pm" aria-hidden="true"></span></summary>
             <div class="esp-body">
               <p class="quote-line">«Implantes dentales: la solución definitiva, segura y duradera de reponer piezas dentales perdidas»</p>
@@ -673,7 +697,7 @@ body{overflow-x:clip}
             </div>
           </details>
 
-          <details name="esp" data-img="https://airamdental.com/wp-content/uploads/yootheme/cache/12/@Sortistudio_Airam_26_09_2024-26-scaled-1283d82b.jpg" data-alt="Niña en una revisión dental">
+          <details name="esp" data-img="img/sortistudio-airam-26-09-2024-26-scaled-1283d82b.jpg" data-alt="Niña en una revisión dental">
             <summary>Odontopediatría<span class="pm" aria-hidden="true"></span></summary>
             <div class="esp-body">
               <p class="quote-line">«Los niños pequeños: nuestros grandes protagonistas»</p>
@@ -682,7 +706,7 @@ body{overflow-x:clip}
             </div>
           </details>
 
-          <details name="esp" data-img="https://airamdental.com/wp-content/uploads/yootheme/cache/36/2022.02.22-Clinica-Smile-243-36a2a5bc.jpg" data-alt="Elección del color dental con guía de tonos">
+          <details name="esp" data-img="img/2022.02.22-clinica-smile-243-36a2a5bc.jpg" data-alt="Elección del color dental con guía de tonos">
             <summary>Estética dental<span class="pm" aria-hidden="true"></span></summary>
             <div class="esp-body">
               <p class="quote-line">«Sonrisas de cine, para todos los públicos»</p>
@@ -691,7 +715,7 @@ body{overflow-x:clip}
             </div>
           </details>
 
-          <details name="esp" data-img="https://airamdental.com/wp-content/uploads/2024/11/@Sortistudio_AIRAM_28_octubre-40_opt.jpg" data-alt="Paciente durante un tratamiento dental">
+          <details name="esp" data-img="img/sortistudio-airam-28-octubre-40-opt.jpg" data-alt="Paciente durante un tratamiento dental">
             <summary>Blanqueamiento dental<span class="pm" aria-hidden="true"></span></summary>
             <div class="esp-body">
               <p class="d">Un tratamiento estético que reduce varios tonos el color original de los dientes, dejándolos más blancos y brillantes. Se puede realizar en clínica o en casa, según cada caso.</p>
@@ -699,7 +723,7 @@ body{overflow-x:clip}
             </div>
           </details>
 
-          <details name="esp" data-img="https://airamdental.com/wp-content/uploads/2024/11/@Sortistudio_AIRAM_28_octubre-52_opt.jpg" data-alt="Dos profesionales de Airam realizando un tratamiento">
+          <details name="esp" data-img="img/sortistudio-airam-28-octubre-52-opt.jpg" data-alt="Dos profesionales de Airam realizando un tratamiento">
             <summary>Restauradora<span class="pm" aria-hidden="true"></span></summary>
             <div class="esp-body">
               <p class="quote-line">«Soluciones más fáciles con diagnósticos a tiempo»</p>
@@ -708,7 +732,7 @@ body{overflow-x:clip}
             </div>
           </details>
 
-          <details name="esp" data-img="https://airamdental.com/wp-content/uploads/yootheme/cache/c5/@Sortistudio_Airam_10_09_2024-14_opt-scaled-c52ab58c.jpg" data-alt="Diseño digital de una pieza dental">
+          <details name="esp" data-img="img/sortistudio-airam-10-09-2024-14-opt-scaled-c52ab58c.jpg" data-alt="Diseño digital de una pieza dental">
             <summary>Endodoncia<span class="pm" aria-hidden="true"></span></summary>
             <div class="esp-body">
               <p class="quote-line">«Una opción conservadora para no perder una pieza dental»</p>
@@ -717,7 +741,7 @@ body{overflow-x:clip}
             </div>
           </details>
 
-          <details name="esp" data-img="https://airamdental.com/wp-content/uploads/yootheme/cache/43/@Sortistudio_Airam_26_09_2024-56-scaled-43cb1043.jpg" data-alt="Radiografía dental en pantalla">
+          <details name="esp" data-img="img/sortistudio-airam-26-09-2024-56-scaled-43cb1043.jpg" data-alt="Radiografía dental en pantalla">
             <summary>Prótesis<span class="pm" aria-hidden="true"></span></summary>
             <div class="esp-body">
               <p class="quote-line">«Diferentes alternativas cuando decidimos no usar implantes»</p>
@@ -726,7 +750,7 @@ body{overflow-x:clip}
             </div>
           </details>
 
-          <details name="esp" data-img="https://airamdental.com/wp-content/uploads/2025/08/Quirofano-opt-ok-scaled.jpg" data-alt="Cirujana en el quirófano de la clínica">
+          <details name="esp" data-img="img/quirofano-opt-ok-scaled.jpg" data-alt="Cirujana en el quirófano de la clínica">
             <summary>Cirugía dental<span class="pm" aria-hidden="true"></span></summary>
             <div class="esp-body">
               <p class="quote-line">«La nueva odontología no genera dolor, te lo quita»</p>
@@ -735,7 +759,7 @@ body{overflow-x:clip}
             </div>
           </details>
 
-          <details name="esp" data-img="https://airamdental.com/wp-content/uploads/yootheme/cache/bb/@Sortistudio_Airam_10_09_2024-31_opt-scaled-bb451a79.jpg" data-alt="Instrumental del gabinete dental">
+          <details name="esp" data-img="img/sortistudio-airam-10-09-2024-31-opt-scaled-bb451a79.jpg" data-alt="Instrumental del gabinete dental">
             <summary>Periodoncia<span class="pm" aria-hidden="true"></span></summary>
             <div class="esp-body">
               <p class="quote-line">«La importancia de cuidar los tejidos que rodean al diente»</p>
@@ -746,7 +770,7 @@ body{overflow-x:clip}
 
         </div>
         <figure class="esp-visual rv" style="--d:.18s" aria-hidden="true">
-          <div class="petal-frame"><img id="esp-img" src="https://airamdental.com/wp-content/uploads/yootheme/cache/50/@Sortistudio_Airam_26_09_2024-62-scaled-5065944f.jpg" alt=""></div>
+          <div class="petal-frame"><img id="esp-img" src="img/sortistudio-airam-26-09-2024-62-scaled-5065944f.jpg" alt=""></div>
           <figcaption id="esp-cap">Ortodoncia</figcaption>
         </figure>
       </div>
@@ -756,7 +780,7 @@ body{overflow-x:clip}
   <!-- SEDACIÓN -->
   <section class="sed on-dark" aria-labelledby="h-sed">
     <div class="wrap">
-      <div class="petal-frame rv rv-left"><img src="https://airamdental.com/wp-content/uploads/2025/08/Gabinete-3-sedacion_opt-scaled.jpg" alt="Gabinete de cirugía y sedación de la clínica" loading="lazy"></div>
+      <div class="petal-frame rv rv-left"><img src="img/gabinete-3-sedacion-opt-scaled.jpg" alt="Gabinete de cirugía y sedación de la clínica" loading="lazy"></div>
       <div class="rv" style="--d:.12s">
         <h2 id="h-sed">Sedación consciente</h2>
         <p class="quote-line">«Aprovechamos los avances médicos: adiós miedos y fobias»</p>
@@ -778,10 +802,10 @@ body{overflow-x:clip}
   <section class="section" id="clinica" aria-labelledby="h-clinica">
     <div class="wrap clinic-grid">
       <div class="petals">
-        <figure class="rv rv-scale" style="--d:0s"><img src="https://airamdental.com/wp-content/uploads/2025/08/Entrada-airam-opt.jpg" alt="Entrada de la clínica" loading="lazy"><figcaption>Entrada</figcaption></figure>
-        <figure class="rv rv-scale" style="--d:.12s"><img src="https://airamdental.com/wp-content/uploads/2025/08/Recepcion-airam-opt.jpg" alt="Recepción" loading="lazy"><figcaption>Recepción</figcaption></figure>
-        <figure class="rv rv-scale" style="--d:.24s"><img src="https://airamdental.com/wp-content/uploads/2025/08/Gabinete-infantil-airam-opt-scaled.jpg" alt="Gabinete infantil" loading="lazy"><figcaption>Gabinete infantil</figcaption></figure>
-        <figure class="rv rv-scale" style="--d:.36s"><img src="https://airamdental.com/wp-content/uploads/2025/08/Sala-de-espera-airam-opt-scaled.jpg" alt="Sala de espera" loading="lazy"><figcaption>Sala de espera</figcaption></figure>
+        <figure class="rv rv-scale" style="--d:0s"><img src="img/entrada-airam-opt.jpg" alt="Entrada de la clínica" loading="lazy"><figcaption>Entrada</figcaption></figure>
+        <figure class="rv rv-scale" style="--d:.12s"><img src="img/recepcion-airam-opt.jpg" alt="Recepción" loading="lazy"><figcaption>Recepción</figcaption></figure>
+        <figure class="rv rv-scale" style="--d:.24s"><img src="img/gabinete-infantil-airam-opt-scaled.jpg" alt="Gabinete infantil" loading="lazy"><figcaption>Gabinete infantil</figcaption></figure>
+        <figure class="rv rv-scale" style="--d:.36s"><img src="img/sala-de-espera-airam-opt-scaled.jpg" alt="Sala de espera" loading="lazy"><figcaption>Sala de espera</figcaption></figure>
       </div>
       <div class="clinic-text rv" style="--d:.2s">
         <div class="section-head" style="margin-bottom:28px">
@@ -812,31 +836,31 @@ body{overflow-x:clip}
 
       <div class="docs">
         <article class="doc rv" style="--d:0s">
-          <img src="https://airamdental.com/wp-content/uploads/yootheme/cache/d5/6-Maria-de-Luis_opt-d5d56cf8.jpg" alt="María de Luis Marcos" loading="lazy">
+          <img src="img/6-maria-de-luis-opt-d5d56cf8.jpg" alt="María de Luis Marcos" loading="lazy">
           <h3>María de Luis Marcos</h3>
           <p class="role">Cirujana y directora</p>
           <p class="bio">Odontóloga especializada en cirugía, implantología y periodoncia. Lidera el equipo de la clínica.</p>
         </article>
         <article class="doc rv" style="--d:.08s">
-          <img src="https://airamdental.com/wp-content/uploads/yootheme/cache/e3/7-Maria-Garcia_opt-e32e772c.jpg" alt="María García" loading="lazy">
+          <img src="img/7-maria-garcia-opt-e32e772c.jpg" alt="María García" loading="lazy">
           <h3>María García</h3>
           <p class="role">Ortodoncista y odontopediatra</p>
           <p class="bio">Experta en ortodoncia infantil y de adultos, con brackets convencionales y ortodoncia invisible.</p>
         </article>
         <article class="doc rv" style="--d:.16s">
-          <img src="https://airamdental.com/wp-content/uploads/yootheme/cache/de/9-Sara_opt-defccc1d.jpg" alt="Sara Virtus" loading="lazy">
+          <img src="img/9-sara-opt-defccc1d.jpg" alt="Sara Virtus" loading="lazy">
           <h3>Sara Virtus</h3>
           <p class="role">Odontóloga</p>
           <p class="bio">Especialista en odontología 360, con más de 20 años de experiencia y una visión integral del paciente.</p>
         </article>
         <article class="doc rv" style="--d:.24s">
-          <img src="https://airamdental.com/wp-content/uploads/yootheme/cache/81/8-Belen_opt-8178c7c5.jpg" alt="Belén Granja" loading="lazy">
+          <img src="img/8-belen-opt-8178c7c5.jpg" alt="Belén Granja" loading="lazy">
           <h3>Belén Granja</h3>
           <p class="role">Ortodoncista y odontopediatra</p>
           <p class="bio">Más de 10 años ganándose la confianza de los más pequeños. «El éxito de mis tratamientos es la prevención».</p>
         </article>
         <article class="doc rv" style="--d:.32s">
-          <img src="https://airamdental.com/wp-content/uploads/yootheme/cache/c6/10-Paula_opt-c6107c46.jpg" alt="Paula Pontevedra" loading="lazy">
+          <img src="img/10-paula-opt-c6107c46.jpg" alt="Paula Pontevedra" loading="lazy">
           <h3>Paula Pontevedra</h3>
           <p class="role">Odontóloga</p>
           <p class="bio">Especialista en estética y rehabilitación oral, con más de 10 años de experiencia y docente universitaria.</p>
@@ -844,11 +868,11 @@ body{overflow-x:clip}
       </div>
 
       <div class="staff rv">
-        <div class="p"><img src="https://airamdental.com/wp-content/uploads/yootheme/cache/aa/@Sortistudio_AIRAM_JOSE-ANGEL-aa9025e0.jpg" alt="" loading="lazy"><div><b>José Ángel Palomo</b><span>Médico anestesista</span></div></div>
-        <div class="p"><img src="https://airamdental.com/wp-content/uploads/yootheme/cache/1c/3-Liliana_opt-1c8a0754.jpg" alt="" loading="lazy"><div><b>Liliana Marín</b><span>Higienista</span></div></div>
-        <div class="p"><img src="https://airamdental.com/wp-content/uploads/yootheme/cache/a5/%C2%A9SortiStudio_AIRAM_TAMARA-scaled-a53fe925.jpg" alt="" loading="lazy"><div><b>Tamara Moreno</b><span>Coordinación y atención al paciente</span></div></div>
-        <div class="p"><img src="https://airamdental.com/wp-content/uploads/yootheme/cache/31/@Sortistudio_AIRAM_Abril_2025-14-NOE-scaled-310e6ec5.jpg" alt="" loading="lazy"><div><b>Noelia Rodríguez</b><span>Recepción y administración</span></div></div>
-        <div class="p"><img src="https://airamdental.com/wp-content/uploads/yootheme/cache/56/@Sortistudio_CRIS-scaled-561f3d48.jpg" alt="" loading="lazy"><div><b>Cristina Moreno</b><span>Auxiliar de clínica</span></div></div>
+        <div class="p"><img src="img/sortistudio-airam-jose-angel-aa9025e0.jpg" alt="" loading="lazy"><div><b>José Ángel Palomo</b><span>Médico anestesista</span></div></div>
+        <div class="p"><img src="img/3-liliana-opt-1c8a0754.jpg" alt="" loading="lazy"><div><b>Liliana Marín</b><span>Higienista</span></div></div>
+        <div class="p"><img src="img/sortistudio-airam-tamara-scaled-a53fe925.jpg" alt="" loading="lazy"><div><b>Tamara Moreno</b><span>Coordinación y atención al paciente</span></div></div>
+        <div class="p"><img src="img/sortistudio-airam-abril-2025-14-noe-scaled-310e6ec5.jpg" alt="" loading="lazy"><div><b>Noelia Rodríguez</b><span>Recepción y administración</span></div></div>
+        <div class="p"><img src="img/sortistudio-cris-scaled-561f3d48.jpg" alt="" loading="lazy"><div><b>Cristina Moreno</b><span>Auxiliar de clínica</span></div></div>
       </div>
     </div>
   </section>
@@ -908,9 +932,13 @@ body{overflow-x:clip}
             <tr data-d="6 0" class="closed"><td>Sábado, domingo y festivos</td><td>Cerrado</td></tr>
           </tbody>
         </table>
-        <div class="map">
-          <iframe title="Mapa: Clínica Dental Airam, Avenida del Nuevo Mundo 7, Boadilla del Monte" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            src="https://maps.google.com/maps?q=Avenida%20del%20Nuevo%20Mundo%207%2C%2028660%20Boadilla%20del%20Monte%2C%20Madrid&z=16&output=embed"></iframe>
+        <div class="map" id="map" data-src="https://maps.google.com/maps?q=Avenida%20del%20Nuevo%20Mundo%207%2C%2028660%20Boadilla%20del%20Monte%2C%20Madrid&z=16&output=embed">
+          <div class="map-ph">
+            <svg class="map-mark" viewBox="0 0 340.16 340.16" aria-hidden="true"><use href="#i-mark"/></svg>
+            <p class="map-addr">Avenida del Nuevo Mundo, 7<br>Boadilla del Monte</p>
+            <button type="button" class="btn btn-wa map-load" data-load-map><svg aria-hidden="true"><use href="#i-pin"/></svg>Cargar mapa</button>
+            <p class="map-note">Al cargar el mapa, Google puede instalar cookies y recibir tu dirección IP. <a href="cookies.html">Más información</a></p>
+          </div>
         </div>
         <a class="dir" href="https://www.google.com/maps/dir/?api=1&destination=Avenida%20del%20Nuevo%20Mundo%207%2C%2028660%20Boadilla%20del%20Monte%2C%20Madrid" target="_blank" rel="noopener">Cómo llegar<svg aria-hidden="true"><use href="#i-route"/></svg></a>
       </div>
@@ -925,9 +953,9 @@ body{overflow-x:clip}
       <span class="word"><small>Clínica dental</small><svg viewBox="0 0 250 61" aria-hidden="true"><use href="#i-word"/></svg></span>
     </a>
     <nav aria-label="Legal">
-      <a href="https://airamdental.com/aviso-legal/">Aviso legal</a>
-      <a href="https://airamdental.com/politicadeprivacidad/">Política de privacidad</a>
-      <a href="https://airamdental.com/politica-de-cookies/">Política de cookies</a>
+      <a href="aviso-legal.html">Aviso legal</a>
+      <a href="privacidad.html">Política de privacidad</a>
+      <a href="cookies.html">Política de cookies</a>
       <a href="https://airamdental.com/recomendaciones/">Recomendaciones post tratamiento</a>
       <a href="https://airamdental.com/noticias/">Blog</a>
     </nav>
@@ -936,7 +964,11 @@ body{overflow-x:clip}
       <a href="https://www.facebook.com/people/Airam-Dental/61565206595550/" target="_blank" rel="noopener" aria-label="Facebook"><svg aria-hidden="true"><use href="#i-fb"/></svg></a>
       <a data-wa href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><svg aria-hidden="true"><use href="#i-wa"/></svg></a>
     </div>
-    <p class="copy">Dentista infantil Boadilla · Copyright © <span id="y">2026</span> Clínica Dental de Luis Marcos S.L.P.</p>
+    <div class="copy">
+      <span>Clínica Dental de Luis Marcos S.L.P. · CIF B82906132</span>
+      <span>Autorización sanitaria n.º CS-04932</span>
+      <span>Dentista infantil Boadilla · Copyright © <span id="y">2026</span></span>
+    </div>
   </div>
 </footer>
 
@@ -1027,6 +1059,32 @@ body{overflow-x:clip}
   }catch(e){}
 
   document.getElementById("y").textContent = new Date().getFullYear();
+
+  /* Mapa de Google: solo se carga cuando el usuario pulsa «Cargar mapa» (no instala nada antes) */
+  var map = document.getElementById("map"), loadBtn = map && map.querySelector("[data-load-map]");
+  if(loadBtn){
+    loadBtn.addEventListener("click", function(){
+      var f = document.createElement("iframe");
+      f.title = "Mapa: Clínica Dental Airam, Avenida del Nuevo Mundo 7, Boadilla del Monte";
+      f.src = map.getAttribute("data-src");
+      f.setAttribute("referrerpolicy", "no-referrer-when-downgrade");
+      map.innerHTML = ""; map.appendChild(f);
+      f.focus();
+    });
+  }
+
+  /* Pausar / reanudar las animaciones continuas */
+  var mt = document.querySelector("[data-motion-toggle]");
+  if(mt){
+    mt.addEventListener("click", function(){
+      var paused = mt.getAttribute("aria-pressed") !== "true";
+      mt.setAttribute("aria-pressed", paused);
+      mt.querySelector(".sr-only").textContent = paused ? "Reanudar animaciones" : "Pausar animaciones";
+      mt.title = paused ? "Reanudar animaciones" : "Pausar animaciones";
+      document.documentElement.classList.toggle("motion-paused", paused);
+    });
+    mt.title = "Pausar animaciones";
+  }
 })();
 </script>
 <script>
