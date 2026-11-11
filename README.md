@@ -13,3 +13,7 @@ Nova versão do site da Clínica Dental Airam (Boadilla del Monte, Madrid).
 Faltam dados da clínica para completar o aviso legal: número de colegiado de cada dentista e colégio profissional, dados completos do Registro Mercantil e confirmação do número de registro sanitário (CS-04932).
 
 Para ver localmente, abra `index.html` no navegador.
+
+## Branch `demo`
+
+Versão de demonstração para apresentar a proposta à clínica: igual à `main`, com uma faixa fixa "Propuesta de rediseño. Versión de demostración, no es la web oficial" e `noindex` em todas as páginas.
