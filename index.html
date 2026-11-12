@@ -3,17 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Demo · Clínica Dental Airam · Tu dentista en Boadilla del Monte</title>
-<meta name="description" content="Clínica Dental Airam en Boadilla del Monte, Madrid. Desde el año 2000 devolviendo sonrisas: ortodoncia, implantes, odontopediatría, estética dental y sedación consciente. Pide cita por WhatsApp o al 91 633 46 36.">
 <meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Clínica Dental Airam"><meta property="og:locale" content="es_ES"><meta property="og:title" content="Clínica Dental Airam · Tu dentista en Boadilla del Monte"><meta property="og:description" content="Desde el año 2000 devolviendo sonrisas. Especialidades para niños y adultos y sedación consciente en Boadilla del Monte."><meta property="og:url" content="https://climbahia.com.br/demo-airam/"><meta property="og:image" content="https://climbahia.com.br/demo-airam/assets/img/sortistudio-airam-equipo-diciembre-2024-1.jpg"><meta name="twitter:card" content="summary_large_image">
+<title>Clínica Dental Airam · Tu dentista en Boadilla del Monte</title>
+<meta name="description" content="Clínica Dental Airam en Boadilla del Monte, Madrid. Desde el año 2000 devolviendo sonrisas: ortodoncia, implantes, odontopediatría, estética dental y sedación consciente. Pide cita por WhatsApp o al 91 633 46 36.">
 <meta name="theme-color" content="#3A4147">
 <script>
 /* Activa el movimiento solo con JS y sin preferencia de movimiento reducido */
 try{ if(!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('js'); }catch(e){}
 </script>
-<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="stylesheet" href="fonts/maven-pro.css">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/fonts/maven-pro.css">
 
 <script type="application/ld+json">
 {
@@ -74,6 +75,9 @@ h1,h2,h3{font-weight:500;line-height:1.12;margin:0;letter-spacing:-.01em}
 p{margin:0}
 .wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gutter)}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--pizarra);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none}
+.skip:focus{top:12px}
+.staff h3 a,.doc-link h3{display:inline-block;padding:3px 0}
 :focus-visible{outline:2px solid var(--pizarra);outline-offset:3px;border-radius:4px}
 .on-dark :focus-visible{outline-color:var(--arena)}
 
@@ -210,6 +214,11 @@ section[id]{scroll-margin-top:64px}
 .esp-body .ask{display:inline-flex;align-items:center;gap:8px;margin-top:18px;font-weight:600;font-size:15.5px;text-decoration:none;border-bottom:1.5px solid var(--arena);padding-bottom:2px}
 .esp-body .ask:hover{border-color:var(--pizarra)}
 .esp-body .ask svg{width:18px;height:18px}
+.esp-links{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center}
+.esp-body .more{display:inline-flex;align-items:center;min-height:44px;margin-top:18px;font-weight:600;font-size:15.5px;color:var(--nogal);text-underline-offset:3px}
+.esp-body .more:hover{color:var(--pizarra)}
+.demo-banner{background:var(--arena);color:var(--pizarra-2);font-size:13px;line-height:1.35;text-align:center;padding:7px 16px}
+@media (max-width:1100px){.nav,.header-cta{display:none}.menu-btn{display:block}}
 .esp-body .m-img{display:none}
 .esp-visual{position:sticky;top:110px}
 .esp-visual .petal-frame{aspect-ratio:4/4.4;--petal:clamp(48px,8vw,104px)}
@@ -248,13 +257,20 @@ section[id]{scroll-margin-top:64px}
 /* ---------- Equipo ---------- */
 .team-photo{border-radius:0 var(--petal) 0 var(--petal);overflow:hidden;aspect-ratio:16/7.5;margin-bottom:clamp(40px,5vw,64px)}
 .team-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 25%}
-.docs{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(16px,2vw,28px)}
+.docs{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,2.4vw,32px)}
+.doc-link{display:block;text-decoration:none}
+.doc-link:hover h3{text-decoration:underline}
+.team-more{margin-top:28px}
 .doc img{width:100%;aspect-ratio:3/3.7;object-fit:cover;object-position:50% 20%;border-radius:0 28px 0 28px;background:var(--lino)}
 .doc h3{font-size:19px;font-weight:600;margin-top:16px}
 .doc .role{font-size:14.5px;color:var(--nogal);margin-top:3px}
 .doc p.bio{font-size:15px;color:var(--nogal);margin-top:10px;line-height:1.55}
-.staff{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(16px,2vw,28px);margin-top:clamp(40px,5vw,56px);padding-top:clamp(28px,4vw,40px);border-top:1px solid rgba(58,65,71,.15)}
-.staff .p{display:flex;align-items:center;gap:12px}
+.staff{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(16px,2vw,28px);margin-top:clamp(40px,5vw,56px);padding-top:clamp(28px,4vw,40px);border-top:1px solid rgba(58,65,71,.15)}
+.staff .p{display:flex;align-items:flex-start;gap:14px}
+.staff h3{font-size:16.5px;font-weight:600;line-height:1.25}
+.staff h3 a{text-decoration:none}
+.staff h3 a:hover{text-decoration:underline}
+.staff p{font-size:15px;color:var(--nogal);margin-top:6px;line-height:1.55}
 .staff img{width:56px;height:56px;border-radius:50%;object-fit:cover;object-position:50% 20%;flex:none;background:var(--lino)}
 .staff b{display:block;font-weight:600;font-size:15.5px;line-height:1.25}
 .staff span{font-size:13.5px;color:var(--nogal);line-height:1.3;display:block}
@@ -306,8 +322,10 @@ section[id]{scroll-margin-top:64px}
 .foot .logo{color:var(--lino);margin:0}
 .foot .logo .word svg{color:var(--lino)}
 .foot .logo .word small{color:var(--arena)}
-.foot nav{display:flex;flex-wrap:wrap;gap:8px 22px}
+.foot nav{display:flex;flex-wrap:wrap;gap:4px 22px}
 .foot a{text-decoration:none}
+.foot nav a{display:inline-block;padding:6px 0}
+@media (max-width:640px){.btn{white-space:normal;text-align:center}}
 .foot a:hover{color:var(--blanco)}
 .social{display:flex;gap:10px}
 .social a{width:42px;height:42px;border-radius:50%;border:1px solid rgba(215,204,191,.35);display:grid;place-items:center;color:var(--arena)}
@@ -332,6 +350,8 @@ section[id]{scroll-margin-top:64px}
 .mnav nav{display:flex;flex-direction:column;margin-top:32px}
 .mnav nav a{font-size:30px;font-weight:500;text-decoration:none;padding:12px 0;border-bottom:1px solid rgba(58,65,71,.12)}
 .mnav .actions{margin-top:auto;display:grid;gap:12px}
+.mnav .btn{white-space:normal;text-align:center}
+.mnav{overflow-y:auto}
 
 /* =====================================================================
    MOVIMIENTO · nivel "Vivo" con tono sereno de clínica
@@ -432,7 +452,7 @@ body{overflow-x:clip}
 @media (max-width:1080px){
   .docs{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 calc(var(--gutter) * -1);padding:0 var(--gutter) 12px;scroll-padding:0 var(--gutter);scrollbar-width:thin}
   .doc{flex:0 0 min(270px,72%);scroll-snap-align:start}
-  .staff{grid-template-columns:repeat(3,1fr)}
+  .staff{grid-template-columns:1fr 1fr}
 }
 @media (max-width:900px){
   .nav,.header-cta{display:none}
@@ -460,7 +480,7 @@ body{overflow-x:clip}
   .why{grid-template-columns:1fr}
   .why article:nth-child(even),.why article,.why article+article{padding:24px 0;border-left:0}
   .doc h3{font-size:17px}
-  .staff{grid-template-columns:1fr 1fr;gap:18px 14px}
+  .staff{grid-template-columns:1fr;gap:22px}
   .staff img{width:48px;height:48px}
   .petals figcaption{font-size:11.5px;padding:4px 9px}
   .sed .actions .btn,.contact .actions .btn{flex:1 1 100%}
@@ -510,23 +530,25 @@ body{overflow-x:clip}
   </defs>
 </svg>
 
-<a class="sr-only" href="#main">Saltar al contenido</a>
+<a class="skip" href="#main">Saltar al contenido</a>
 
 <header class="site-header" id="top">
-  <div class="demo-banner" role="note" style="background:#D7CCBF;color:#2D2E33;font:500 13px/1.35 'Maven Pro',system-ui,sans-serif;text-align:center;padding:7px 16px">Propuesta de rediseño. Versión de demostración, no es la web oficial de Clínica Dental Airam.</div>
+  <div class="demo-banner" role="note">Propuesta de rediseño. Versión de demostración, no es la web oficial de Clínica Dental Airam.</div>
   <div class="wrap header-in">
     <a class="logo" href="#top" aria-label="Clínica Dental Airam, inicio">
       <svg class="mark" aria-hidden="true"><use href="#i-mark"/></svg>
       <span class="word"><small>Clínica dental</small><svg viewBox="0 0 250 61" aria-hidden="true"><use href="#i-word"/></svg></span>
     </a>
     <nav class="nav" aria-label="Principal">
-      <a href="#especialidades">Especialidades</a>
-      <a href="#clinica">La clínica</a>
+      <a href="#especialidades">Tratamientos</a>
+      <a href="#clinica">Clínica</a>
       <a href="#equipo">Equipo</a>
       <a href="#opiniones">Opiniones</a>
+      <a href="recomendaciones/">Recomendaciones</a>
+      <a href="noticias/">Blog</a>
       <a href="#contacto">Contacto</a>
     </nav>
-    <a class="btn btn-wa header-cta" data-wa href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir cita</a>
+    <a class="btn btn-wa header-cta" data-wa href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Solicitar cita</a>
     <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="mnav">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
     </button>
@@ -545,14 +567,16 @@ body{overflow-x:clip}
     </button>
   </div>
   <nav aria-label="Móvil">
-    <a href="#especialidades">Especialidades</a>
-    <a href="#clinica">La clínica</a>
+    <a href="#especialidades">Tratamientos</a>
+    <a href="#clinica">Clínica</a>
     <a href="#equipo">Equipo</a>
     <a href="#opiniones">Opiniones</a>
+    <a href="recomendaciones/">Recomendaciones</a>
+    <a href="noticias/">Blog</a>
     <a href="#contacto">Contacto</a>
   </nav>
   <div class="actions">
-    <a class="btn btn-wa" data-wa href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir cita por WhatsApp</a>
+    <a class="btn btn-wa" data-wa href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Solicitar cita por WhatsApp</a>
     <a class="btn btn-line" href="tel:+34916334636"><svg aria-hidden="true"><use href="#i-phone"/></svg>Llamar al 91 633 46 36</a>
   </div>
 </div>
@@ -567,7 +591,7 @@ body{overflow-x:clip}
         <p class="motto fu" style="--d:.35s">«Desde el año 2000 devolviendo sonrisas»</p>
         <p class="lead fu" style="--d:.45s">Un equipo experto y preparado para cualquier intervención en niños y adultos, con tecnología innovadora e instalaciones de última generación.</p>
         <div class="actions fu" style="--d:.55s">
-          <a class="btn btn-wa" data-wa href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir cita por WhatsApp</a>
+          <a class="btn btn-wa" data-wa href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Solicitar cita por WhatsApp</a>
           <a class="btn btn-line" href="tel:+34916334636"><svg aria-hidden="true"><use href="#i-phone"/></svg>91 633 46 36</a>
         </div>
         <ul class="hero-facts fu" style="--d:.7s">
@@ -579,7 +603,7 @@ body{overflow-x:clip}
       <div class="hero-media">
         <svg class="mark-bg" viewBox="0 0 340.16 340.16" aria-hidden="true"><use href="#i-mark"/></svg>
         <div class="petal-frame">
-          <img src="img/sortistudio-airam-equipo-diciembre-2024-1.jpg" alt="El equipo de Clínica Dental Airam en la clínica de Boadilla del Monte" width="1600" height="1067" fetchpriority="high">
+          <img src="assets/img/sortistudio-airam-equipo-diciembre-2024-1.jpg" alt="El equipo de Clínica Dental Airam en la clínica de Boadilla del Monte" width="1600" height="1067" fetchpriority="high">
         </div>
         <p class="status" id="status" aria-live="polite"><b><i></i><span class="st-t">Horario de hoy</span></b><span class="st-d">Lunes a viernes</span></p>
       </div>
@@ -664,7 +688,7 @@ body{overflow-x:clip}
         <cite class="rv" style="--d:.15s">Equipo de Clínica Dental Airam</cite>
         <dl class="facts rv" style="--d:.2s">
           <div><dt>Años devolviendo sonrisas</dt><dd><span data-count="26" data-since="2000">26</span></dd></div>
-          <div><dt>Especialidades</dt><dd><span data-count="10">10</span></dd></div>
+          <div><dt>Especialidades, además de la sedación consciente</dt><dd><span data-count="10">10</span></dd></div>
           <div><dt>Profesionales en el equipo</dt><dd><span data-count="10">10</span></dd></div>
         </dl>
       </div>
@@ -681,98 +705,98 @@ body{overflow-x:clip}
       <div class="esp-grid">
         <div class="esp-list rv" id="esp-list" style="--d:.08s">
 
-          <details name="esp" open data-img="img/sortistudio-airam-26-09-2024-62-scaled-5065944f.jpg" data-alt="Paciente revisando su sonrisa con un espejo">
+          <details name="esp" open data-img="assets/img/sortistudio-airam-26-09-2024-62-scaled-5065944f.jpg" data-alt="Paciente revisando su sonrisa con un espejo">
             <summary>Ortodoncia<span class="pm" aria-hidden="true"></span></summary>
             <div class="esp-body">
               <p class="quote-line">«Alinear, conseguir estética y funcionalidad para niños y adultos»</p>
               <p class="d">Corrige la posición de los dientes y de los maxilares para restablecer el equilibrio funcional de la boca y de la cara, mejorando también la estética facial. Con brackets convencionales u ortodoncia invisible.</p>
-              <a class="ask" data-wa="ortodoncia" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar sobre ortodoncia</a>
+              <span class="esp-links"><a class="ask" data-wa="ortodoncia" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar sobre ortodoncia</a><a class="more" href="ortodoncia/">Más información<span class="sr-only"> sobre ortodoncia</span></a></span>
             </div>
           </details>
 
-          <details name="esp" data-img="img/cbct-3d-opt-scaled.jpg" data-alt="Imagen de diagnóstico CBCT 3D">
+          <details name="esp" data-img="assets/img/cbct-3d-opt-scaled.jpg" data-alt="Imagen de diagnóstico CBCT 3D">
             <summary>Implantología<span class="pm" aria-hidden="true"></span></summary>
             <div class="esp-body">
               <p class="quote-line">«Implantes dentales: la solución definitiva, segura y duradera de reponer piezas dentales perdidas»</p>
               <p class="d">El implante sustituye a la raíz del diente y funciona igual que tus propios dientes, para masticar, hablar o sonreír con total normalidad. Estudiamos cada caso con CBCT 3D y cirugía guiada.</p>
-              <a class="ask" data-wa="implantes dentales" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar sobre implantes</a>
+              <span class="esp-links"><a class="ask" data-wa="implantes dentales" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar sobre implantes</a><a class="more" href="implantologia/">Más información<span class="sr-only"> sobre implantología</span></a></span>
             </div>
           </details>
 
-          <details name="esp" data-img="img/sortistudio-airam-26-09-2024-26-scaled-1283d82b.jpg" data-alt="Niña en una revisión dental">
+          <details name="esp" data-img="assets/img/sortistudio-airam-26-09-2024-26-scaled-1283d82b.jpg" data-alt="Niña en una revisión dental">
             <summary>Odontopediatría<span class="pm" aria-hidden="true"></span></summary>
             <div class="esp-body">
               <p class="quote-line">«Los niños pequeños: nuestros grandes protagonistas»</p>
               <p class="d">Nuestra fachada en la Av. del Nuevo Mundo, junto a la rotonda «de la fuente», con colores vivos y dibujos infantiles, ya muestra nuestro cariño por los más pequeños. Dentro, un gabinete infantil pensado para ellos.</p>
-              <a class="ask" data-wa="odontopediatría" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar sobre odontopediatría</a>
+              <span class="esp-links"><a class="ask" data-wa="odontopediatría" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar sobre odontopediatría</a><a class="more" href="odontopediatria/">Más información<span class="sr-only"> sobre odontopediatría</span></a></span>
             </div>
           </details>
 
-          <details name="esp" data-img="img/2022.02.22-clinica-smile-243-36a2a5bc.jpg" data-alt="Elección del color dental con guía de tonos">
+          <details name="esp" data-img="assets/img/2022.02.22-clinica-smile-243-36a2a5bc.jpg" data-alt="Elección del color dental con guía de tonos">
             <summary>Estética dental<span class="pm" aria-hidden="true"></span></summary>
             <div class="esp-body">
               <p class="quote-line">«Sonrisas de cine, para todos los públicos»</p>
               <p class="d">Soluciona asimetrías, separaciones entre dientes y cambios de color para lograr una sonrisa armónica, con diseño de sonrisa digital.</p>
-              <a class="ask" data-wa="estética dental" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar sobre estética dental</a>
+              <span class="esp-links"><a class="ask" data-wa="estética dental" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar sobre estética dental</a><a class="more" href="estetica-dental/">Más información<span class="sr-only"> sobre estética dental</span></a></span>
             </div>
           </details>
 
-          <details name="esp" data-img="img/sortistudio-airam-28-octubre-40-opt.jpg" data-alt="Paciente durante un tratamiento dental">
+          <details name="esp" data-img="assets/img/sortistudio-airam-28-octubre-40-opt.jpg" data-alt="Paciente durante un tratamiento dental">
             <summary>Blanqueamiento dental<span class="pm" aria-hidden="true"></span></summary>
             <div class="esp-body">
               <p class="d">Un tratamiento estético que reduce varios tonos el color original de los dientes, dejándolos más blancos y brillantes. Se puede realizar en clínica o en casa, según cada caso.</p>
-              <a class="ask" data-wa="blanqueamiento dental" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar sobre blanqueamiento</a>
+              <span class="esp-links"><a class="ask" data-wa="blanqueamiento dental" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar sobre blanqueamiento</a><a class="more" href="blanqueamiento-dental/">Más información<span class="sr-only"> sobre blanqueamiento dental</span></a></span>
             </div>
           </details>
 
-          <details name="esp" data-img="img/sortistudio-airam-28-octubre-52-opt.jpg" data-alt="Dos profesionales de Airam realizando un tratamiento">
+          <details name="esp" data-img="assets/img/sortistudio-airam-28-octubre-52-opt.jpg" data-alt="Dos profesionales de Airam realizando un tratamiento">
             <summary>Restauradora<span class="pm" aria-hidden="true"></span></summary>
             <div class="esp-body">
               <p class="quote-line">«Soluciones más fáciles con diagnósticos a tiempo»</p>
               <p class="d">Mantiene o restablece la forma, la función y la estética de las piezas dentales.</p>
-              <a class="ask" data-wa="odontología restauradora" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar sobre restauradora</a>
+              <span class="esp-links"><a class="ask" data-wa="odontología restauradora" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar sobre restauradora</a><a class="more" href="restauradora/">Más información<span class="sr-only"> sobre odontología restauradora</span></a></span>
             </div>
           </details>
 
-          <details name="esp" data-img="img/sortistudio-airam-10-09-2024-14-opt-scaled-c52ab58c.jpg" data-alt="Diseño digital de una pieza dental">
+          <details name="esp" data-img="assets/img/sortistudio-airam-10-09-2024-14-opt-scaled-c52ab58c.jpg" data-alt="Diseño digital de una pieza dental">
             <summary>Endodoncia<span class="pm" aria-hidden="true"></span></summary>
             <div class="esp-body">
               <p class="quote-line">«Una opción conservadora para no perder una pieza dental»</p>
               <p class="d">Elimina los tejidos dañados del interior del diente para poder conservarlo.</p>
-              <a class="ask" data-wa="endodoncia" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar sobre endodoncia</a>
+              <span class="esp-links"><a class="ask" data-wa="endodoncia" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar sobre endodoncia</a><a class="more" href="endodoncia/">Más información<span class="sr-only"> sobre endodoncia</span></a></span>
             </div>
           </details>
 
-          <details name="esp" data-img="img/sortistudio-airam-26-09-2024-56-scaled-43cb1043.jpg" data-alt="Radiografía dental en pantalla">
+          <details name="esp" data-img="assets/img/sortistudio-airam-26-09-2024-56-scaled-43cb1043.jpg" data-alt="Radiografía dental en pantalla">
             <summary>Prótesis<span class="pm" aria-hidden="true"></span></summary>
             <div class="esp-body">
               <p class="quote-line">«Diferentes alternativas cuando decidimos no usar implantes»</p>
               <p class="d">Restaura una o varias piezas dentales y la relación entre los maxilares, devolviendo la altura dental y reponiendo las piezas perdidas.</p>
-              <a class="ask" data-wa="prótesis dentales" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar sobre prótesis</a>
+              <span class="esp-links"><a class="ask" data-wa="prótesis dentales" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar sobre prótesis</a><a class="more" href="protesis/">Más información<span class="sr-only"> sobre prótesis dental</span></a></span>
             </div>
           </details>
 
-          <details name="esp" data-img="img/quirofano-opt-ok-scaled.jpg" data-alt="Cirujana en el quirófano de la clínica">
+          <details name="esp" data-img="assets/img/quirofano-opt-ok-scaled.jpg" data-alt="Cirujana en el quirófano de la clínica">
             <summary>Cirugía dental<span class="pm" aria-hidden="true"></span></summary>
             <div class="esp-body">
               <p class="quote-line">«La nueva odontología no genera dolor, te lo quita»</p>
               <p class="d">Diagnóstico y tratamiento quirúrgico en nuestro propio quirófano, con la opción de sedación consciente.</p>
-              <a class="ask" data-wa="cirugía dental" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar sobre cirugía</a>
+              <span class="esp-links"><a class="ask" data-wa="cirugía dental" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar sobre cirugía</a><a class="more" href="cirugia-dental/">Más información<span class="sr-only"> sobre cirugía dental</span></a></span>
             </div>
           </details>
 
-          <details name="esp" data-img="img/sortistudio-airam-10-09-2024-31-opt-scaled-bb451a79.jpg" data-alt="Instrumental del gabinete dental">
+          <details name="esp" data-img="assets/img/sortistudio-airam-10-09-2024-31-opt-scaled-bb451a79.jpg" data-alt="Instrumental del gabinete dental">
             <summary>Periodoncia<span class="pm" aria-hidden="true"></span></summary>
             <div class="esp-body">
               <p class="quote-line">«La importancia de cuidar los tejidos que rodean al diente»</p>
               <p class="d">Prevención, diagnóstico y tratamiento de las enfermedades de la encía y del hueso que sostienen los dientes.</p>
-              <a class="ask" data-wa="periodoncia" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar sobre periodoncia</a>
+              <span class="esp-links"><a class="ask" data-wa="periodoncia" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Consultar sobre periodoncia</a><a class="more" href="periodoncia/">Más información<span class="sr-only"> sobre periodoncia</span></a></span>
             </div>
           </details>
 
         </div>
         <figure class="esp-visual rv" style="--d:.18s" aria-hidden="true">
-          <div class="petal-frame"><img id="esp-img" src="img/sortistudio-airam-26-09-2024-62-scaled-5065944f.jpg" alt=""></div>
+          <div class="petal-frame"><img id="esp-img" src="assets/img/sortistudio-airam-26-09-2024-62-scaled-5065944f.jpg" width="350" height="350" alt=""></div>
           <figcaption id="esp-cap">Ortodoncia</figcaption>
         </figure>
       </div>
@@ -782,7 +806,7 @@ body{overflow-x:clip}
   <!-- SEDACIÓN -->
   <section class="sed on-dark" aria-labelledby="h-sed">
     <div class="wrap">
-      <div class="petal-frame rv rv-left"><img src="img/gabinete-3-sedacion-opt-scaled.jpg" alt="Gabinete de cirugía y sedación de la clínica" loading="lazy"></div>
+      <div class="petal-frame rv rv-left"><img src="assets/img/gabinete-3-sedacion-opt-scaled.jpg" width="1600" height="1067" alt="Gabinete de cirugía y sedación de la clínica" loading="lazy"></div>
       <div class="rv" style="--d:.12s">
         <h2 id="h-sed">Sedación consciente</h2>
         <p class="quote-line">«Aprovechamos los avances médicos: adiós miedos y fobias»</p>
@@ -795,6 +819,7 @@ body{overflow-x:clip}
         <p class="t">Colabora con nosotros un equipo de médicos especialistas en Anestesiología y Reanimación con amplia experiencia en grandes hospitales de Madrid.</p>
         <div class="actions">
           <a class="btn btn-wa" data-wa="sedación consciente" href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Preguntar por la sedación</a>
+          <a class="btn btn-line" href="sedacion-consciente/">Más información sobre la sedación</a>
         </div>
       </div>
     </div>
@@ -804,10 +829,10 @@ body{overflow-x:clip}
   <section class="section" id="clinica" aria-labelledby="h-clinica">
     <div class="wrap clinic-grid">
       <div class="petals">
-        <figure class="rv rv-scale" style="--d:0s"><img src="img/entrada-airam-opt.jpg" alt="Entrada de la clínica" loading="lazy"><figcaption>Entrada</figcaption></figure>
-        <figure class="rv rv-scale" style="--d:.12s"><img src="img/recepcion-airam-opt.jpg" alt="Recepción" loading="lazy"><figcaption>Recepción</figcaption></figure>
-        <figure class="rv rv-scale" style="--d:.24s"><img src="img/gabinete-infantil-airam-opt-scaled.jpg" alt="Gabinete infantil" loading="lazy"><figcaption>Gabinete infantil</figcaption></figure>
-        <figure class="rv rv-scale" style="--d:.36s"><img src="img/sala-de-espera-airam-opt-scaled.jpg" alt="Sala de espera" loading="lazy"><figcaption>Sala de espera</figcaption></figure>
+        <figure class="rv rv-scale" style="--d:0s"><img src="assets/img/entrada-airam-opt.jpg" width="1536" height="2048" alt="Entrada de la clínica" loading="lazy"><figcaption>Entrada</figcaption></figure>
+        <figure class="rv rv-scale" style="--d:.12s"><img src="assets/img/recepcion-airam-opt.jpg" width="1519" height="2025" alt="Recepción" loading="lazy"><figcaption>Recepción</figcaption></figure>
+        <figure class="rv rv-scale" style="--d:.24s"><img src="assets/img/gabinete-infantil-airam-opt-scaled.jpg" width="1600" height="1067" alt="Gabinete infantil" loading="lazy"><figcaption>Gabinete infantil</figcaption></figure>
+        <figure class="rv rv-scale" style="--d:.36s"><img src="assets/img/sala-de-espera-airam-opt-scaled.jpg" width="1600" height="1067" alt="Sala de espera" loading="lazy"><figcaption>Sala de espera</figcaption></figure>
       </div>
       <div class="clinic-text rv" style="--d:.2s">
         <div class="section-head" style="margin-bottom:28px">
@@ -833,49 +858,12 @@ body{overflow-x:clip}
     <div class="wrap">
       <div class="section-head rv">
         <h2 id="h-equipo">Profesionales de confianza</h2>
-        <p>Detrás de cada sonrisa hay un equipo que se conoce bien y trabaja mano a mano.</p>
+        <p>Detrás de cada sonrisa hay un equipo que se conoce bien y trabaja mano a mano desde hace años.</p>
       </div>
 
-      <div class="docs">
-        <article class="doc rv" style="--d:0s">
-          <img src="img/6-maria-de-luis-opt-d5d56cf8.jpg" alt="María de Luis Marcos" loading="lazy">
-          <h3>María de Luis Marcos</h3>
-          <p class="role">Cirujana y directora</p>
-          <p class="bio">Odontóloga especializada en cirugía, implantología y periodoncia. Lidera el equipo de la clínica.</p>
-        </article>
-        <article class="doc rv" style="--d:.08s">
-          <img src="img/7-maria-garcia-opt-e32e772c.jpg" alt="María García" loading="lazy">
-          <h3>María García</h3>
-          <p class="role">Ortodoncista y odontopediatra</p>
-          <p class="bio">Experta en ortodoncia infantil y de adultos, con brackets convencionales y ortodoncia invisible.</p>
-        </article>
-        <article class="doc rv" style="--d:.16s">
-          <img src="img/9-sara-opt-defccc1d.jpg" alt="Sara Virtus" loading="lazy">
-          <h3>Sara Virtus</h3>
-          <p class="role">Odontóloga</p>
-          <p class="bio">Especialista en odontología 360, con más de 20 años de experiencia y una visión integral del paciente.</p>
-        </article>
-        <article class="doc rv" style="--d:.24s">
-          <img src="img/8-belen-opt-8178c7c5.jpg" alt="Belén Granja" loading="lazy">
-          <h3>Belén Granja</h3>
-          <p class="role">Ortodoncista y odontopediatra</p>
-          <p class="bio">Más de 10 años ganándose la confianza de los más pequeños. «El éxito de mis tratamientos es la prevención».</p>
-        </article>
-        <article class="doc rv" style="--d:.32s">
-          <img src="img/10-paula-opt-c6107c46.jpg" alt="Paula Pontevedra" loading="lazy">
-          <h3>Paula Pontevedra</h3>
-          <p class="role">Odontóloga</p>
-          <p class="bio">Especialista en estética y rehabilitación oral, con más de 10 años de experiencia y docente universitaria.</p>
-        </article>
-      </div>
-
-      <div class="staff rv">
-        <div class="p"><img src="img/sortistudio-airam-jose-angel-aa9025e0.jpg" alt="" loading="lazy"><div><b>José Ángel Palomo</b><span>Médico anestesista</span></div></div>
-        <div class="p"><img src="img/3-liliana-opt-1c8a0754.jpg" alt="" loading="lazy"><div><b>Liliana Marín</b><span>Higienista</span></div></div>
-        <div class="p"><img src="img/sortistudio-airam-tamara-scaled-a53fe925.jpg" alt="" loading="lazy"><div><b>Tamara Moreno</b><span>Coordinación y atención al paciente</span></div></div>
-        <div class="p"><img src="img/sortistudio-airam-abril-2025-14-noe-scaled-310e6ec5.jpg" alt="" loading="lazy"><div><b>Noelia Rodríguez</b><span>Recepción y administración</span></div></div>
-        <div class="p"><img src="img/sortistudio-cris-scaled-561f3d48.jpg" alt="" loading="lazy"><div><b>Cristina Moreno</b><span>Auxiliar de clínica</span></div></div>
-      </div>
+      <div class="docs"><article class="doc rv"><a class="doc-link" href="equipo/#maria-de-luis"><img src="assets/img/6-maria-de-luis-opt-d5d56cf8.jpg" alt="María de Luis Marcos" width="500" height="500" loading="lazy" decoding="async"><h3>María de Luis Marcos</h3></a><p class="role">Cirujana y directora</p><p class="bio">Odontóloga especializada en cirugía, implantología y periodoncia. Lidera el equipo de Clínica Dental Airam. Detallista y delicada en su trabajo, se gana la confianza de sus pacientes tanto por su profesionalidad como por el trato humano.</p></article><article class="doc rv"><a class="doc-link" href="equipo/#maria-garcia"><img src="assets/img/7-maria-garcia-opt-e32e772c.jpg" alt="María García" width="500" height="500" loading="lazy" decoding="async"><h3>María García</h3></a><p class="role">Ortodoncista y odontopediatra</p><p class="bio">Ortodoncista y odontopediatra con gran preparación profesional. Experta en ortodoncia infantil y de adultos, tanto con brackets convencionales como con ortodoncia invisible. Es increíble cómo los niños entran contentos a su consulta: se hace amiga de ellos, es «un don».</p></article><article class="doc rv"><a class="doc-link" href="equipo/#sara-virtus"><img src="assets/img/9-sara-opt-defccc1d.jpg" alt="Sara Virtus" width="500" height="500" loading="lazy" decoding="async"><h3>Sara Virtus</h3></a><p class="role">Odontóloga</p><p class="bio">Especialista en odontología 360. En sus más de 20 años de experiencia, Sara ha desarrollado la capacidad de integrar todas las especialidades de la odontología en su día a día para ofrecer una visión integral a nuestros pacientes. Forma equipo con la Dra. de Luis desde hace más de 10 años.</p></article><article class="doc rv"><a class="doc-link" href="equipo/#belen-granja"><img src="assets/img/8-belen-opt-8178c7c5.jpg" alt="Belén Granja" width="500" height="500" loading="lazy" decoding="async"><h3>Belén Granja</h3></a><p class="role">Ortodoncista y odontopediatra</p><p class="bio">Belén lleva más de 10 años ganándose la confianza de los más pequeños gracias al cariño y la dulzura que la caracterizan. Además de odontopediatra, es especialista en ortodoncia convencional e invisible, tanto en niños como en adultos.</p></article><article class="doc rv"><a class="doc-link" href="equipo/#paula-pontevedra"><img src="assets/img/10-paula-opt-c6107c46.jpg" alt="Paula Pontevedra" width="500" height="500" loading="lazy" decoding="async"><h3>Paula Pontevedra</h3></a><p class="role">Odontóloga</p><p class="bio">Odontóloga especialista en estética y rehabilitación oral, con más de 10 años de experiencia mejorando tanto la función como la estética de las sonrisas. Apasionada por su especialidad, además de atender a sus pacientes da clases en la universidad a los futuros odontólogos.</p></article><article class="doc rv"><a class="doc-link" href="equipo/#jose-angel-palomo"><img src="assets/img/sortistudio-airam-jose-angel-aa9025e0.jpg" alt="José Ángel Palomo" width="500" height="500" loading="lazy" decoding="async"><h3>José Ángel Palomo</h3></a><p class="role">Médico anestesista</p><p class="bio">Director médico de una empresa de sedación en gabinete dental. Gracias a sus años de experiencia en el sector, el Dr. Palomo y su equipo, en colaboración con nuestras doctoras, ayudan a pacientes con ansiedad y miedo ante el tratamiento dental. Especialista en sedación infantil y de pacientes especiales.</p></article></div>
+      <div class="staff rv"><article class="p"><img src="assets/img/3-liliana-opt-1c8a0754.jpg" alt="" width="500" height="500" loading="lazy" decoding="async"><div><h3><a href="equipo/#liliana-marin">Liliana Marín</a></h3><span>Higienista</span><p>Higienista colegiada con gran vocación por su trabajo. Disfruta transmitiendo los conocimientos y técnicas necesarias para que nuestros pacientes puedan gozar de una buena salud bucodental. Es pieza fundamental en los tratamientos quirúrgicos junto a nuestra cirujana: llevan más de 10 años formando equipo.</p></div></article><article class="p"><img src="assets/img/sortistudio-airam-tamara-scaled-a53fe925.jpg" alt="" width="500" height="500" loading="lazy" decoding="async"><div><h3><a href="equipo/#tamara-moreno">Tamara Moreno</a></h3><span>Coordinación y atención al paciente</span><p>Responsable de coordinar al equipo de profesionales que te atenderá en Clínica Dental Airam y de cuidar el trato a nuestros pacientes. Tamara es el nexo de unión entre la parte clínica y la administrativa.</p></div></article><article class="p"><img src="assets/img/sortistudio-airam-abril-2025-14-noe-scaled-310e6ec5.jpg" alt="" width="500" height="500" loading="lazy" decoding="async"><div><h3><a href="equipo/#noelia-rodriguez">Noelia Rodríguez</a></h3><span>Recepción y administración</span><p>Forma parte del equipo desde hace muchos años y conoce al dedillo cada historial y a cada paciente. Es la encargada de la recepción y la administración de la clínica. Si la buscáis, siempre estará sonriendo para ayudar.</p></div></article><article class="p"><img src="assets/img/sortistudio-cris-scaled-561f3d48.jpg" alt="" width="500" height="500" loading="lazy" decoding="async"><div><h3><a href="equipo/#cristina-moreno">Cristina Moreno</a></h3><span>Auxiliar de clínica</span><p>Compañera con una gran capacidad de trabajo en equipo. Su labor como auxiliar contribuye a un entorno seguro y acogedor para cada paciente. Apoya al equipo en los tratamientos con una atención cercana y profesional, para que cada visita sea cómoda y tranquila. Trabaja mano a mano con la Dra. García en las tardes de ortodoncia y está al día en nuevas tecnologías.</p></div></article></div>
+      <p class="team-more rv"><a class="btn btn-line" href="equipo/">Conocer al equipo y su forma de trabajar</a></p>
     </div>
   </section>
 
@@ -889,17 +877,17 @@ body{overflow-x:clip}
         <figure class="rev rv" style="--d:0s">
           <svg class="qmark" aria-hidden="true"><use href="#i-quote"/></svg>
           <blockquote>Un equipo maravilloso y profesional. Encantado con mis revisiones rutinarias como también lo está mi hija que hoy ha venido conmigo y con la que han mostrado la profesionalidad, paciencia y gran empatía habitual.</blockquote>
-          <figcaption>Carlos Navarro<span>Paciente</span></figcaption>
+          <figcaption>Carlos Navarro<span>Opinión publicada en la web de la clínica</span></figcaption>
         </figure>
         <figure class="rev rv" style="--d:.1s">
           <svg class="qmark" aria-hidden="true"><use href="#i-quote"/></svg>
-          <blockquote>Llevamos ya muchos años llevando a mis 3 hijas y estamos encantados con el trato recibido. Son un equipo de personas muy profesionales y que inspiran confianza. Totalmente recomendable.</blockquote>
-          <figcaption>M Carmen Piñera<span>Paciente</span></figcaption>
+          <blockquote>Llevamos ya muchos años llevando a mis 3 hijas y estamos encantados con el trato recibido. Son un equipo de personas muy profesionales y que inspiran confianza. María, Noelia, Maria y Liliana todas unas bellísimas personas que nos tratan con familiaridad y dedicación. Totalmente recomendable.</blockquote>
+          <figcaption>M Carmen Piñera<span>Opinión publicada en la web de la clínica</span></figcaption>
         </figure>
         <figure class="rev rv" style="--d:.2s">
           <svg class="qmark" aria-hidden="true"><use href="#i-quote"/></svg>
-          <blockquote>Llevo visitando la clínica varios años, tanto yo como mi familia estamos muy contentos. Tuve muy malas experiencias antes y ahora que he encontrado un sitio de confianza no lo cambio.</blockquote>
-          <figcaption>Delia Aparicio<span>Paciente</span></figcaption>
+          <blockquote>Llevo visitando la clínica varios años, tanto yo como mi familia estamos muy contentos. Muy buen trato, el equipo muy amable y muy profesional. Tuve muy malas experiencias antes y ahora que he encontrado un sitio de confianza no lo cambio. Seguiré con ellos sin duda os lo recomiendo un montón</blockquote>
+          <figcaption>Delia Aparicio<span>Opinión publicada en la web de la clínica</span></figcaption>
         </figure>
       </div>
     </div>
@@ -912,7 +900,7 @@ body{overflow-x:clip}
         <h2 id="h-contacto">Visita nuestra clínica</h2>
         <p class="quote-line">«Siempre a tu disposición»</p>
         <div class="actions">
-          <a class="btn btn-wa" data-wa href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir cita por WhatsApp</a>
+          <a class="btn btn-wa" data-wa href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Solicitar cita por WhatsApp</a>
           <a class="btn btn-line" href="tel:+34916334636"><svg aria-hidden="true"><use href="#i-phone"/></svg>Llamar</a>
         </div>
         <ul class="c-list">
@@ -939,7 +927,7 @@ body{overflow-x:clip}
             <svg class="map-mark" viewBox="0 0 340.16 340.16" aria-hidden="true"><use href="#i-mark"/></svg>
             <p class="map-addr">Avenida del Nuevo Mundo, 7<br>Boadilla del Monte</p>
             <button type="button" class="btn btn-wa map-load" data-load-map><svg aria-hidden="true"><use href="#i-pin"/></svg>Cargar mapa</button>
-            <p class="map-note">Al cargar el mapa, Google puede instalar cookies y recibir tu dirección IP. <a href="cookies.html">Más información</a></p>
+            <p class="map-note">Al cargar el mapa, Google puede instalar cookies y recibir tu dirección IP. <a href="politica-de-cookies/">Más información</a></p>
           </div>
         </div>
         <a class="dir" href="https://www.google.com/maps/dir/?api=1&destination=Avenida%20del%20Nuevo%20Mundo%207%2C%2028660%20Boadilla%20del%20Monte%2C%20Madrid" target="_blank" rel="noopener">Cómo llegar<svg aria-hidden="true"><use href="#i-route"/></svg></a>
@@ -955,11 +943,12 @@ body{overflow-x:clip}
       <span class="word"><small>Clínica dental</small><svg viewBox="0 0 250 61" aria-hidden="true"><use href="#i-word"/></svg></span>
     </a>
     <nav aria-label="Legal">
-      <a href="aviso-legal.html">Aviso legal</a>
-      <a href="privacidad.html">Política de privacidad</a>
-      <a href="cookies.html">Política de cookies</a>
-      <a href="https://airamdental.com/recomendaciones/">Recomendaciones post tratamiento</a>
-      <a href="https://airamdental.com/noticias/">Blog</a>
+      <a href="aviso-legal/">Aviso legal</a>
+      <a href="politicadeprivacidad/">Política de privacidad</a>
+      <a href="politica-de-cookies/">Política de cookies</a>
+      <a href="recomendaciones/">Recomendaciones</a>
+      <a href="noticias/">Blog</a>
+      <a href="https://7782a46e.sibforms.com/serve/MUIFAC6qWefVmhI0dbAXW5PlVBlKniNWDZzTIJeXi1S_GvzCJw7sw_ZBe3PCoXJ1KTH4uc_dpAN2tXgBUDnUgnZTDbVrSOHFraBk_tJSqgOof_1_I4tJEycAL7wxhUk3XIPsheWSRtwfWjvUwxDfWywc86GZHN6Bp5OQZ8NaJ_RgeJ2aUmMJNJKlzM51pQosy8OE3vLr7C2ATHQu" target="_blank" rel="noopener">Newsletter</a>
     </nav>
     <div class="social">
       <a href="https://www.instagram.com/dentalairam/" target="_blank" rel="noopener" aria-label="Instagram"><svg aria-hidden="true"><use href="#i-ig"/></svg></a>
@@ -974,13 +963,14 @@ body{overflow-x:clip}
   </div>
 </footer>
 
-<a class="wa-float" data-wa href="#" target="_blank" rel="noopener" aria-label="Pedir cita por WhatsApp"><svg aria-hidden="true"><use href="#i-wa"/></svg></a>
+<a class="wa-float" data-wa href="#" target="_blank" rel="noopener" aria-label="Solicitar cita por WhatsApp"><svg aria-hidden="true"><use href="#i-wa"/></svg></a>
 
 <div class="mbar">
   <a class="btn btn-line" href="tel:+34916334636"><svg aria-hidden="true"><use href="#i-phone"/></svg>Llamar</a>
-  <a class="btn btn-wa" data-wa href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir cita</a>
+  <a class="btn btn-wa" data-wa href="#" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Solicitar cita</a>
 </div>
 
+<script>window.AIRAM={"hours":[{"days":[1],"label":"Lunes","open":"10:00","close":"20:00"},{"days":[2],"label":"Martes","open":"14:00","close":"20:00"},{"days":[3],"label":"Miércoles","open":"09:00","close":"20:00"},{"days":[4],"label":"Jueves","open":"10:00","close":"20:00"},{"days":[5],"label":"Viernes","open":"10:00","close":"15:00"},{"days":[6,0],"label":"Sábado, domingo y festivos","closed":true}],"exceptions":{"_formato":"Fechas YYYY-MM-DD en hora de Madrid. closed: true para cierres (festivos, vacaciones); o open/close para horario especial. Vacío = sin calendario validado: el sitio indica «según el horario habitual».","validated":false,"dates":[]}};</script>
 <script>
 (function(){
   /* WhatsApp de la clínica (enlace del sitio actual, con prefijo +34) */
@@ -988,7 +978,7 @@ body{overflow-x:clip}
   function waLink(topic){
     var msg = topic
       ? "Hola, me gustaría información sobre " + topic + " en Clínica Dental Airam."
-      : "Hola, me gustaría pedir cita en Clínica Dental Airam.";
+      : "Hola, me gustaría solicitar cita en Clínica Dental Airam.";
     return "https://wa.me/" + WA + "?text=" + encodeURIComponent(msg);
   }
   document.querySelectorAll("[data-wa]").forEach(function(a){ a.href = waLink(a.getAttribute("data-wa")); });
@@ -1018,7 +1008,8 @@ body{overflow-x:clip}
     // imagen dentro del acordeón para móvil
     var fig = document.createElement("div"); fig.className = "m-img";
     fig.innerHTML = '<img loading="lazy" alt="">'; fig.firstChild.src = d.dataset.img; fig.firstChild.alt = d.dataset.alt;
-    d.querySelector(".esp-body").insertBefore(fig, d.querySelector(".ask"));
+    var body = d.querySelector(".esp-body");
+    body.insertBefore(fig, body.querySelector(".esp-links"));
     d.addEventListener("toggle", function(){
       if(!d.open) return;
       // cierre exclusivo para navegadores sin soporte de details[name]
@@ -1029,34 +1020,36 @@ body{overflow-x:clip}
   });
   img.addEventListener("load", function(){ img.style.opacity = 1; });
 
-  /* Horario: abierto/cerrado según la hora de Madrid */
-  var H = {1:[10,20],2:[14,20],3:[9,20],4:[10,20],5:[10,15]};
+  /* Horario: estado orientativo según el horario habitual (zona Europe/Madrid, incluye horario de verano).
+     Las excepciones (festivos, vacaciones) se definen en src/data/site.json -> hoursExceptions. */
+  var AH = (window.AIRAM && window.AIRAM.hours) || [], AX = (window.AIRAM && window.AIRAM.exceptions) || { dates: [] };
   var DN = ["domingo","lunes","martes","miércoles","jueves","viernes","sábado"];
   function madridNow(){
-    var p = new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Madrid",weekday:"short",hour:"2-digit",minute:"2-digit",hour12:false}).formatToParts(new Date());
+    var p = new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Madrid",year:"numeric",month:"2-digit",day:"2-digit",weekday:"short",hour:"2-digit",minute:"2-digit",hour12:false}).formatToParts(new Date());
     var o = {}; p.forEach(function(x){ o[x.type] = x.value; });
-    var d = {Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[o.weekday];
-    return {d:d, m:(+o.hour % 24) * 60 + (+o.minute)};
+    return {d:{Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[o.weekday], m:(+o.hour % 24) * 60 + (+o.minute), date:o.year+"-"+o.month+"-"+o.day};
   }
-  function fmt(h){ return h + ":00"; }
+  function mins(s){ var a = s.split(":"); return +a[0]*60 + +a[1]; }
+  function hoursFor(d){ return AH.filter(function(x){ return x.days.indexOf(d) > -1 && !x.closed; })[0]; }
   try{
-    var now = madridNow();
+    var now = madridNow(), qual = AX.validated ? "" : ", según el horario habitual";
     document.querySelectorAll("#hours tr").forEach(function(tr){
       if(tr.dataset.d.split(" ").indexOf(String(now.d)) > -1) tr.classList.add("today");
     });
     var st = document.getElementById("status"), t = st.querySelector(".st-t"), dd = st.querySelector(".st-d");
-    var today = H[now.d];
-    if(today && now.m >= today[0]*60 && now.m < today[1]*60){
-      st.classList.add("open"); t.textContent = "Abierto ahora"; dd.textContent = "Hoy hasta las " + fmt(today[1]) + " h";
+    var ex = (AX.dates || []).filter(function(e){ return e.date === now.date; })[0];
+    var today = ex ? (ex.closed ? null : ex) : hoursFor(now.d);
+    if(today && now.m >= mins(today.open) && now.m < mins(today.close)){
+      st.classList.add("open"); t.textContent = "Abierto ahora"; dd.textContent = "Hasta las " + today.close + " h" + qual;
     } else {
-      var n = now.d, label;
+      var label = "";
       for(var i = 0; i < 7; i++){
-        var day = (now.d + i) % 7, h = H[day];
-        if(!h) continue;
-        if(i === 0 && now.m < h[0]*60){ label = "Hoy abrimos a las " + fmt(h[0]) + " h"; break; }
-        if(i > 0){ label = (i === 1 ? "Mañana" : "El " + DN[day]) + " abrimos a las " + fmt(h[0]) + " h"; break; }
+        var day = (now.d + i) % 7, hh = hoursFor(day);
+        if(!hh) continue;
+        if(i === 0 && now.m < mins(hh.open)){ label = "Hoy abrimos a las " + hh.open + " h"; break; }
+        if(i > 0){ label = (i === 1 ? "Mañana" : "El " + DN[day]) + " abrimos a las " + hh.open + " h"; break; }
       }
-      t.textContent = "Ahora cerrado"; dd.textContent = label || "";
+      t.textContent = "Cerrado ahora"; dd.textContent = label + qual;
     }
   }catch(e){}
 
@@ -1133,7 +1126,7 @@ body{overflow-x:clip}
   if(bar){ addEventListener("scroll", function(){ if(!ticking){ ticking = true; requestAnimationFrame(prog); } }, {passive:true}); addEventListener("resize", prog); prog(); }
 
   var els = Array.prototype.slice.call(document.querySelectorAll(".rv"));
-  var counters = Array.prototype.slice.call(document.querySelectorAll("[data-count]"));
+  var counters = []; /* contadores estáticos: sin animación para no mostrar cifras provisionales */
   if(reduced || !("IntersectionObserver" in window)){
     els.forEach(function(el){ el.classList.add("in"); });
     return;
