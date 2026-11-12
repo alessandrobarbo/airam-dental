@@ -6,6 +6,8 @@ import fs from 'node:fs';
 import lighthouse from 'lighthouse';
 import * as chromeLauncher from 'chrome-launcher';
 const RUNS = +(process.argv[2] || 3);
+const WHICH = process.argv[3] || 'both'; // current | demo | both
+const OUTFILE = process.argv[4] || 'docs/rendimiento-laboratorio.json';
 const PAIRS = [
   ['Inicio', 'https://airamdental.com/', 'https://climbahia.com.br/demo-airam/'],
   ['Implantología', 'https://airamdental.com/implantologia/', 'https://climbahia.com.br/demo-airam/implantologia/'],
@@ -14,7 +16,8 @@ const PAIRS = [
 const chrome = await chromeLauncher.launch({ chromePath: process.env.CHROME_PATH || 'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe', chromeFlags: ['--headless=new', '--no-first-run'] });
 const med = a => { const s = [...a].sort((x, y) => x - y); return s[Math.floor(s.length / 2)]; };
 const out = { date: new Date().toISOString(), runs: RUNS, profile: 'Lighthouse 12 mobile (simulated throttling)', results: [] };
-for (const [name, ...urls] of PAIRS) {
+for (const [name, ...pair] of PAIRS) {
+  const urls = WHICH === 'current' ? [pair[0]] : WHICH === 'demo' ? [pair[1]] : pair;
   for (const url of urls) {
     const r = { name, url, score: [], lcp: [], cls: [], tbt: [], fcp: [], si: [], bytes: [], a11y: [], seo: [], bp: [] };
     for (let i = 0; i < RUNS; i++) {
@@ -31,4 +34,4 @@ for (const [name, ...urls] of PAIRS) {
   }
 }
 await chrome.kill();
-fs.writeFileSync('docs/rendimiento-laboratorio.json', JSON.stringify(out, null, 1));
+fs.writeFileSync(OUTFILE, JSON.stringify(out, null, 1));

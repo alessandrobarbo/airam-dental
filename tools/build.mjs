@@ -409,7 +409,7 @@ function contactPage() {
 
 // ---------------- blog ----------------
 const PER = 10;
-const postCard = (R, x) => `<article class="post-card">${x.image ? `<a href="${R}${x.path.replace(/^\//, '')}" tabindex="-1" aria-hidden="true">${img(R, x.image.src, '')}</a>` : ''}<div><p class="meta"><time datetime="${x.date.slice(0, 10)}">${fmtDate(x.date)}</time></p><h2><a href="${R}${x.path.replace(/^\//, '')}">${esc(x.title)}</a></h2><p>${esc(x.excerpt.slice(0, 220))}${x.excerpt.length > 220 ? '…' : ''}</p></div></article>`;
+const postCard = (R, x, first = false) => `<article class="post-card">${x.image ? `<a href="${R}${x.path.replace(/^\//, '')}" tabindex="-1" aria-hidden="true">${img(R, x.image.src, '', { lazy: !first })}</a>` : ''}<div><p class="meta"><time datetime="${x.date.slice(0, 10)}">${fmtDate(x.date)}</time></p><h2><a href="${R}${x.path.replace(/^\//, '')}">${esc(x.title)}</a></h2><p>${esc(x.excerpt.slice(0, 220))}${x.excerpt.length > 220 ? '…' : ''}</p></div></article>`;
 function pager(R, base, n, cur) {
   if (n < 2) return '';
   const href = i => `${R}${base}${i > 1 ? `page/${i}/` : ''}`;
@@ -420,7 +420,7 @@ function archive(base, list, { h1, lead, crumbsTrail, titleBase, desc }) {
   for (let i = 1; i <= n; i++) {
     const p = `/${base}${i > 1 ? `page/${i}/` : ''}`, R = prefix(p);
     const body = `<header class="page-hero page-hero--plain wrap"><div class="page-hero-text"><h1>${esc(h1)}${i > 1 ? ` <span class="pg">(página ${i} de ${n})</span>` : ''}</h1>${lead ? `<p class="lead">${lead}</p>` : ''}</div></header>
-<div class="wrap blog-list">${list.slice((i - 1) * PER, i * PER).map(x => postCard(R, x)).join('\n')}</div>
+<div class="wrap blog-list">${list.slice((i - 1) * PER, i * PER).map((x, k) => postCard(R, x, k === 0)).join('\n')}</div>
 <div class="wrap">${pager(R, base, n, i)}</div>`;
     write(p, page({ p, title: `${titleBase}${i > 1 ? ` · página ${i}` : ''} · Clínica Dental Airam`, desc, current: 'noticias/', trail: crumbsTrail, body }));
   }

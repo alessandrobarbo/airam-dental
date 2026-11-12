@@ -1,0 +1,85 @@
+{
+ "date": "2026-11-12T12:18:14.424Z",
+ "runs": 3,
+ "profile": "Lighthouse 12 mobile (simulated throttling)",
+ "results": [
+  {
+   "name": "Inicio",
+   "url": "https://airamdental.com/",
+   "performance": 52,
+   "accessibility": 95,
+   "seo": 100,
+   "bestPractices": 75,
+   "lcp_s": 4.79,
+   "cls": 0,
+   "tbt_ms": 1114,
+   "fcp_s": 2.62,
+   "si_s": 3.75,
+   "kb": 1298,
+   "raw": {
+    "lcp": [
+     4795,
+     5423,
+     3667
+    ],
+    "performance": [
+     52,
+     52,
+     63
+    ]
+   }
+  },
+  {
+   "name": "Implantología",
+   "url": "https://airamdental.com/implantologia/",
+   "performance": 51,
+   "accessibility": 96,
+   "seo": 92,
+   "bestPractices": 75,
+   "lcp_s": 9.53,
+   "cls": 0,
+   "tbt_ms": 832,
+   "fcp_s": 2.62,
+   "si_s": 3.14,
+   "kb": 1341,
+   "raw": {
+    "lcp": [
+     9533,
+     8742,
+     9825
+    ],
+    "performance": [
+     51,
+     56,
+     47
+    ]
+   }
+  },
+  {
+   "name": "Blog",
+   "url": "https://airamdental.com/noticias/",
+   "performance": 65,
+   "accessibility": 93,
+   "seo": 92,
+   "bestPractices": 75,
+   "lcp_s": 3.64,
+   "cls": 0,
+   "tbt_ms": 821,
+   "fcp_s": 2.72,
+   "si_s": 3.78,
+   "kb": 1370,
+   "raw": {
+    "lcp": [
+     7948,
+     3636,
+     3486
+    ],
+    "performance": [
+     49,
+     65,
+     70
+    ]
+   }
+  }
+ ]
+}
