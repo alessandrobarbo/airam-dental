@@ -1,31 +1,31 @@
 {
- "date": "2026-11-12T13:21:58.202Z",
+ "date": "2026-11-12T13:25:27.397Z",
  "runs": 3,
  "profile": "Lighthouse 12 mobile (simulated throttling)",
  "results": [
   {
    "name": "Inicio",
    "url": "https://climbahia.com.br/demo-airam/",
-   "performance": 97,
+   "performance": 93,
    "accessibility": 99,
    "seo": 50,
    "bestPractices": 100,
-   "lcp_s": 2.54,
+   "lcp_s": 2.09,
    "cls": 0,
-   "tbt_ms": 0,
-   "fcp_s": 1.49,
-   "si_s": 1.8,
+   "tbt_ms": 165,
+   "fcp_s": 1.26,
+   "si_s": 2.51,
    "kb": 190,
    "raw": {
     "lcp": [
-     2126,
-     2541,
-     2546
+     2060,
+     2092,
+     2842
     ],
     "performance": [
      99,
-     97,
-     97
+     92,
+     93
     ]
    }
   },
@@ -36,48 +36,48 @@
    "accessibility": 100,
    "seo": 58,
    "bestPractices": 100,
-   "lcp_s": 2.39,
+   "lcp_s": 2.54,
    "cls": 0,
    "tbt_ms": 0,
-   "fcp_s": 1.65,
-   "si_s": 1.74,
+   "fcp_s": 1.64,
+   "si_s": 1.72,
    "kb": 137,
    "raw": {
     "lcp": [
-     2391,
-     2546,
-     2233
+     2394,
+     2540,
+     2537
     ],
     "performance": [
      97,
      97,
-     98
+     96
     ]
    }
   },
   {
    "name": "Blog",
    "url": "https://climbahia.com.br/demo-airam/noticias/",
-   "performance": 91,
+   "performance": 95,
    "accessibility": 100,
    "seo": 54,
    "bestPractices": 100,
-   "lcp_s": 3.36,
+   "lcp_s": 2.86,
    "cls": 0,
-   "tbt_ms": 11,
+   "tbt_ms": 47,
    "fcp_s": 1.64,
-   "si_s": 1.93,
+   "si_s": 1.79,
    "kb": 594,
    "raw": {
     "lcp": [
-     3364,
-     3441,
-     3148
+     2843,
+     2856,
+     3442
     ],
     "performance": [
-     91,
-     91,
-     93
+     95,
+     95,
+     91
     ]
    }
   }
