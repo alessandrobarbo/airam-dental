@@ -1,0 +1,818 @@
+{
+ "base": "http://localhost:5179",
+ "date": "2026-11-12T11:59:48.550Z",
+ "browser": "Edg/157.0.4341.46",
+ "widths": {
+  "360": [
+   {
+    "page": "/",
+    "innerWidth": 372,
+    "clientWidth": 360,
+    "scrollWidth": 372,
+    "overflow": [
+     "A.btn btn-line",
+     "DIV.mbar"
+    ],
+    "smallTargets": [
+     "Aviso legal",
+     "Política de privacidad",
+     "Política de cookies",
+     "Recomendaciones",
+     "Blog"
+    ],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": true
+   },
+   {
+    "page": "/implantologia/",
+    "innerWidth": 360,
+    "clientWidth": 360,
+    "scrollWidth": 360,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   },
+   {
+    "page": "/sedacion-consciente/",
+    "innerWidth": 360,
+    "clientWidth": 360,
+    "scrollWidth": 360,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   },
+   {
+    "page": "/especialidades/",
+    "innerWidth": 360,
+    "clientWidth": 360,
+    "scrollWidth": 360,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   },
+   {
+    "page": "/recomendaciones/",
+    "innerWidth": 360,
+    "clientWidth": 360,
+    "scrollWidth": 360,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   },
+   {
+    "page": "/cirugia-dental/recomendaciones-tras-una-extraccion-dental/",
+    "innerWidth": 360,
+    "clientWidth": 360,
+    "scrollWidth": 360,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   },
+   {
+    "page": "/equipo/",
+    "innerWidth": 360,
+    "clientWidth": 360,
+    "scrollWidth": 360,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   },
+   {
+    "page": "/instalaciones/",
+    "innerWidth": 360,
+    "clientWidth": 360,
+    "scrollWidth": 360,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   },
+   {
+    "page": "/contacto/",
+    "innerWidth": 360,
+    "clientWidth": 360,
+    "scrollWidth": 360,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   },
+   {
+    "page": "/noticias/",
+    "innerWidth": 360,
+    "clientWidth": 360,
+    "scrollWidth": 360,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   },
+   {
+    "page": "/noticias/page/10/",
+    "innerWidth": 360,
+    "clientWidth": 360,
+    "scrollWidth": 360,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   },
+   {
+    "page": "/politicadeprivacidad/",
+    "innerWidth": 360,
+    "clientWidth": 360,
+    "scrollWidth": 360,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   }
+  ],
+  "390": [
+   {
+    "page": "/",
+    "innerWidth": 390,
+    "clientWidth": 390,
+    "scrollWidth": 390,
+    "overflow": [],
+    "smallTargets": [
+     "Aviso legal",
+     "Política de privacidad",
+     "Política de cookies",
+     "Recomendaciones",
+     "Blog"
+    ],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   },
+   {
+    "page": "/implantologia/",
+    "innerWidth": 390,
+    "clientWidth": 390,
+    "scrollWidth": 390,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   },
+   {
+    "page": "/sedacion-consciente/",
+    "innerWidth": 390,
+    "clientWidth": 390,
+    "scrollWidth": 390,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   },
+   {
+    "page": "/especialidades/",
+    "innerWidth": 390,
+    "clientWidth": 390,
+    "scrollWidth": 390,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   },
+   {
+    "page": "/recomendaciones/",
+    "innerWidth": 390,
+    "clientWidth": 390,
+    "scrollWidth": 390,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   },
+   {
+    "page": "/cirugia-dental/recomendaciones-tras-una-extraccion-dental/",
+    "innerWidth": 390,
+    "clientWidth": 390,
+    "scrollWidth": 390,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   },
+   {
+    "page": "/equipo/",
+    "innerWidth": 390,
+    "clientWidth": 390,
+    "scrollWidth": 390,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   },
+   {
+    "page": "/instalaciones/",
+    "innerWidth": 390,
+    "clientWidth": 390,
+    "scrollWidth": 390,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   },
+   {
+    "page": "/contacto/",
+    "innerWidth": 390,
+    "clientWidth": 390,
+    "scrollWidth": 390,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   },
+   {
+    "page": "/noticias/",
+    "innerWidth": 390,
+    "clientWidth": 390,
+    "scrollWidth": 390,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   },
+   {
+    "page": "/noticias/page/10/",
+    "innerWidth": 390,
+    "clientWidth": 390,
+    "scrollWidth": 390,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   },
+   {
+    "page": "/politicadeprivacidad/",
+    "innerWidth": 390,
+    "clientWidth": 390,
+    "scrollWidth": 390,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   }
+  ],
+  "768": [
+   {
+    "page": "/",
+    "innerWidth": 768,
+    "clientWidth": 768,
+    "scrollWidth": 768,
+    "overflow": [],
+    "smallTargets": [
+     "Aviso legal",
+     "Política de privacidad",
+     "Política de cookies",
+     "Recomendaciones",
+     "Blog"
+    ],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   },
+   {
+    "page": "/implantologia/",
+    "innerWidth": 768,
+    "clientWidth": 768,
+    "scrollWidth": 768,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   },
+   {
+    "page": "/sedacion-consciente/",
+    "innerWidth": 768,
+    "clientWidth": 768,
+    "scrollWidth": 768,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   },
+   {
+    "page": "/especialidades/",
+    "innerWidth": 768,
+    "clientWidth": 768,
+    "scrollWidth": 768,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   },
+   {
+    "page": "/recomendaciones/",
+    "innerWidth": 768,
+    "clientWidth": 768,
+    "scrollWidth": 768,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   },
+   {
+    "page": "/cirugia-dental/recomendaciones-tras-una-extraccion-dental/",
+    "innerWidth": 768,
+    "clientWidth": 768,
+    "scrollWidth": 768,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   },
+   {
+    "page": "/equipo/",
+    "innerWidth": 768,
+    "clientWidth": 768,
+    "scrollWidth": 768,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   },
+   {
+    "page": "/instalaciones/",
+    "innerWidth": 768,
+    "clientWidth": 768,
+    "scrollWidth": 768,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   },
+   {
+    "page": "/contacto/",
+    "innerWidth": 768,
+    "clientWidth": 768,
+    "scrollWidth": 768,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   },
+   {
+    "page": "/noticias/",
+    "innerWidth": 768,
+    "clientWidth": 768,
+    "scrollWidth": 768,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   },
+   {
+    "page": "/noticias/page/10/",
+    "innerWidth": 768,
+    "clientWidth": 768,
+    "scrollWidth": 768,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   },
+   {
+    "page": "/politicadeprivacidad/",
+    "innerWidth": 768,
+    "clientWidth": 768,
+    "scrollWidth": 768,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": true,
+    "hScroll": false
+   }
+  ],
+  "1280": [
+   {
+    "page": "/",
+    "innerWidth": 1280,
+    "clientWidth": 1280,
+    "scrollWidth": 1280,
+    "overflow": [],
+    "smallTargets": [
+     "Aviso legal",
+     "Política de privacidad",
+     "Política de cookies",
+     "Recomendaciones",
+     "Blog"
+    ],
+    "h1": 1,
+    "menuButtonVisible": false,
+    "hScroll": false
+   },
+   {
+    "page": "/implantologia/",
+    "innerWidth": 1280,
+    "clientWidth": 1280,
+    "scrollWidth": 1280,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": false,
+    "hScroll": false
+   },
+   {
+    "page": "/sedacion-consciente/",
+    "innerWidth": 1280,
+    "clientWidth": 1280,
+    "scrollWidth": 1280,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": false,
+    "hScroll": false
+   },
+   {
+    "page": "/especialidades/",
+    "innerWidth": 1280,
+    "clientWidth": 1280,
+    "scrollWidth": 1280,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": false,
+    "hScroll": false
+   },
+   {
+    "page": "/recomendaciones/",
+    "innerWidth": 1280,
+    "clientWidth": 1280,
+    "scrollWidth": 1280,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": false,
+    "hScroll": false
+   },
+   {
+    "page": "/cirugia-dental/recomendaciones-tras-una-extraccion-dental/",
+    "innerWidth": 1280,
+    "clientWidth": 1280,
+    "scrollWidth": 1280,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": false,
+    "hScroll": false
+   },
+   {
+    "page": "/equipo/",
+    "innerWidth": 1280,
+    "clientWidth": 1280,
+    "scrollWidth": 1280,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": false,
+    "hScroll": false
+   },
+   {
+    "page": "/instalaciones/",
+    "innerWidth": 1280,
+    "clientWidth": 1280,
+    "scrollWidth": 1280,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": false,
+    "hScroll": false
+   },
+   {
+    "page": "/contacto/",
+    "innerWidth": 1280,
+    "clientWidth": 1280,
+    "scrollWidth": 1280,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": false,
+    "hScroll": false
+   },
+   {
+    "page": "/noticias/",
+    "innerWidth": 1280,
+    "clientWidth": 1280,
+    "scrollWidth": 1280,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": false,
+    "hScroll": false
+   },
+   {
+    "page": "/noticias/page/10/",
+    "innerWidth": 1280,
+    "clientWidth": 1280,
+    "scrollWidth": 1280,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": false,
+    "hScroll": false
+   },
+   {
+    "page": "/politicadeprivacidad/",
+    "innerWidth": 1280,
+    "clientWidth": 1280,
+    "scrollWidth": 1280,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": false,
+    "hScroll": false
+   }
+  ],
+  "1440": [
+   {
+    "page": "/",
+    "innerWidth": 1440,
+    "clientWidth": 1440,
+    "scrollWidth": 1440,
+    "overflow": [],
+    "smallTargets": [
+     "Aviso legal",
+     "Política de privacidad",
+     "Política de cookies",
+     "Recomendaciones",
+     "Blog"
+    ],
+    "h1": 1,
+    "menuButtonVisible": false,
+    "hScroll": false
+   },
+   {
+    "page": "/implantologia/",
+    "innerWidth": 1440,
+    "clientWidth": 1440,
+    "scrollWidth": 1440,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": false,
+    "hScroll": false
+   },
+   {
+    "page": "/sedacion-consciente/",
+    "innerWidth": 1440,
+    "clientWidth": 1440,
+    "scrollWidth": 1440,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": false,
+    "hScroll": false
+   },
+   {
+    "page": "/especialidades/",
+    "innerWidth": 1440,
+    "clientWidth": 1440,
+    "scrollWidth": 1440,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": false,
+    "hScroll": false
+   },
+   {
+    "page": "/recomendaciones/",
+    "innerWidth": 1440,
+    "clientWidth": 1440,
+    "scrollWidth": 1440,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": false,
+    "hScroll": false
+   },
+   {
+    "page": "/cirugia-dental/recomendaciones-tras-una-extraccion-dental/",
+    "innerWidth": 1440,
+    "clientWidth": 1440,
+    "scrollWidth": 1440,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": false,
+    "hScroll": false
+   },
+   {
+    "page": "/equipo/",
+    "innerWidth": 1440,
+    "clientWidth": 1440,
+    "scrollWidth": 1440,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": false,
+    "hScroll": false
+   },
+   {
+    "page": "/instalaciones/",
+    "innerWidth": 1440,
+    "clientWidth": 1440,
+    "scrollWidth": 1440,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": false,
+    "hScroll": false
+   },
+   {
+    "page": "/contacto/",
+    "innerWidth": 1440,
+    "clientWidth": 1440,
+    "scrollWidth": 1440,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": false,
+    "hScroll": false
+   },
+   {
+    "page": "/noticias/",
+    "innerWidth": 1440,
+    "clientWidth": 1440,
+    "scrollWidth": 1440,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": false,
+    "hScroll": false
+   },
+   {
+    "page": "/noticias/page/10/",
+    "innerWidth": 1440,
+    "clientWidth": 1440,
+    "scrollWidth": 1440,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": false,
+    "hScroll": false
+   },
+   {
+    "page": "/politicadeprivacidad/",
+    "innerWidth": 1440,
+    "clientWidth": 1440,
+    "scrollWidth": 1440,
+    "overflow": [],
+    "smallTargets": [],
+    "h1": 1,
+    "menuButtonVisible": false,
+    "hScroll": false
+   }
+  ]
+ },
+ "axe": {
+  "390/": [],
+  "390/implantologia/": [],
+  "390/sedacion-consciente/": [],
+  "390/especialidades/": [],
+  "390/recomendaciones/": [],
+  "390/cirugia-dental/recomendaciones-tras-una-extraccion-dental/": [],
+  "390/equipo/": [],
+  "390/instalaciones/": [],
+  "390/contacto/": [],
+  "390/noticias/": [],
+  "390/noticias/page/10/": [],
+  "390/politicadeprivacidad/": [],
+  "1280/": [],
+  "1280/implantologia/": [],
+  "1280/sedacion-consciente/": [],
+  "1280/especialidades/": [],
+  "1280/recomendaciones/": [],
+  "1280/cirugia-dental/recomendaciones-tras-una-extraccion-dental/": [],
+  "1280/equipo/": [],
+  "1280/instalaciones/": [],
+  "1280/contacto/": [],
+  "1280/noticias/": [],
+  "1280/noticias/page/10/": [],
+  "1280/politicadeprivacidad/": []
+ },
+ "behaviour": {
+  "mapa": {
+   "before": {
+    "thirdParty": [],
+    "cookies": [],
+    "storage": [
+     0,
+     0
+    ],
+    "iframes": 0
+   },
+   "after": {
+    "thirdParty": [
+     "maps.google.com",
+     "www.google.com",
+     "maps.gstatic.com",
+     "maps.googleapis.com",
+     "",
+     "fonts.googleapis.com",
+     "fonts.gstatic.com",
+     "places.googleapis.com"
+    ],
+    "iframes": 1,
+    "allCookiesInBrowser": []
+   }
+  },
+  "horario": "Abierto ahora según el horario habitual | Hoy hasta las 20:00 h. Los festivos y cierres puntuales pueden cambiarlo.",
+  "skipLink": {
+   "text": "Saltar al contenido",
+   "visible": true
+  },
+  "skipTarget": "#main",
+  "focusOutlines": [
+   "A:solid/2px",
+   "A:solid/2px",
+   "A:solid/2px",
+   "A:solid/2px",
+   "A:solid/2px",
+   "A:solid/2px"
+  ],
+  "menuMovil": {
+   "expanded": "true",
+   "visible": true,
+   "focus": "Tratamientos"
+  },
+  "menuMovilEsc": {
+   "expanded": "false",
+   "focusOnButton": true
+  },
+  "galeria": {
+   "open": true,
+   "caption": "Puerta de acceso (1 de 10)",
+   "afterArrow": "Recepción (2 de 10)",
+   "closedWithEsc": true,
+   "focusReturned": true
+  },
+  "home": {
+   "counters": [
+    "26",
+    "10",
+    "10"
+   ],
+   "accordionOpen": 1,
+   "moreLinks": 10,
+   "teamMembers": 10,
+   "status": "Abierto ahora | Hasta las 20:00 h, según el horario habitual",
+   "accordionAfterClick": [
+    1
+   ],
+   "pause": {
+    "pressed": "true",
+    "cls": true,
+    "band": "paused"
+   }
+  },
+  "reducedMotion": {
+   "jsClass": false,
+   "hiddenContent": 0,
+   "bandAnim": "none",
+   "toggleShown": "none"
+  }
+ }
+}

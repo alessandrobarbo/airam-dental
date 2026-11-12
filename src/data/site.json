@@ -1,0 +1,36 @@
+{
+ "_nota": "Datos de contacto y horario centralizados. Todo lo marcado como pendiente debe confirmarlo la clínica antes de la publicación oficial.",
+ "name": "Clínica Dental Airam",
+ "legalName": "Clínica Dental de Luis Marcos S.L.P.",
+ "nif": "B82906132",
+ "sanitaryAuth": "CS-04932",
+ "phone": "+34916334636",
+ "phoneDisplay": "+34 91 633 46 36",
+ "phoneShort": "91 633 46 36",
+ "whatsapp": "34916334636",
+ "email": "info@airamdental.com",
+ "address": { "street": "Avenida del Nuevo Mundo, 7", "postalCode": "28660", "city": "Boadilla del Monte", "region": "Madrid", "country": "ES" },
+ "mapsQuery": "Avenida del Nuevo Mundo 7, 28660 Boadilla del Monte, Madrid",
+ "instagram": "https://www.instagram.com/dentalairam/",
+ "facebook": "https://www.facebook.com/people/Airam-Dental/61565206595550/",
+ "newsletter": {
+  "url": "https://7782a46e.sibforms.com/serve/MUIFAC6qWefVmhI0dbAXW5PlVBlKniNWDZzTIJeXi1S_GvzCJw7sw_ZBe3PCoXJ1KTH4uc_dpAN2tXgBUDnUgnZTDbVrSOHFraBk_tJSqgOof_1_I4tJEycAL7wxhUk3XIPsheWSRtwfWjvUwxDfWywc86GZHN6Bp5OQZ8NaJ_RgeJ2aUmMJNJKlzM51pQosy8OE3vLr7C2ATHQu",
+  "provider": "Brevo",
+  "_fuente": "Enlace «Suscribirse» del pie de airamdental.com. El formulario lo aloja Brevo (sibforms.com); el sitio no recoge datos."
+ },
+ "hours": [
+  { "days": [1], "label": "Lunes", "open": "10:00", "close": "20:00" },
+  { "days": [2], "label": "Martes", "open": "14:00", "close": "20:00" },
+  { "days": [3], "label": "Miércoles", "open": "09:00", "close": "20:00" },
+  { "days": [4], "label": "Jueves", "open": "10:00", "close": "20:00" },
+  { "days": [5], "label": "Viernes", "open": "10:00", "close": "15:00" },
+  { "days": [6, 0], "label": "Sábado, domingo y festivos", "closed": true }
+ ],
+ "hoursExceptions": {
+  "_formato": "Fechas YYYY-MM-DD en hora de Madrid. closed: true para cierres (festivos, vacaciones); o open/close para horario especial. Vacío = sin calendario validado: el sitio indica «según el horario habitual».",
+  "validated": false,
+  "dates": []
+ },
+ "domains": { "prod": "https://airamdental.com", "demo": "https://climbahia.com.br/demo-airam" },
+ "demoOperator": "climbahia.com.br"
+}

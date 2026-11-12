@@ -1,0 +1,25 @@
+{
+  "name": "airam-dental",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "axe-core": "^4.10.2",
+    "lighthouse": "^12.3.0",
+    "puppeteer-core": "^23.11.1"
+  }
+}

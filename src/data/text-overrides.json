@@ -1,0 +1,28 @@
+{
+ "_nota": "Cambios de redacción aplicados a los textos clínicos importados de airamdental.com para evitar promesas absolutas o cifras sin fuente. Se aplican en el build (find -> replace, texto exacto). Todos están PENDIENTES DE APROBACIÓN por la clínica; el texto original queda registrado aquí.",
+ "treatments": [
+  { "slug": "implantologia", "find": "Implantes dentales: la solución definitiva, segura y duradera de reponer piezas dentales perdidas", "replace": "Implantes dentales: una solución estable y duradera para reponer piezas dentales perdidas", "motivo": "«definitiva» y «segura» como promesa absoluta" },
+  { "slug": "implantologia", "find": "Hacer un diagnóstico y tratamiento individualizado garantiza el éxito del implante dental.", "replace": "Un diagnóstico y un tratamiento individualizados son la base del éxito del implante dental.", "motivo": "«garantiza el éxito»" },
+  { "slug": "implantologia", "find": "Tasa de éxito del 98% en implantes de alta gama.", "replace": "Alta tasa de éxito con implantes de calidad y una planificación adecuada.", "motivo": "porcentaje sin fuente citada" },
+  { "slug": "implantologia", "find": "Generalmente utilizando técnicas adecuadas e implantes de alta gama, no hay que preocuparse por los fracasos.", "replace": "Con técnicas adecuadas e implantes de calidad, los fracasos son poco frecuentes, aunque ningún tratamiento está libre de riesgos.", "motivo": "«no hay que preocuparse por los fracasos»" },
+  { "slug": "estetica-dental", "find": "Entonces se colocarán sin dolor.", "replace": "Entonces se colocarán, procurando en todo momento tu comodidad.", "motivo": "promesa de ausencia de dolor" },
+  { "slug": "endodoncia", "find": "la endodoncia se realizará con una mínima anestesia local, absolutamente sin dolor y en una sola sesión.", "replace": "la endodoncia suele realizarse con anestesia local y, en muchos casos, en una sola sesión.", "motivo": "«absolutamente sin dolor» y sesión única como regla" },
+  { "slug": "endodoncia", "find": "Ser conservadores nos garantiza la confianza de nuestros pacientes y el éxito de nuestros tratamientos.", "replace": "Ser conservadores nos ayuda a ganarnos la confianza de nuestros pacientes y a mejorar el pronóstico de los tratamientos.", "motivo": "«garantiza el éxito»" },
+  { "slug": "endodoncia", "find": "Usando los mejores materiales, reducimos todos estos riesgos.", "replace": "Usando materiales de calidad, reducimos estos riesgos.", "motivo": "superlativo y «todos los riesgos»" },
+  { "slug": "endodoncia", "find": "Esto garantiza la fiabilidad del proceso llegando así a un resultado óptimo y de larga duración.", "replace": "Esto aumenta la fiabilidad del proceso y favorece un resultado duradero.", "motivo": "«garantiza»" },
+  { "slug": "endodoncia", "find": "Este proceso también es indoloro una vez medicada la pieza.", "replace": "Este proceso suele ser bien tolerado una vez medicada la pieza.", "motivo": "promesa de ausencia de dolor" },
+  { "slug": "odontopediatria", "find": "es un proceso muy sencillo, indoloro y rápido.", "replace": "es un proceso sencillo y rápido, y procuramos que el niño esté cómodo en todo momento.", "motivo": "promesa de ausencia de dolor" },
+  { "slug": "periodoncia", "find": "Es un proceso minucioso, pero totalmente indoloro.", "replace": "Es un proceso minucioso y, en general, bien tolerado.", "motivo": "«totalmente indoloro»" },
+  { "slug": "cirugia-dental", "find": "La nueva odontología no genera dolor, te lo quita", "replace": "La odontología actual busca aliviar el dolor, no provocarlo", "motivo": "promesa de ausencia de dolor en el lema" },
+  { "slug": "cirugia-dental", "find": "Puedes pedirnos cita y estudiaremos tu caso, ponte en las mejores manos.", "replace": "Puedes pedirnos cita y estudiaremos tu caso.", "motivo": "superlativo" }
+ ],
+ "team": [
+  { "persona": "María García", "original": "¡Ponte en sus manos para lucir una sonrisa perfecta!", "accion": "retirado", "motivo": "promesa de resultado" },
+  { "persona": "Sara Virtus", "original": "forman un tándem insuperable", "accion": "retirado", "motivo": "superlativo" },
+  { "persona": "Paula Pontevedra", "original": "capaz de hacer realidad los sueños de nuestros pacientes", "accion": "reformulado", "motivo": "promesa de resultado" },
+  { "persona": "José Ángel Palomo", "original": "Director médico de empresa líder de sedación en gabinete dental a nivel nacional. […] Yo, como anestesista tengo la solución.", "accion": "«líder a nivel nacional» y «tengo la solución» retirados", "motivo": "superlativo sin fuente y promesa" },
+  { "persona": "Noelia Rodríguez", "original": "Actualmente mami primeriza a tiempo parcial.", "accion": "retirado", "motivo": "dato personal que puede estar desactualizado; la clínica decide si se mantiene" },
+  { "persona": "Cristina Moreno", "original": "Bellísima compañera… Su labor como auxiliar garantiza un entorno seguro… lo último en odontología de calidad.", "accion": "reformulado", "motivo": "«garantiza» y superlativo" },
+  { "persona": "Valores del equipo", "original": "altamente especializados… la mejor atención… la última tecnología… los mejores diagnósticos… vanguardia", "accion": "reformulado", "motivo": "superlativos sin fuente" }
+ ]
+}

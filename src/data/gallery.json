@@ -1,0 +1,19 @@
+{
+ "_fuente": "https://airamdental.com/instalaciones/ (dos galerías: 4 y 6 imágenes). Nombres de los espacios tomados de los nombres de archivo de la clínica.",
+ "groups": [
+  { "title": "Acogida y espera", "items": [
+   { "img": "wp/sortistudio-airam-10-09-2024-39-opt-scaled.jpg", "url": "https://airamdental.com/wp-content/uploads/2024/09/@Sortistudio_Airam_10_09_2024-39_opt-scaled.jpg", "caption": "Puerta de acceso", "alt": "Puerta de cristal de la clínica con el logotipo de Airam" },
+   { "img": "recepcion-airam-opt.jpg", "caption": "Recepción", "alt": "Mostrador de recepción de la clínica" },
+   { "img": "sala-de-espera-airam-opt-scaled.jpg", "caption": "Sala de espera", "alt": "Sala de espera con bancos y luz natural" },
+   { "img": "entrada-airam-opt.jpg", "caption": "Entrada", "alt": "Zona de entrada de la clínica" }
+  ]},
+  { "title": "Área clínica y diagnóstico", "items": [
+   { "img": "cbct-3d-opt-scaled.jpg", "caption": "CBCT 3D", "alt": "Imagen tridimensional de un CBCT en pantalla" },
+   { "img": "wp/escaner-intraoral-opt-scaled.jpg", "url": "https://airamdental.com/wp-content/uploads/2025/08/Escaner-intraoral-opt-scaled.jpg", "caption": "Escáner intraoral", "alt": "Escáner intraoral junto al ordenador de diseño" },
+   { "img": "wp/gabinete-2-airam-opt-scaled.jpg", "url": "https://airamdental.com/wp-content/uploads/2025/08/Gabinete-2-airam-opt-scaled.jpg", "caption": "Gabinete de odontología general y estética", "alt": "Gabinete dental con sillón y equipo" },
+   { "img": "gabinete-3-sedacion-opt-scaled.jpg", "caption": "Gabinete de cirugía y sedación", "alt": "Gabinete preparado para cirugía y sedación" },
+   { "img": "gabinete-infantil-airam-opt-scaled.jpg", "caption": "Gabinete infantil", "alt": "Gabinete infantil decorado para niños" },
+   { "img": "quirofano-opt-ok-scaled.jpg", "caption": "Quirófano", "alt": "Profesional con equipo quirúrgico en el quirófano" }
+  ]}
+ ]
+}

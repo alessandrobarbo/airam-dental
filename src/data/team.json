@@ -1,0 +1,49 @@
+{
+ "_fuente": "https://airamdental.com/equipo/ (consultado el 12-11-2026). Textos de la clínica, con correcciones mínimas de ortografía. Pendiente: la clínica debe validar la lista vigente (divergencia con el aviso legal: Belén Granja aparece aquí; David de Paz aparece solo en el aviso legal).",
+ "intro": [
+  "En Clínica Dental Airam somos un equipo joven con una gran preparación y una formación continuada, como corresponde a la odontología de hoy, entendida como un servicio de salud. Nos preocupa la comercialización a la que se somete la odontología. Nosotros no hacemos ventas, sino que emitimos y explicamos diagnósticos: somos profesionales de la salud.",
+  "La profesión dental está pasando por un momento «comercial» sin precedentes en el ámbito sanitario. Tenemos que trabajar con mucho esfuerzo, preparación y pasión. Nuestra obligación es cuidar de la salud dental de nuestra población, y lo hacemos cada día desde el año 2000."
+ ],
+ "values": [
+  { "title": "Compromiso y estabilidad", "text": "Formamos un equipo estable que comparte éxitos y se apoya mutuamente para mejorar continuamente. Trabajamos juntos en busca de alternativas de diagnóstico, compartiendo sueños y alegrías.", "img": "sortistudio-airam-28-octubre-52-opt.jpg", "alt": "Dos profesionales de Airam trabajando juntas en un tratamiento" },
+  { "title": "Trato personalizado y empatía", "text": "Nuestro enfoque personalizado y humano genera confianza en la comprensión del diagnóstico y del tratamiento. La empatía es parte integral de nuestra forma de entender la odontología.", "img": "sortistudio-airam-28-octubre-40-opt.jpg", "alt": "Paciente atendida en el gabinete" },
+  { "title": "Experiencia y especialización", "text": "Nuestro equipo cuenta con experiencia en las distintas áreas de la odontología y mantiene sus conocimientos actualizados.", "img": "wp/sortistudio-airam-26-09-2024-13-opt.jpg", "alt": "Profesional de la clínica en consulta" },
+  { "title": "Ética y calidad integral", "text": "La ética es fundamental en nuestra práctica odontológica. Buscamos la calidad en todos los aspectos: tratamiento, instalaciones, asistencia, trato humano y ética profesional.", "img": "wp/sortistudio-airam-14-10-2024-28-opt.jpg", "alt": "Equipo de la clínica atendiendo a un paciente" },
+  { "title": "Enfoque en la salud dental", "text": "Para nosotros, la odontología es un ámbito sanitario, no un objetivo de ventas. Nos esforzamos por dar lo mejor de nosotros mismos, porque es lo que nuestros pacientes nos piden.", "img": "wp/sortistudio-airam-14-10-2024-45-opt.jpg", "alt": "Consulta en la clínica" },
+  { "title": "Tecnología y equipo técnico", "text": "Contamos con un equipo técnico capacitado y con tecnología de diagnóstico actual para estudiar cada caso y planificar el tratamiento.", "img": "wp/sortistudio-airam-10-09-2024-13-opt-scaled.jpg", "alt": "Equipamiento del gabinete dental" }
+ ],
+ "members": [
+  { "id": "maria-de-luis", "name": "María de Luis Marcos", "role": "Cirujana y directora", "group": "clinico", "img": "6-maria-de-luis-opt-d5d56cf8.jpg",
+    "bio": "Odontóloga especializada en cirugía, implantología y periodoncia. Lidera el equipo de Clínica Dental Airam. Detallista y delicada en su trabajo, se gana la confianza de sus pacientes tanto por su profesionalidad como por el trato humano.",
+    "quote": "Mi verdadera misión es ayudar. En cuanto empecé a crecer como profesional me di cuenta de que la mejor manera de ayudar a mis pacientes era rodearme de profesionales con mis mismos valores y misión. Estoy muy orgullosa del equipo que formamos y de lo que somos capaces de hacer.",
+    "areas": ["implantologia", "cirugia-dental", "periodoncia"] },
+  { "id": "maria-garcia", "name": "María García", "role": "Ortodoncista y odontopediatra", "group": "clinico", "img": "7-maria-garcia-opt-e32e772c.jpg",
+    "bio": "Ortodoncista y odontopediatra con gran preparación profesional. Experta en ortodoncia infantil y de adultos, tanto con brackets convencionales como con ortodoncia invisible. Es increíble cómo los niños entran contentos a su consulta: se hace amiga de ellos, es «un don».",
+    "areas": ["ortodoncia", "odontopediatria"] },
+  { "id": "sara-virtus", "name": "Sara Virtus", "role": "Odontóloga", "group": "clinico", "img": "9-sara-opt-defccc1d.jpg",
+    "bio": "Especialista en odontología 360. En sus más de 20 años de experiencia, Sara ha desarrollado la capacidad de integrar todas las especialidades de la odontología en su día a día para ofrecer una visión integral a nuestros pacientes. Forma equipo con la Dra. de Luis desde hace más de 10 años.",
+    "areas": ["restauradora", "endodoncia", "protesis"] },
+  { "id": "belen-granja", "name": "Belén Granja", "role": "Ortodoncista y odontopediatra", "group": "clinico", "img": "8-belen-opt-8178c7c5.jpg",
+    "bio": "Belén lleva más de 10 años ganándose la confianza de los más pequeños gracias al cariño y la dulzura que la caracterizan. Además de odontopediatra, es especialista en ortodoncia convencional e invisible, tanto en niños como en adultos.",
+    "quote": "El éxito de mis tratamientos es la prevención.",
+    "areas": ["odontopediatria", "ortodoncia"], "pending": "Aparece en la página de equipo de la web actual, pero no en la lista de profesionales colegiados del aviso legal. Pendiente de validación por la clínica." },
+  { "id": "paula-pontevedra", "name": "Paula Pontevedra", "role": "Odontóloga", "group": "clinico", "img": "10-paula-opt-c6107c46.jpg",
+    "bio": "Odontóloga especialista en estética y rehabilitación oral, con más de 10 años de experiencia mejorando tanto la función como la estética de las sonrisas. Apasionada por su especialidad, además de atender a sus pacientes da clases en la universidad a los futuros odontólogos.",
+    "areas": ["estetica-dental", "blanqueamiento-dental", "protesis"] },
+  { "id": "jose-angel-palomo", "name": "José Ángel Palomo", "role": "Médico anestesista", "group": "clinico", "img": "sortistudio-airam-jose-angel-aa9025e0.jpg",
+    "bio": "Director médico de una empresa de sedación en gabinete dental. Gracias a sus años de experiencia en el sector, el Dr. Palomo y su equipo, en colaboración con nuestras doctoras, ayudan a pacientes con ansiedad y miedo ante el tratamiento dental. Especialista en sedación infantil y de pacientes especiales.",
+    "quote": "Todo el mundo merece tener acceso a una odontología de calidad. Ayudar a personas que por miedo no acuden al dentista fue lo que me animó a especializarme en este sector. Que el miedo no te quite la sonrisa.",
+    "areas": ["sedacion-consciente"] },
+  { "id": "liliana-marin", "name": "Liliana Marín", "role": "Higienista", "group": "equipo", "img": "3-liliana-opt-1c8a0754.jpg",
+    "bio": "Higienista colegiada con gran vocación por su trabajo. Disfruta transmitiendo los conocimientos y técnicas necesarias para que nuestros pacientes puedan gozar de una buena salud bucodental. Es pieza fundamental en los tratamientos quirúrgicos junto a nuestra cirujana: llevan más de 10 años formando equipo.",
+    "quote": "El único modo de hacer un buen trabajo es amar lo que haces. Amo mi profesión y la disfruto con pasión." },
+  { "id": "tamara-moreno", "name": "Tamara Moreno", "role": "Coordinación y atención al paciente", "group": "equipo", "img": "sortistudio-airam-tamara-scaled-a53fe925.jpg",
+    "bio": "Responsable de coordinar al equipo de profesionales que te atenderá en Clínica Dental Airam y de cuidar el trato a nuestros pacientes. Tamara es el nexo de unión entre la parte clínica y la administrativa.",
+    "quote": "Siento una preocupación sincera por los pacientes. Por eso, la honestidad, la claridad y la sinceridad son valores fundamentales para mí." },
+  { "id": "noelia-rodriguez", "name": "Noelia Rodríguez", "role": "Recepción y administración", "group": "equipo", "img": "sortistudio-airam-abril-2025-14-noe-scaled-310e6ec5.jpg",
+    "bio": "Forma parte del equipo desde hace muchos años y conoce al dedillo cada historial y a cada paciente. Es la encargada de la recepción y la administración de la clínica. Si la buscáis, siempre estará sonriendo para ayudar.",
+    "quote": "No quiero perderme la oportunidad de seguir creciendo de la mano de las mejores compañeras y profesionales." },
+  { "id": "cristina-moreno", "name": "Cristina Moreno", "role": "Auxiliar de clínica", "group": "equipo", "img": "sortistudio-cris-scaled-561f3d48.jpg",
+    "bio": "Compañera con una gran capacidad de trabajo en equipo. Su labor como auxiliar contribuye a un entorno seguro y acogedor para cada paciente. Apoya al equipo en los tratamientos con una atención cercana y profesional, para que cada visita sea cómoda y tranquila. Trabaja mano a mano con la Dra. García en las tardes de ortodoncia y está al día en nuevas tecnologías." }
+ ]
+}
