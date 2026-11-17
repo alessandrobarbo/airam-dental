@@ -1,0 +1,155 @@
+{
+  "measuredAt": "2026-11-16",
+  "lighthouseVersion": "12.2.1",
+  "profile": "mobile (padrão Lighthouse)",
+  "pages": [
+    {
+      "name": "Portada",
+      "before": {
+        "url": "https://airamdental.com/",
+        "performance": 60,
+        "accessibility": 91,
+        "bestPractices": 75,
+        "seo": 100,
+        "lcpSeconds": 3.5,
+        "fcpSeconds": 2.9,
+        "cls": 0.004,
+        "tbtMs": 764,
+        "weightKB": 1267,
+        "requests": 60,
+        "warnings": [
+          "largest-contentful-paint-element: Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')",
+          "lcp-lazy-loaded: Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')",
+          "layout-shifts: Required RootCauses gatherer encountered an error: Cannot read properties of undefined (reading 'frame_sequence')",
+          "non-composited-animations: Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')",
+          "prioritize-lcp-image: Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')"
+        ],
+        "a11yFailed": [
+          "Background and foreground colors do not have a sufficient contrast ratio.",
+          "Heading elements are not in a sequentially-descending order",
+          "Links do not have a discernible name",
+          "Elements with visible text labels do not have matching accessible names."
+        ]
+      },
+      "after": {
+        "url": "https://climbahia.com.br/demo-airam/",
+        "performance": 95,
+        "accessibility": 99,
+        "bestPractices": 100,
+        "seo": 50,
+        "lcpSeconds": 2,
+        "fcpSeconds": 1.3,
+        "cls": 0.011,
+        "tbtMs": 202,
+        "weightKB": 175,
+        "requests": 6,
+        "warnings": [
+          "largest-contentful-paint-element: Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')",
+          "lcp-lazy-loaded: Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')",
+          "layout-shifts: Required RootCauses gatherer encountered an error: Cannot read properties of undefined (reading 'frame_sequence')",
+          "non-composited-animations: Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')",
+          "prioritize-lcp-image: Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')"
+        ],
+        "a11yFailed": [
+          "Image elements have `[alt]` attributes that are redundant text."
+        ]
+      }
+    },
+    {
+      "name": "Implantología",
+      "before": {
+        "url": "https://airamdental.com/implantologia/",
+        "performance": 69,
+        "accessibility": 96,
+        "bestPractices": 75,
+        "seo": 92,
+        "lcpSeconds": 2.3,
+        "fcpSeconds": 2.3,
+        "cls": 0,
+        "tbtMs": 796,
+        "weightKB": 1351,
+        "requests": 70,
+        "warnings": [
+          "largest-contentful-paint-element: Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')",
+          "lcp-lazy-loaded: Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')",
+          "layout-shifts: Required RootCauses gatherer encountered an error: Cannot read properties of undefined (reading 'frame_sequence')",
+          "non-composited-animations: Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')",
+          "prioritize-lcp-image: Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')"
+        ],
+        "a11yFailed": [
+          "Links do not have a discernible name",
+          "Elements with visible text labels do not have matching accessible names."
+        ]
+      },
+      "after": {
+        "url": "https://climbahia.com.br/demo-airam/implantologia/",
+        "performance": 96,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 58,
+        "lcpSeconds": 2.1,
+        "fcpSeconds": 1.4,
+        "cls": 0,
+        "tbtMs": 149,
+        "weightKB": 119,
+        "requests": 7,
+        "warnings": [
+          "largest-contentful-paint-element: Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')",
+          "lcp-lazy-loaded: Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')",
+          "layout-shifts: Required RootCauses gatherer encountered an error: Cannot read properties of undefined (reading 'frame_sequence')",
+          "non-composited-animations: Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')",
+          "prioritize-lcp-image: Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')"
+        ],
+        "a11yFailed": []
+      }
+    },
+    {
+      "name": "Contacto",
+      "before": {
+        "url": "https://airamdental.com/contacto/",
+        "performance": 44,
+        "accessibility": 96,
+        "bestPractices": 75,
+        "seo": 92,
+        "lcpSeconds": 11,
+        "fcpSeconds": 2.9,
+        "cls": 0,
+        "tbtMs": 832,
+        "weightKB": 1320,
+        "requests": 57,
+        "warnings": [
+          "largest-contentful-paint-element: Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')",
+          "lcp-lazy-loaded: Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')",
+          "layout-shifts: Required RootCauses gatherer encountered an error: Cannot read properties of undefined (reading 'frame_sequence')",
+          "non-composited-animations: Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')",
+          "prioritize-lcp-image: Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')"
+        ],
+        "a11yFailed": [
+          "Links do not have a discernible name",
+          "Elements with visible text labels do not have matching accessible names."
+        ]
+      },
+      "after": {
+        "url": "https://climbahia.com.br/demo-airam/contacto/",
+        "performance": 100,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 45,
+        "lcpSeconds": 1.5,
+        "fcpSeconds": 1.3,
+        "cls": 0,
+        "tbtMs": 0,
+        "weightKB": 40,
+        "requests": 6,
+        "warnings": [
+          "largest-contentful-paint-element: Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')",
+          "lcp-lazy-loaded: Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')",
+          "layout-shifts: Required RootCauses gatherer encountered an error: Cannot read properties of undefined (reading 'frame_sequence')",
+          "non-composited-animations: Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')",
+          "prioritize-lcp-image: Required TraceElements gatherer encountered an error: Dependency \"RootCauses\" failed with exception: Cannot read properties of undefined (reading 'frame_sequence')"
+        ],
+        "a11yFailed": []
+      }
+    }
+  ]
+}

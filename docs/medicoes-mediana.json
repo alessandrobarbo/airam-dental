@@ -1,0 +1,138 @@
+{
+ "runs": 3,
+ "pages": {
+  "Portada": {
+   "before": {
+    "perf": 60,
+    "a11y": 91,
+    "lcp": 3.8,
+    "kb": 1267,
+    "a11yFailed": [
+     "Background and foreground colors do not have a sufficient contrast ratio.",
+     "Heading elements are not in a sequentially-descending order",
+     "Links do not have a discernible name",
+     "Elements with visible text labels do not have matching accessible names."
+    ],
+    "raw": {
+     "perf": [
+      62,
+      55,
+      60
+     ],
+     "lcp": [
+      4.2,
+      3.8,
+      3.5
+     ]
+    }
+   },
+   "after": {
+    "perf": 95,
+    "a11y": 99,
+    "lcp": 2,
+    "kb": 175,
+    "a11yFailed": [
+     "Image elements have `[alt]` attributes that are redundant text."
+    ],
+    "raw": {
+     "perf": [
+      95,
+      93,
+      95
+     ],
+     "lcp": [
+      2,
+      2.1,
+      2
+     ]
+    }
+   }
+  },
+  "Implantología": {
+   "before": {
+    "perf": 69,
+    "a11y": 96,
+    "lcp": 3,
+    "kb": 1350,
+    "a11yFailed": [
+     "Links do not have a discernible name",
+     "Elements with visible text labels do not have matching accessible names."
+    ],
+    "raw": {
+     "perf": [
+      71,
+      66,
+      69
+     ],
+     "lcp": [
+      3,
+      3,
+      2.3
+     ]
+    }
+   },
+   "after": {
+    "perf": 96,
+    "a11y": 100,
+    "lcp": 2,
+    "kb": 119,
+    "a11yFailed": [],
+    "raw": {
+     "perf": [
+      96,
+      98,
+      96
+     ],
+     "lcp": [
+      2,
+      2,
+      2.1
+     ]
+    }
+   }
+  },
+  "Contacto": {
+   "before": {
+    "perf": 44,
+    "a11y": 96,
+    "lcp": 11,
+    "kb": 1319,
+    "a11yFailed": [
+     "Links do not have a discernible name",
+     "Elements with visible text labels do not have matching accessible names."
+    ],
+    "raw": {
+     "perf": [
+      41,
+      47,
+      44
+     ],
+     "lcp": [
+      11.3,
+      10.8,
+      11
+     ]
+    }
+   },
+   "after": {
+    "perf": 100,
+    "a11y": 100,
+    "lcp": 1.5,
+    "kb": 40,
+    "a11yFailed": [],
+    "raw": {
+     "perf": [
+      100,
+      99,
+      100
+     ],
+     "lcp": [
+      1.4,
+      1.5,
+      1.5
+     ]
+    }
+   }
+  }
+ }
+}

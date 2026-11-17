@@ -85,7 +85,8 @@ const NAV = [
   ['recomendaciones/', 'Recomendaciones'], ['noticias/', 'Blog'], ['contacto/', 'Contacto']
 ];
 const ICONS = fs.readFileSync(path.join(SRC, 'partials', 'icons.svg'), 'utf8');
-const banner = MODE === 'demo' ? `<div class="demo-banner" role="note">Propuesta de rediseño. Versión de demostración, no es la web oficial de Clínica Dental Airam.</div>` : '';
+// Faixa de demonstração retirada a pedido (16-11-2026). A demo continua com noindex/robots e com o aviso nas páginas legais.
+const banner = '';
 
 function head({ p, title, desc, image, type = 'website', jsonld = [] }) {
   const R = prefix(p);

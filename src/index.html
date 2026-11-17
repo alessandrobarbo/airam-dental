@@ -456,8 +456,11 @@ body{overflow-x:clip}
 @media (max-width:900px){
   .nav,.header-cta{display:none}
   .menu-btn{display:block}
-  .hero-in{grid-template-columns:1fr}
-  .hero-media{max-width:560px;margin-right:calc(var(--gutter) * -1);margin-left:auto;width:calc(100% + var(--gutter) * 0)}
+  .hero-in{grid-template-columns:1fr;padding-top:16px;gap:40px}
+  /* Celular/tablet: a foto da equipe aparece primeiro, já na abertura */
+  .hero-media{order:-1;max-width:640px;width:100%;margin:0 auto}
+  .hero-media .petal-frame{aspect-ratio:4/3}
+  .hero-media .mark-bg{width:46%;right:-8%;top:-10%}
   .why{grid-template-columns:1fr 1fr}
   .why article,.why article+article{padding:28px 24px 28px 0;border-left:0}
   .why article:nth-child(even){padding-left:24px;border-left:1px solid rgba(58,65,71,.15)}
